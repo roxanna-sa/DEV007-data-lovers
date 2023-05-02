@@ -13,6 +13,9 @@ data.got.forEach((item, index)=>{
   plantillaActual = plantillaActual.replace("[Apellido-Personaje]", item.lastName);
   plantillaActual = plantillaActual.replace("[Nombre-Personaje]", item.fullName);
   plantillaActual = plantillaActual.replace("[Titulo-Personaje]", item.title);
+  plantillaActual = plantillaActual.replace("[Fecha-Nacimiento]", item.born);
+  plantillaActual = plantillaActual.replace("[Fecha-Muerte]", item.death);
+
   
 
 // es lo mismo que el if
