@@ -1,5 +1,6 @@
 import data from "./data/got/got.js";
 import { ordenAlfabetico } from './data.js'; //se ocupará para hacer el orden alfabético cuando el usuario modifique el select
+import * as datos from "./data.js";
 //import { filtrarCasas} from "./data.js";
 
 
@@ -8,6 +9,9 @@ import { ordenAlfabetico } from './data.js'; //se ocupará para hacer el orden a
 
 
 console.log(data);
+console.log(data, "soy ese console");
+
+
 
 //ordenAlfabetico(structuredClone(data.got),"ascendente");   cuando el user modifique el select lo uso
 //ordenAlfabetico(structuredClone(data.got),"descendente");  cuando el user modifique el select lo uso
@@ -45,3 +49,24 @@ function dibujarPersonajesPantalla(listaPersonajes){
 dibujarPersonajesPantalla(data.got);
 
 
+
+
+ 
+
+let listaDesplegable = document.getElementById('Familias');
+let seleccion = listaDesplegable.options[listaDesplegable.selectedIndex].value;
+console.log(seleccion); 
+
+
+
+
+
+
+//trabajar desde esta línea
+
+// console.log (datos.filtrarDatosStark(data), "filtro Casa Stark");
+// console.log (datos.filtrarDatosTargaryen(data), "filtro Casa Targaryen");
+// console.log (datos.filtrarDatosTarly(data), "filtro Casa Tarly")
+
+
+//Llamar elementos de lista desplegable 

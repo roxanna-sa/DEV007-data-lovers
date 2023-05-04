@@ -50,3 +50,11 @@ export function filtro() {
 };
 
 console.log(filtro);
+
+
+// add event listener click, 
+export const filtrarFamilias = (data, selecciondeCasa) => {
+  const filtrar = data.got.filter(casa => casa.family.includes(selecciondeCasa))
+ return filtrar;
+}  
+

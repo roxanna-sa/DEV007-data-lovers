@@ -1,55 +1,72 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Data Lovers</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <h1 style="color:white">GAME OF THRONES || Winter is coming</h1>
 
-    <div id="root"></div>
+<head>
+  <meta charset="utf-8">
+  <title>Data Lovers</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-    <section name="plantilla" style="color:white" class="recuadro-personaje">
-       
-      <img src="[Foto-Personaje]" class="imagen-personaje">
+<h1 style="color:white">GAME OF THRONES || Winter is coming</h1>
+  <div>
+    <input type="search" placeholder="Buscar..." class="filtro-personajes">
+  </div>
 
-      <div class="informacion">
-        <p>First Name: </p>
-        <p name="primerNombre">[PrimerNombre-Personaje]</p>
-      </div>   
+  <label for="Familias">Selecciona una Casa</label>
+  <select id="familias">
+    <option value="stark" selected> Stark</option>
+    <option value="targaryen">Targaryen</option>
+    <option value="tarly">Tarly</option>
+    <option value="baratheon"> Baratheon</option>
+    <option value="lannister"> Lannister</option>
+    <br><br>
+    <input type="submit" value="Aceptar">
+  </select>
 
-      <div class="informacion">
-        <p>Last Name: </p>
-        <p name="apellido">[Apellido-Personaje]</p>
-      </div>
+  <div id="root"></div>
 
-      <div class="informacion">
-        <p>Full Name: </p>
-        <p name="nombre">[Nombre-Personaje]</p>
-      </div>
+  <div name="plantilla" style="color:white" class="recuadro-personaje">
 
-      <div class="informacion">
-        <p>Title: </p>
-        <p name="title">[Titulo-Personaje]</p>
-      </div>
+    <img src="[Foto-Personaje]" class="imagen-personaje">
 
-      <div class="informacion">
-        <p>House: </p>
-        <p name="house">[Casa-Personaje]</p>
-      </div>
+    <div class="informacion">
+      <p>First Name: </p>
+      <p name="primerNombre">[PrimerNombre-Personaje]</p>
+    </div>
 
-      <div class="informacion">
-        <p>Born: </p>
-        <p name="born">[Fecha-Nacimiento]</p>
-      </div>
+    <div class="informacion">
+      <p>Last Name: </p>
+      <p name="apellido">[Apellido-Personaje]</p>
+    </div>
 
-      <div class="informacion">
-        <p>Death: </p>
-        <p name="death">[Fecha-Muerte]</p>
-      </div>
-      
-    </section>
+    <div class="informacion">
+      <p>Full Name: </p>
+      <p name="nombre">[Nombre-Personaje]</p>
+    </div>
+
+    <div class="informacion">
+      <p>Title: </p>
+      <p name="title">[Titulo-Personaje]</p>
+    </div>
+
+    <div class="informacion">
+      <p>House: </p>
+      <p name="house">[Casa-Personaje]</p>
+    </div>
+
+    <div class="informacion">
+      <p>Born: </p>
+      <p name="born">[Fecha-Nacimiento]</p>
+    </div>
+
+    <div class="informacion">
+      <p>Death: </p>
+      <p name="death">[Fecha-Muerte]</p>
+    </div>
+
+
+  </div>
+
 
     <select id="selectRoxana"> 
       <option value="">Todos</option>
@@ -57,9 +74,13 @@
       <option value="descendente">Descendente</option>
     </select>
 
-    
-    
-    
-    <script src="main.js" type="module"></script>
-  </body>
+  
+ 
+
+  
+
+
+  <script src="main.js" type="module"></script>
+</body>
+
 </html>
