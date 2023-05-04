@@ -7,26 +7,22 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 
-<body>
-
-
-  
-    <label for="Familias">Selecciona una Casa</label>
-    <select id="familias">
-      <option value="stark" selected> Stark</option>
-      <option value="targaryen">Targaryen</option>
-      <option value="tarly">Tarly</option>
-      <option value="baratheon"> Baratheon</option>
-      <option value="lannister"> Lannister</option>
-      <br><br>
-      <input type="submit" value="Aceptar">
-    </select>
- 
-
-  <h1 style="color:white">GAME OF THRONES || Winter is coming</h1>
+<h1 style="color:white">GAME OF THRONES || Winter is coming</h1>
   <div>
     <input type="search" placeholder="Buscar..." class="filtro-personajes">
   </div>
+
+  <label for="Familias">Selecciona una Casa</label>
+  <select id="familias">
+    <option value="stark" selected> Stark</option>
+    <option value="targaryen">Targaryen</option>
+    <option value="tarly">Tarly</option>
+    <option value="baratheon"> Baratheon</option>
+    <option value="lannister"> Lannister</option>
+    <br><br>
+    <input type="submit" value="Aceptar">
+  </select>
+
   <div id="root"></div>
 
   <div name="plantilla" style="color:white" class="recuadro-personaje">
@@ -71,6 +67,17 @@
 
   </div>
 
+
+    <select id="selectRoxana"> 
+      <option value="">Todos</option>
+      <option value="ascendente">Ascendente</option>
+      <option value="descendente">Descendente</option>
+    </select>
+
+  
+ 
+
+  
 
 
   <script src="main.js" type="module"></script>

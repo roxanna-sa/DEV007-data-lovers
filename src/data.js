@@ -1,23 +1,56 @@
 // estas funciones son de ejemplo
 
-// export const example = () => {
-//   return 'example';
-// };
+/*export const example = () => {
+  return 'example';
+};
 
-// export const filtrarDatosStark = (data) => {
-//   const filtrar = data.got.filter(casaStark => casaStark.family === "House Stark" || casaStark.family === "Stark")
-//  return filtrar;
-// }  
+export const anotherExample = () => {
+  return 'OMG';
+};*/
 
-// export const filtrarDatosTargaryen = (data) => {
-//   const filtrar = data.got.filter(casaTargaryen => casaTargaryen.family === "House Targaryen"|| casaTargaryen.family === "Targaryan")
-//  return filtrar;
-// }  
+//listaPersonajes= c/pj  orden=ascendente/descendente
+/**
+ * recibe un arreglo y lo ordena en base al parámetro orden
+ * @param {Array} listaPersonajes Un arreglo con el formato de got.js
+ * @param {string} orden El texto "ascendente" o "descendente"
+ * @returns 
+ */
+export const ordenAlfabetico = (listaPersonajes,orden) => {
+  listaPersonajes.sort(orderByFullName);
+  if (orden !== "ascendente"){
+    return listaPersonajes.reverse();
+  }else{
+    return listaPersonajes;
+  }
+};
 
-// export const filtrarDatosTarly = (data) => {
-//   const filtrar = data.got.filter(casaTarly => casaTarly.family === "House Tarly")
-//  return filtrar;
-// }  
+function orderByFullName(a,b){
+  if (a.fullName > b.fullName){
+    return 1;
+  }else if(b.fullName > a.fullName){
+    return -1;
+  }else{
+    return 0;
+  }
+}
+
+
+  
+export function filtro() {
+  const casaSeleccionada = document.querySelector("#idSelect").value;
+
+  if (casaSeleccionada === ""){
+   dibujarPersonajes(data.got);
+   
+  }else{
+    const filtradosPorCasa = filtradosPorCasa(structureClone(data.got), casaSeleccionada); 
+
+   dibujarPersonajes(filtradosPorCasa);
+  }
+};
+
+console.log(filtro);
+
 
 
 
