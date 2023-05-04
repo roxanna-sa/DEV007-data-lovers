@@ -26,9 +26,9 @@ data.got.forEach((item, index) => {
   document.querySelector("#root").innerHTML += plantillaActual;
 });
 
-let listaDesplegable = document.getElementById('Familias');
-let seleccion = listaDesplegable.options[listaDesplegable.selectedIndex].value;
-console.log(seleccion); 
+const listaDesplegable = document.getElementById('familias');
+const seleccionDeCasa = listaDesplegable.options[listaDesplegable.selectedIndex].value;
+console.log(seleccionDeCasa, "Soy la casa Seleccionada"); 
 
 
 

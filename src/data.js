@@ -19,9 +19,15 @@
 //  return filtrar;
 // }  
 
+
+
 // add event listener click, 
-export const filtrarFamilias = (data, selecciondeCasa) => {
-  const filtrar = data.got.filter(casa => casa.family.includes(selecciondeCasa))
- return filtrar;
+export const filtrarFamilias = (data) => {
+  const filtrar = data.filter(casa => casa.includes(selecciondeCasa))
+  console.log(filtrar, "Soy la casa Seleccionada");
+//  return filtrar;
 }  
+
+
+
 
