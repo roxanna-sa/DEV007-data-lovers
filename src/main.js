@@ -1,6 +1,6 @@
 import data from "./data/got/got.js";
-import { ordenAlfabetico } from './data.js'; //se ocupará para hacer el orden alfabético cuando el usuario modifique el select
-import * as datos from "./data.js";
+import { filtrarFamilias } from './data.js'; //se ocupará para hacer el orden alfabético cuando el usuario modifique el select
+
 //import { filtrarCasas} from "./data.js";
 
 
@@ -8,7 +8,6 @@ import * as datos from "./data.js";
 
 
 
-console.log(data);
 console.log(data, "soy ese console");
 
 
@@ -21,11 +20,11 @@ document.querySelector("[name='plantilla']").style.display = "none";
 
 
 
-function dibujarPersonajesPantalla(listaPersonajes){
+function dibujarPersonajesPantalla(listaPersonajes) {
   document.querySelector("#root").innerHTML = ""; //limpiar el root que es donde dibujamos cada personaje
   listaPersonajes.forEach((item) => { //data.got.forEach((item, index)
     let plantillaActual = plantilla;
-  
+
     plantillaActual = plantillaActual.replace("[Foto-Personaje]", item.imageUrl);
     plantillaActual = plantillaActual.replace("[PrimerNombre-Personaje]", item.firstName);
     plantillaActual = plantillaActual.replace("[Apellido-Personaje]", item.lastName);
@@ -35,10 +34,10 @@ function dibujarPersonajesPantalla(listaPersonajes){
     plantillaActual = plantillaActual.replace("[Fecha-Muerte]", item.death);
     // es lo mismo que el if
     plantillaActual = plantillaActual.replace("[Casa-Personaje]", (item.family === "" ? "-" : item.family)); // ?= entonces : = si no (lo hago de esta forma por si hay campos vacíos)
-    
-    document.querySelector("#root").innerHTML +=  plantillaActual;
+
+    document.querySelector("#root").innerHTML += plantillaActual;
   });
-  
+
 };
 
 
@@ -51,14 +50,20 @@ dibujarPersonajesPantalla(data.got);
 
 
 
- 
-
-const listaDesplegable = document.getElementById('familias');
-const seleccionDeCasa = listaDesplegable.options[listaDesplegable.selectedIndex].value;
-console.log(seleccionDeCasa, "Soy la casa Seleccionada"); 
 
 
 
+function filtro() {
+
+  const listaDesplegable = document.getElementById('familias');
+  const selecciondeCasa = listaDesplegable.options[listaDesplegable.selectedIndex].value;
+  let filtrados = filtrarFamilias(structuredClone(data), selecciondeCasa);
+  console.log(filtrados);
+
+  dibujarPersonajesPantalla(filtrados);
+}
+
+document.querySelector("#familias").addEventListener("change", filtro);
 
 
 

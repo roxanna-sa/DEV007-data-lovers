@@ -35,30 +35,20 @@ function orderByFullName(a,b){
 }
 
 
-  
-export function filtro() {
-  const casaSeleccionada = document.querySelector("#idSelect").value;
 
-  if (casaSeleccionada === ""){
-   dibujarPersonajes(data.got);
-   
-  }else{
-    const filtradosPorCasa = filtradosPorCasa(structureClone(data.got), casaSeleccionada); 
 
-   dibujarPersonajes(filtradosPorCasa);
-  }
-};
 
-console.log(filtro);
 
 
 
 
 // add event listener click, 
-export const filtrarFamilias = (data) => {
-  const filtrar = data.filter(casa => casa.includes(selecciondeCasa))
-  console.log(filtrar, "Soy la casa Seleccionada");
-//  return filtrar;
+
+
+export const filtrarFamilias = (data, selecciondeCasa) => {
+  const filtrar = data.got.filter(casa => casa.family.toLowerCase().includes(selecciondeCasa))
+  // console.log(filtrar, "Soy la casa Seleccionada");
+    return filtrar;
 }  
 
 
