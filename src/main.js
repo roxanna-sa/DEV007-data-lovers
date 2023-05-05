@@ -9,7 +9,6 @@ import data from "./data/got/got.js";
 
 
 
-console.log(data);
 console.log(data, "soy ese console");
 
 const plantilla = document.querySelector("[name='plantilla']").outerHTML;
@@ -17,11 +16,11 @@ document.querySelector("[name='plantilla']").style.display = "none";
 
 
 
-function dibujarPersonajesPantalla(listaPersonajes){
+function dibujarPersonajesPantalla(listaPersonajes) {
   document.querySelector("#root").innerHTML = ""; //limpiar el root que es donde dibujamos cada personaje
   listaPersonajes.forEach((item) => { //data.got.forEach((item, index)
     let plantillaActual = plantilla;
-  
+
     plantillaActual = plantillaActual.replace("[Foto-Personaje]", item.imageUrl);
     plantillaActual = plantillaActual.replace("[PrimerNombre-Personaje]", item.firstName);
     plantillaActual = plantillaActual.replace("[Apellido-Personaje]", item.lastName);
@@ -31,10 +30,10 @@ function dibujarPersonajesPantalla(listaPersonajes){
     plantillaActual = plantillaActual.replace("[Fecha-Muerte]", item.death);
     // es lo mismo que el if
     plantillaActual = plantillaActual.replace("[Casa-Personaje]", (item.family === "" ? "-" : item.family)); // ?= entonces : = si no (lo hago de esta forma por si hay campos vacíos)
-    
-    document.querySelector("#root").innerHTML +=  plantillaActual;
+
+    document.querySelector("#root").innerHTML += plantillaActual;
   });
-  
+
 };
 
 
@@ -63,11 +62,13 @@ function filtro(){
   let ordenados = document.getElementById('selectOrder').value;
   filtrados = ordenAlfabetico(filtrados,ordenados);
 
+
   // Proceso 3: Hacer filtro por input de texto
 
 
   
   // Proceso Final: Dibujar el resultado de los proceso en pantalla
+
   dibujarPersonajesPantalla(filtrados);
 }
   
@@ -75,6 +76,21 @@ document.querySelector("#familias").addEventListener("change",filtro);
 document.querySelector("#selectOrder").addEventListener("change",filtro);
 
 
+
+
+
+ botonBuscar.addEventListener("click", () => {
+  
+   const personajeIngresado = document.getElementById("inputSearch");
+   const  titlePersonaje= personajeIngresado.input[personajeIngresado.selectedIndex].value
+   let filtrados = filtrarTitles(structuredClone(data), titlePersonaje);
+   console.log(filtrados)
+
+   dibujarPersonajesPantalla(filtrados);
+
+  }
+ )
+   document.querySelector("#familias").addEventListener("change", botonBuscar);
 
 
 

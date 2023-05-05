@@ -9,12 +9,7 @@ export const anotherExample = () => {
 };*/
 
 //listaPersonajes= c/pj  orden=ascendente/descendente
-/**
- * recibe un arreglo y lo ordena en base al parámetro orden
- * @param {Array} listaPersonajes Un arreglo con el formato de got.js
- * @param {string} orden El texto "ascendente" o "descendente"
- * @returns 
- */
+
 export const ordenAlfabetico = (listaPersonajes,orden) => {
   listaPersonajes.sort(orderByFullName);
   if (orden !== "ascendente"){
@@ -36,11 +31,22 @@ function orderByFullName(a,b){
 
 
 
+// add event listener click, 
 
 
-// add event listener click, MAFER
 export const filtrarFamilias = (data, selecciondeCasa) => {
   const filtrar = data.got.filter(casa => casa.family.toLowerCase().includes(selecciondeCasa))
- return filtrar;
+  // console.log(filtrar, "Soy la casa Seleccionada");
+    return filtrar;
 }  
+
+
+
+
+export const filtrarTitles = (data, titlePersonaje) => {
+  const filtrar = data.got.filter(titulo => titulo.title.toLowerCase().includes(titlePersonaje))
+  console.log(filtrar, "Soy la casa Seleccionada");
+    // return filtrar;
+}  
+
 
