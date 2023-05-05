@@ -7,10 +7,11 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 
-<h1 style="color:white">GAME OF THRONES || Winter is coming</h1>
+<body>
+  <h1 style="color:white">GAME OF THRONES || Winter is coming</h1>
   <div>
     
-    <input type="text" id="inputSearch" placeholder="Buscar..." class="filtro-personajes">
+    <input type="search" id="inputSearch" placeholder="Buscar..." class="filtro-personajes">
     <label for="search">
       <input type="submit" id="inputSearch">
     </label>
@@ -48,9 +49,12 @@
     <option value="none">None</option>                                        
     <!-- Incluir none a Desconocida -->
    
+  </select>
 
-    <br><br>
-    <input type="submit" value="Aceptar">
+  <select id="selectOrder"> 
+    <option value="">Ordenar</option>
+    <option value="ascendente">Ascendente</option>
+    <option value="descendente">Descendente</option>
   </select>
 
   <div id="root"></div>
@@ -96,18 +100,6 @@
 
 
   </div>
-
-
-    <select id="selectOrder"> 
-      <option value="">Todos</option>
-      <option value="ascendente">Ascendente</option>
-      <option value="descendente">Descendente</option>
-    </select>
-
-  
- 
-
-  
 
 
   <script src="main.js" type="module"></script>
