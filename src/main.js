@@ -1,20 +1,16 @@
+import { filtrarFamilias, ordenAlfabetico } from "./data.js";
 import data from "./data/got/got.js";
-import { ordenAlfabetico } from './data.js'; //se ocupará para hacer el orden alfabético cuando el usuario modifique el select
-import * as datos from "./data.js";
+
+//import * as datos from "./data.js";
 //import { filtrarCasas} from "./data.js";
 
 
-//filtrarCasas(data.got);
+
 
 
 
 console.log(data);
 console.log(data, "soy ese console");
-
-
-
-//ordenAlfabetico(structuredClone(data.got),"ascendente");   cuando el user modifique el select lo uso
-//ordenAlfabetico(structuredClone(data.got),"descendente");  cuando el user modifique el select lo uso
 
 const plantilla = document.querySelector("[name='plantilla']").outerHTML;
 document.querySelector("[name='plantilla']").style.display = "none";
@@ -51,22 +47,36 @@ dibujarPersonajesPantalla(data.got);
 
 
 
- 
+  
+function filtro(){
+  let filtrados = structuredClone(data);
 
-let listaDesplegable = document.getElementById('Familias');
-let seleccion = listaDesplegable.options[listaDesplegable.selectedIndex].value;
-console.log(seleccion); 
-
-
-
-
+  // Proceso 1: Filto por familia
+  let listaDesplegable = document.getElementById('familias');
+  let seleccion = listaDesplegable.options[listaDesplegable.selectedIndex].value; //document.getElementById("familias").value 57&58
 
 
-//trabajar desde esta línea
+  filtrados = filtrarFamilias(filtrados,seleccion);
+  
 
-// console.log (datos.filtrarDatosStark(data), "filtro Casa Stark");
-// console.log (datos.filtrarDatosTargaryen(data), "filtro Casa Targaryen");
-// console.log (datos.filtrarDatosTarly(data), "filtro Casa Tarly")
+  //Proceso 2: hacer orden AZ/ZA acá
+  let ordenados = document.getElementById('selectOrder').value;
+  filtrados = ordenAlfabetico(filtrados,ordenados);
+
+  // Proceso 3: Hacer filtro por input de texto
 
 
-//Llamar elementos de lista desplegable 
+  
+  // Proceso Final: Dibujar el resultado de los proceso en pantalla
+  dibujarPersonajesPantalla(filtrados);
+}
+  
+document.querySelector("#familias").addEventListener("change",filtro);
+document.querySelector("#selectOrder").addEventListener("change",filtro);
+
+
+
+
+
+
+

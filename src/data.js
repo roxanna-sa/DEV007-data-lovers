@@ -35,26 +35,12 @@ function orderByFullName(a,b){
 }
 
 
-  
-export function filtro() {
-  const casaSeleccionada = document.querySelector("#idSelect").value;
-
-  if (casaSeleccionada === ""){
-   dibujarPersonajes(data.got);
-   
-  }else{
-    const filtradosPorCasa = filtradosPorCasa(structureClone(data.got), casaSeleccionada); 
-
-   dibujarPersonajes(filtradosPorCasa);
-  }
-};
-
-console.log(filtro);
 
 
-// add event listener click, 
+
+// add event listener click, MAFER
 export const filtrarFamilias = (data, selecciondeCasa) => {
-  const filtrar = data.got.filter(casa => casa.family.includes(selecciondeCasa))
+  const filtrar = data.got.filter(casa => casa.family.toLowerCase().includes(selecciondeCasa))
  return filtrar;
 }  
 
