@@ -54,3 +54,10 @@ export const filtrarFamilias = (data, selecciondeCasa) => {
 
 
 
+export const filtrarTitles = (data, titlePersonaje) => {
+  const filtrar = data.got.filter(titulo => titulo.title.toLowerCase().includes(titlePersonaje))
+  console.log(filtrar, "Soy la casa Seleccionada");
+    // return filtrar;
+}  
+
+

@@ -67,6 +67,23 @@ document.querySelector("#familias").addEventListener("change", filtro);
 
 
 
+
+// botonBuscar.addEventListener("click", () => {
+  
+//   const personajeIngresado = document.getElementById("inputSearch");
+//   const  titlePersonaje= personajeIngresado.input[personajeIngresado.selectedIndex].value
+//   let filtrados = filtrarTitles(structuredClone(data), titlePersonaje);
+//   console.log(filtrados)
+
+//   dibujarPersonajesPantalla(filtrados);
+
+// }
+// )
+// document.querySelector("#familias").addEventListener("change", botonBuscar);
+
+
+
+
 //trabajar desde esta línea
 
 // console.log (datos.filtrarDatosStark(data), "filtro Casa Stark");
