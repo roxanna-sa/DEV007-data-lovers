@@ -1,12 +1,8 @@
-import { filtrarFamilias, ordenAlfabetico } from "./data.js";
+import { filtrarFamilias, filtrarNombres, ordenAlfabetico } from "./data.js";
 import data from "./data/got/got.js";
 
 //import * as datos from "./data.js";
 //import { filtrarCasas} from "./data.js";
-
-
-
-
 
 
 console.log(data, "soy ese console");
@@ -34,7 +30,7 @@ function dibujarPersonajesPantalla(listaPersonajes) {
     document.querySelector("#root").innerHTML += plantillaActual;
   });
 
-};
+}
 
 
 // funcion inicial
@@ -43,30 +39,26 @@ function dibujarPersonajesPantalla(listaPersonajes) {
 // dibujarPersonajesPantalla(ordenadaAlfabeticamente);
 dibujarPersonajesPantalla(data.got);
 
-
-
-
-  
 function filtro(){
   let filtrados = structuredClone(data);
 
   // Proceso 1: Filto por familia
-  let listaDesplegable = document.getElementById('familias');
-  let seleccion = listaDesplegable.options[listaDesplegable.selectedIndex].value; //document.getElementById("familias").value 57&58
+  const listaDesplegable = document.getElementById('familias');
+  const seleccion = listaDesplegable.options[listaDesplegable.selectedIndex].value; //document.getElementById("familias").value 57&58
 
 
   filtrados = filtrarFamilias(filtrados,seleccion);
   
 
   //Proceso 2: hacer orden AZ/ZA acá
-  let ordenados = document.getElementById('selectOrder').value;
+  const ordenados = document.getElementById('selectOrder').value;
   filtrados = ordenAlfabetico(filtrados,ordenados);
 
 
   // Proceso 3: Hacer filtro por input de texto
+ // const fullName = document.getElementById('inputSearch').value;
+ // filtrados = filtrarNombres(filtrados, fullName);
 
-
-  
   // Proceso Final: Dibujar el resultado de los proceso en pantalla
 
   dibujarPersonajesPantalla(filtrados);
@@ -74,23 +66,27 @@ function filtro(){
   
 document.querySelector("#familias").addEventListener("change",filtro);
 document.querySelector("#selectOrder").addEventListener("change",filtro);
+//document.querySelector("#inputSearch").addEventListener("search", filtro);
 
 
 
 
 
- botonBuscar.addEventListener("click", () => {
+
+
+
+/*botonBuscar.addEventListener("click", () => {
   
-   const personajeIngresado = document.getElementById("inputSearch");
-   const  titlePersonaje= personajeIngresado.input[personajeIngresado.selectedIndex].value
-   let filtrados = filtrarTitles(structuredClone(data), titlePersonaje);
+  const personajeIngresado = document.getElementById("inputSearch");
+  const  titlePersonaje= personajeIngresado.input[personajeIngresado.selectedIndex].value
+  let filtrados = filtrarTitles(structuredClone(data), titlePersonaje);
    console.log(filtrados)
 
    dibujarPersonajesPantalla(filtrados);
 
   }
  )
-   document.querySelector("#familias").addEventListener("change", botonBuscar);
+   document.querySelector("#familias").addEventListener("change", botonBuscar);*/
 
 
 

@@ -28,10 +28,18 @@ describe("ordenAlfabetico", ()=> {
   });
 
   it("arreglo ordenado ascendente", ()=>{
-    expect(ordenAlfabetico(["C","A","D","B"],"ascendente")).toStrictEqual(["A","B","C","D"]); //toStrictEqual es para objetos completos 
+    expect(ordenAlfabetico([{"fullName":"C"},{"fullName":"A"},{"fullName":"D"},{"fullName":"B"}],"ascendente")).toStrictEqual([{"fullName":"A"},{"fullName":"B"},{"fullName":"C"},{"fullName":"D"}]); //toStrictEqual es para objetos completos 
   });
 
   it("arreglo ordenado descendente", ()=>{
-    expect(ordenAlfabetico(["C","A","D","B"],"descendente")).toStrictEqual(["D","C","B","A"]);
+    expect(ordenAlfabetico([{"fullName":"C"},{"fullName":"A"},{"fullName":"D"},{"fullName":"B"}],"descendente")).toStrictEqual([{"fullName":"D"},{"fullName":"C"},{"fullName":"B"},{"fullName":"A"}]);
   });
 });
+
+
+
+  
+
+
+
+
