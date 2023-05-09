@@ -29,7 +29,7 @@ function orderByFullName(a,b){
 
 
 
-// Filtrar por familia
+// add event listener click, 
 
 
 export const filtrarFamilias = (data, selecciondeCasa) => {

@@ -1,8 +1,12 @@
-import { filtrarFamilias, filtrarNombres, ordenAlfabetico } from "./data.js";
+import { filtrarFamilias, ordenAlfabetico, barraDeBusqueda} from "./data.js";
 import data from "./data/got/got.js";
 
 //import * as datos from "./data.js";
 //import { filtrarCasas} from "./data.js";
+
+
+
+
 
 
 console.log(data, "soy ese console");
@@ -30,12 +34,13 @@ function dibujarPersonajesPantalla(listaPersonajes) {
     document.querySelector("#root").innerHTML += plantillaActual;
   });
 
-}
+};
 
 
 
 dibujarPersonajesPantalla(data.got); //le mando todos los personajes a la función que tiene el parámetro listaPersonajes (al cargar la página)
 
+ 
 function filtro(){
   let filtrados = structuredClone(data);
 
@@ -57,6 +62,8 @@ function filtro(){
   const fullName = document.getElementById('inputSearch').value;
   filtrados = filtrarNombres(filtrados, fullName); 
 
+
+  
   // Proceso Final: Dibujar el resultado de los proceso en pantalla
 
   dibujarPersonajesPantalla(filtrados);
