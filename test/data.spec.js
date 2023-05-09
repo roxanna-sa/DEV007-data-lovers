@@ -1,4 +1,5 @@
-import { ordenAlfabetico } from '../src/data.js';
+import { filtrarFamilias, ordenAlfabetico } from '../src/data.js';
+import data from "../src/data/got/got.js";
 
 /*
 describe('example', () => {
@@ -23,7 +24,7 @@ describe('anotherExample', () => {
 });*/
 
 describe("ordenAlfabetico", ()=> {
-  it("es una funcion", ()=> {
+  it("es una función", ()=> {
     expect(typeof ordenAlfabetico).toBe("function"); //toBe es para datos primitivos
   });
 
@@ -36,7 +37,24 @@ describe("ordenAlfabetico", ()=> {
   });
 });
 
+describe("filtrarFamilias", ()=> {
+  it("es una función", ()=> {
+    expect(typeof filtrarFamilias).toBe("function");
+  });
 
+  it("filtrar por Tarly", ()=> {
+    expect(filtrarFamilias(data,"tarly")).toStrictEqual([{
+      "id": 1,
+      "firstName": "Samwell",
+      "lastName": "Tarly",
+      "fullName": "Samwell Tarly",
+      "title": "Maester",
+      "family": "House Tarly",
+      "imageUrl": "https://thronesapi.com/assets/images/sam.jpg",
+      "born": "283 DC"
+    }]);
+  });
+});
 
   
 

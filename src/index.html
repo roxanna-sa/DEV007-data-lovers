@@ -8,15 +8,19 @@
 </head>
 
 <body>
+
+  <header>
+  </header>
+
   <h1 style="color:white">GAME OF THRONES || Winter is coming</h1>
+
   <div>
-    
-    <input type="search" id="inputSearch" placeholder="Buscar..." class="filtro-personajes">
-    
+    <input type="search" id="inputSearch" placeholder="Buscar por nombre..." class="filtro-personajes">
   </div>
 
   <label for="Familias">Selecciona una Casa</label>
   <select id="familias">
+    <option value="" disabled selected> Filtrar por familia</option>
     <option value=""> Todos </option>
     <option value="stark"> Stark</option>
     <option value="targaryen">Targaryen</option>
@@ -45,11 +49,10 @@
     <option value="unknown"> Desconocida</option>
     <option value="none">None</option>                                        
     <!-- Incluir none a Desconocida -->
-   
   </select>
 
   <select id="selectOrder"> 
-    <option value="">Ordenar</option>
+    <option value="">Ordenar por defecto</option>
     <option value="ascendente">Ascendente</option>
     <option value="descendente">Descendente</option>
   </select>
@@ -58,7 +61,7 @@
 
   <div name="plantilla" style="color:white" class="recuadro-personaje">
 
-    <img src="[Foto-Personaje]" class="imagen-personaje">
+    <img src="#" class="imagen-personaje">
 
     <div class="informacion">
       <p>First Name: </p>
