@@ -31,22 +31,17 @@ function orderByFullName(a,b){
 
 
 
-// Filtrar por familia
+// add event listener click, 
 
 
 export const filtrarFamilias = (data, selecciondeCasa) => {
   const filtrar = data.got.filter(casa => casa.family.toLowerCase().includes(selecciondeCasa))
   // console.log(filtrar, "Soy la casa Seleccionada");
-  return filtrar;
+    return filtrar;
 }  
 
 
-//input
 
-export const filtrarNombres= (data, fullName) => {
-  const filtrar = data.got.filter(nombre => nombre.fullName.toLowerCase().includes(fullName));
-  //console.log(filtrar, "Soy la casa Seleccionada");
-  return filtrar;
-}  
+
 
 
