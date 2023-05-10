@@ -9,53 +9,57 @@
 
 <body>
 
-  <header>
-  </header>
+    <header>
+      <img src="img/logoheader.png" class="logo-header" alt="">
+      <img src="img/winterishere.png" class="logo--header">
+    </header>
 
-  <h1 style="color:white">GAME OF THRONES || Winter is coming</h1>
+    
 
-  <div>
+  
+ <div>
+
     <input type="search" id="inputSearch" placeholder="Buscar por nombre..." class="filtro-personajes">
+  
+   
+  
+    <label for="Familias">Selecciona una Casa</label>
+    <select id="familias">
+      <option value="" disabled selected> Filtrar por familia</option>
+      <option value=""> Todos </option>
+      <option value="stark"> Stark</option>
+      <option value="targaryen">Targaryen</option>
+      <option value="lannister">Lannister</option>
+      <option value="baratheon">Baratheon</option>
+      <option value="tyrell">Tyrell</option>
+      <option value="tarly">Tarly</option>
+      <option value="martell">Martell</option>
+      <option value="mormont">Mormont</option> 
+      <option value="tarth">Tarth</option>
+      <option value="greyjoy">Greyjoy</option>
+      <option value="clegane">Clegane</option>
+      <option value="baelish">Baelish</option>
+      <option value="seaworth">Seaworth</option>
+      <option value="free folk">Free Folk</option>
+      <option value="naathi">Naath</option>
+      <option value="bolton">Bolton</option> 
+      <option value="naharis">Naharis</option> 
+      <option value="sparrow">Sparrow</option> 
+      <option value="lorath">Lorath</option> 
+      <option value="sand">Sand</option> 
+      <option value="unsullied">Unsullied</option> 
+      <option value="qyburn">Qyburn</option> 
+      <option value="bronn"> Bronn</option> 
+      <option value="unknown"> Desconocida</option>
+    </select>
+
+    <select id="selectOrder"> 
+      <option value="">Ordenar por defecto</option>
+      <option value="ascendente">Ascendente</option>
+      <option value="descendente">Descendente</option>
+    </select>
+
   </div>
-
-  <label for="Familias">Selecciona una Casa</label>
-  <select id="familias">
-    <option value="" disabled selected> Filtrar por familia</option>
-    <option value=""> Todos </option>
-    <option value="stark"> Stark</option>
-    <option value="targaryen">Targaryen</option>
-    <option value="tarly">Tarly</option>
-    <option value="baratheon"> Baratheon</option>
-    <option value="lannister"> Lannister</option>
-    <option value="tyrell">Tyrell</option>
-    <option value="greyjoy"> Greyjoy</option>
-    <option value="clegane"> Clegane</option>
-    <option value="baelish"> Baelish</option>
-    <option value="seaworth"> Seaworth</option>
-    <option value="whisperers"> Master of Whisperers</option>
-    <option value="free folk"> Free Folk</option>
-    <option value="tarth">Tarth</option>
-    <option value="naathi">Naathi</option>
-    <option value="bolton">Bolton</option> 
-    <option value="naharis"> Naharis</option> 
-    <option value="mormont">Mormont</option> 
-    <option value="sparrow">Sparrow</option> 
-    <option value="viper">Viper</option>
-    <option value="lorath">Lorath</option> 
-    <option value="sand">Sand</option> 
-    <option value="worm">Worm</option> 
-    <option value="qyburn">Qyburn</option> 
-    <option value="bronn"> Bronn</option> 
-    <option value="unknown"> Desconocida</option>
-    <option value="none">None</option>                                        
-    <!-- Incluir none a Desconocida -->
-  </select>
-
-  <select id="selectOrder"> 
-    <option value="">Ordenar por defecto</option>
-    <option value="ascendente">Ascendente</option>
-    <option value="descendente">Descendente</option>
-  </select>
 
   <div id="root"></div>
 
@@ -64,37 +68,37 @@
     <img src="#" class="imagen-personaje">
 
     <div class="informacion">
-      <p>First Name: </p>
+      <p>First Name : </p>
       <p name="primerNombre">[PrimerNombre-Personaje]</p>
     </div>
 
     <div class="informacion">
-      <p>Last Name: </p>
+      <p>Last Name : </p>
       <p name="apellido">[Apellido-Personaje]</p>
     </div>
 
     <div class="informacion">
-      <p>Full Name: </p>
+      <p>Full Name : </p>
       <p name="nombre">[Nombre-Personaje]</p>
     </div>
 
     <div class="informacion">
-      <p>Title: </p>
+      <p>Title : </p>
       <p name="title">[Titulo-Personaje]</p>
     </div>
 
     <div class="informacion">
-      <p>House: </p>
+      <p>Family : </p>
       <p name="house">[Casa-Personaje]</p>
     </div>
 
     <div class="informacion">
-      <p>Born: </p>
+      <p>Born : </p>
       <p name="born">[Fecha-Nacimiento]</p>
     </div>
 
     <div class="informacion">
-      <p>Death: </p>
+      <p>Death : </p>
       <p name="death">[Fecha-Muerte]</p>
     </div>
 
