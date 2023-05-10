@@ -7,7 +7,7 @@ export default{
       "fullName": "Daenerys Targaryen",
       "title": "Mother of Dragons",
       "family": "House Targaryen",
-      "imageUrl": "https://thronesapi.com/assets/images/daenerys.jpg",
+      "imageUrl": "./img/DaenerysTargaryen.jpeg",
       "born": "284 DC"
     },
     {
@@ -17,7 +17,7 @@ export default{
       "fullName": "Samwell Tarly",
       "title": "Maester",
       "family": "House Tarly",
-      "imageUrl": "https://thronesapi.com/assets/images/sam.jpg",
+      "imageUrl": "./img/SamwellTarly.png",
       "born": "283 DC"
     },
     {
@@ -27,7 +27,7 @@ export default{
       "fullName": "Jon Snow",
       "title": "King of the North",
       "family": "House Stark",
-      "imageUrl": "https://thronesapi.com/assets/images/jon-snow.jpg",
+      "imageUrl": "./img/JonSnow.jpg",
       "born": "283 DC"
     },
     {
@@ -37,7 +37,7 @@ export default{
       "fullName": "Arya Stark",
       "title": "No One",
       "family": "House Stark",
-      "imageUrl": "https://thronesapi.com/assets/images/arya-stark.jpg",
+      "imageUrl": "./img/AryaStark.jpg",
       "born": "289 AL"
     },
     {
@@ -47,7 +47,7 @@ export default{
       "fullName": "Sansa Stark",
       "title": "Lady of Winterfell",
       "family": "House Stark",
-      "imageUrl": "https://thronesapi.com/assets/images/sansa-stark.jpeg",
+      "imageUrl": "./img/sansaStark.jpg",
       "born": "286 AL"
     },
     {
@@ -67,7 +67,7 @@ export default{
       "fullName": "Ned Stark",
       "title": "Lord of Winterfell",
       "family": "House Stark",
-      "imageUrl": "https://thronesapi.com/assets/images/ned-stark.jpg",
+      "imageUrl": "./img/NedStark.jpg",
       "born": "263 DC"
     },
     {
@@ -77,7 +77,7 @@ export default{
       "fullName": "Robert Baratheon",
       "title": "Lord of the Seven Kingdoms",
       "family": "House Baratheon",
-      "imageUrl": "https://thronesapi.com/assets/images/robert-baratheon.jpeg",
+      "imageUrl":  "./img/RobertBaratheon.jpg",
       "born": "262 DC"
     },
     {
@@ -87,7 +87,7 @@ export default{
       "fullName": "Jamie Lannister",
       "title": "Lord Commander of the Kingsguard",
       "family": "House Lannister",
-      "imageUrl": "https://thronesapi.com/assets/images/jaime-lannister.jpg",
+      "imageUrl":  "./img/JamieLannister.jpg",
       "born": "262 DC",
       "death": "305 DC"
     },
@@ -247,7 +247,7 @@ export default{
       "fullName": "Brienne of Tarth",
       "title": "Lady Brienne",
       "family": "Tarth",
-      "imageUrl": "https://thronesapi.com/assets/images/brienne-tarth.jpeg",
+      "imageUrl":"./img/brienne.jpg",
       "born": "280 AL"
     },
     {

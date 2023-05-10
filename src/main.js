@@ -1,4 +1,4 @@
-import { filtrarFamilias, ordenAlfabetico, barraDeBusqueda} from "./data.js";
+import { filtrarFamilias, ordenAlfabetico, filtrarNombres} from "./data.js";
 import data from "./data/got/got.js";
 
 //import * as datos from "./data.js";
@@ -50,7 +50,7 @@ function filtro(){
 
 
   filtrados = filtrarFamilias(filtrados,seleccion); //hace el filtro por familia y guarda esa lista ordenada en la variable filtrados
-  
+  console.log(filtrados)
 
   //Proceso 2: hacer orden AZ/ZA acá
   const tipoDeOrden = document.getElementById('selectOrder').value;
