@@ -98,7 +98,7 @@ export default{
       "fullName": "Cersei Lannister",
       "title": "Lady of Casterly Rock",
       "family": "House Lannister",
-      "imageUrl": "https://thronesapi.com/assets/images/cersei.jpg",
+      "imageUrl":  "./img/CerseiLannister.png",
       "born": "262 DC",
       "death": "305 DC"
     },
@@ -109,7 +109,7 @@ export default{
       "fullName": "Catelyn Stark",
       "title": "Lady of Winterfell",
       "family": "House Stark",
-      "imageUrl": "https://thronesapi.com/assets/images/catelyn-stark.jpg",
+      "imageUrl": "./img/CerseiLannister.jpg",
       "born": "264 DC",
       "death": "299 DC"
     },
