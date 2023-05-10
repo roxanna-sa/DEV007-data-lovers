@@ -1,15 +1,8 @@
 import { filtrarFamilias, ordenAlfabetico, filtrarNombres} from "./data.js";
 import data from "./data/got/got.js";
 
-//import * as datos from "./data.js";
-//import { filtrarCasas} from "./data.js";
 
 
-
-
-
-
-console.log(data, "soy ese console");
 
 const plantilla = document.querySelector("[name='plantilla']").outerHTML;
 document.querySelector("[name='plantilla']").style.display = "none";
@@ -62,12 +55,11 @@ function filtro(){
   const fullName = document.getElementById('inputSearch').value;
   filtrados = filtrarNombres(filtrados, fullName); 
 
-
-  
   // Proceso Final: Dibujar el resultado de los proceso en pantalla
-
   dibujarPersonajesPantalla(filtrados);
-}
+};
+
+
   
 document.querySelector("#familias").addEventListener("change",filtro);
 document.querySelector("#selectOrder").addEventListener("change",filtro);
@@ -79,8 +71,8 @@ document.querySelector("#inputSearch").addEventListener("keyup", filtro);
 
 
 
-
  //PARA SACAR EL VALOR DE UNA CAJA DE TEXTO GET ELEMENTBYID().VALUE 
 
 
 
+ //conteoPersonajesPorFamilia();

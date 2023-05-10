@@ -28,7 +28,6 @@ function orderByFullName(a,b){
 }
 
 
-
 // add event listener click, 
 
 
@@ -42,7 +41,7 @@ export const filtrarFamilias = (data, selecciondeCasa) => {
   seleccion de casa es el parámetro, en main están los argumentos que se le envían a la función 
   */
   return filtrar;
-}  
+};
 
 
 //input
@@ -51,6 +50,6 @@ export const filtrarNombres= (data, Name) => {
   const filtrar = data.filter(nombre => nombre.fullName.toLowerCase().includes(Name.toLowerCase()));
   //console.log(filtrar, "Soy la casa Seleccionada");
   return filtrar;
-}  
+}; 
 
 

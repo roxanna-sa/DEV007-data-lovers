@@ -5,6 +5,7 @@
 body{
   background: black;
 }
+
 h1{
     text-align: center;
     margin:1em;
@@ -32,5 +33,23 @@ h1{
   display: flex;
   justify-content:baseline;
   height: 2.1em;
-};
+}
 
+.filtro-personajes{
+  border-radius: 0.4em;
+  height: 2em;
+  width:auto; 
+}
+
+.logo-header{
+  height: 10em;
+}
+
+.logo--header{
+  height:2em;
+}
+
+header{
+  display:flex;
+  align-items: center;
+}
