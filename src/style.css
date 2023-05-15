@@ -1,3 +1,20 @@
+/* @media screen and (max-width: 800px){
+  body{
+    background-image: url("./images/fondoTronoDragon.jpg"); 
+  }
+} */
+
+* {
+  margin: 0;
+  /* box-sizing: border-box;
+  position: absolute;
+  width: 1728px;
+  height: 1117px; 
+  
+  background-position-x: center;
+  background-repeat: no-repeat; */
+}
+
 *{ 
   margin:0em;
 }
@@ -58,19 +75,6 @@ header {
 }
 
 
-@media only screen and (max-width: 500px) {
-  .recuadro-personaje{
-    width: 100%;
-  }
-  .logo-header{
-    height: auto;
-    width:50%;
-  }
-  .logo--header{
-    height:auto;
-    width:30%;
-  }
-}
 
 button {
   width: 336px;
@@ -141,4 +145,42 @@ p {
   
 }
 
+@media only screen and (max-width: 500px) {
+  .recuadro-personaje{
+    width: 100%;
+  }
+  .logo-header{
+    height: auto;
+    width:50%;
+    }
+  .logo--header{
+    height:auto;
+    width:30%;
+    }
+}
+
+@media screen and (max-width: 3800px) {
+  body {
+    background-image: url("./img/fondoTronoDragon.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: cover;
+    background-attachment: fixed;
+  }
+}
+  
+  @media screen and (max-width: 1214px) {
+    body {
+      background-image: url("./img/fondoTronoDragonMovil.jpg");
+      background-repeat: no-repeat;
+ 
+      height: 655px;
+      width: 380;
+      position: absolute;
+      background-attachment: fixed;
+      left: 1px;
+      top: 100px;
+    }
+  
+  }
 
