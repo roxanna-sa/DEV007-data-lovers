@@ -42,7 +42,7 @@ export const filtrarFamilias = (data, seleccionDeCasa) => {
 
 export const filtrarNombres= (data, Name) => {
   const filtrar = data.filter(nombre => nombre.fullName.toLowerCase().includes(Name.toLowerCase()));
-  //console.log(filtrar, "Soy la casa Seleccionada");
+  // console.log(filtrar, "Soy la casa Seleccionada");
   return filtrar;
 }; 
 

@@ -7,42 +7,42 @@ body{
   width: 100%;
 }
 
-h1{
-    text-align: center;
-    margin:1em;
+h1 {
+  text-align: center;
+  margin: 1em;
 }
 
-.recuadro-personaje{
-    display:flex;
-    width: calc(100% / 7);
-    border: 0.063em solid black;
-    float:left;
-    box-sizing:border-box;
-    flex-direction: column;
-    
-}
-
-.imagen-personaje{
-    
-    height: 12.5em;
-    width: auto;
-    object-fit: cover;
-    border-radius: 0.813em;
-}
-
-.informacion{
+.recuadro-personaje {
   display: flex;
-  justify-content:baseline;
+  width: calc(100% / 7);
+  border: 0.063em solid black;
+  float: left;
+  box-sizing: border-box;
+  flex-direction: column;
+
+}
+
+.imagen-personaje {
+
+  height: 12.5em;
+  width: auto;
+  object-fit: cover;
+  border-radius: 0.813em;
+}
+
+.informacion {
+  display: flex;
+  justify-content: baseline;
   height: 2.1em;
 }
 
-.filtro-personajes{
+.filtro-personajes {
   border-radius: 0.4em;
   height: 2em;
-  width:auto; 
+  width: auto;
 }
 
-.logo-header{
+.logo-header {
   height: 10em;
   width:auto;
 }
@@ -52,8 +52,8 @@ h1{
   width:auto;
 }
 
-header{
-  display:flex;
+header {
+  display: flex;
   align-items: center;
 }
 
@@ -62,7 +62,6 @@ header{
   .recuadro-personaje{
     width: 100%;
   }
-
   .logo-header{
     height: auto;
     width:50%;
