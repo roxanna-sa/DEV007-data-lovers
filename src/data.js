@@ -1,5 +1,3 @@
-
-
 //listaPersonajes= c/pj  orden=ascendente/descendente
 
 /**
@@ -27,13 +25,8 @@ function orderByFullName(a,b){
   }
 }
 
-
-// add event listener click, 
-
-export const filtrarFamilias = (data, selecciondeCasa) => {
-  const filtrar = data.got.filter(casa => casa.family.toLowerCase().includes(selecciondeCasa))
-  
-  
+export const filtrarFamilias = (data, seleccionDeCasa) => {
+  const filtrar = data.got.filter(casa => casa.family.toLowerCase().includes(seleccionDeCasa))
   /*
   filter solo funciona sobre arreglos y pide como si fuese un foreach el nombre de c/elemento
   en este caso, cada elemento (que nosotras nombramos "casa") representa un objeto de got.js
@@ -52,4 +45,27 @@ export const filtrarNombres= (data, Name) => {
   // console.log(filtrar, "Soy la casa Seleccionada");
   return filtrar;
 }; 
+
+
+//Conteo de personajes por familia
+
+export function conteoPersonajesPorFamilia(listadoPersonajes) {
+  let listadoDeFamilias = listadoPersonajes.map(x => x.family); //de todos los personajes, se obtienen las familias. Estas pueden repetirse más de una vez.
+  //listadoDeFamilias = listadoDeFamilias.filter(function(familia, index) { //filter siempre pide función dentro
+  //return listadoDeFamilias.indexOf(familia) === index;
+  //}); //Vivie
+  listadoDeFamilias = listadoDeFamilias.filter((familia, index) => listadoDeFamilias.indexOf(familia) === index); //Vivie
+                                              
+  const cantidadPersonajesPorFamilia = []; //se va a guardar la cantidad de personajes por c/familia
+  listadoDeFamilias.forEach((familia) => {
+    const cantidadEncontradaFamilias = listadoPersonajes.filter(x => x.family.toLowerCase().includes(familia.toLowerCase())).length; //.lenght es para cuantos de c/familia encontró. 
+    cantidadPersonajesPorFamilia.push(cantidadEncontradaFamilias);
+  });
+  
+  return { //crea un objeto que tiene 2 listas como resultado, ya que return convencional sólo retorna un objeto que puede ser primitivo o complejo
+    "listadoDeFamilias": listadoDeFamilias,                      
+    "cantidadPersonajesPorFamilia": cantidadPersonajesPorFamilia
+  }
+}
+
 

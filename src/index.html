@@ -5,25 +5,20 @@
   <meta charset="utf-8">
   <title>Data Lovers</title>
   <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
 
-    <header>
-      <img src="img/logoheader.png" class="logo-header" alt="">
-      <img src="img/winterishere.png" class="logo--header">
-    </header>
+  <header>
+    <img src="img/logoheader.png" class="logo-header" alt="">
+    <img src="img/winterishere.png" class="logo--header" alt="">
+  </header>
 
     
-
-  
  <div>
-
     <input type="search" id="inputSearch" placeholder="Buscar por nombre..." class="filtro-personajes">
   
-   
-  
-    <label for="Familias">Selecciona una Casa</label>
     <select id="familias">
       <option value="" disabled selected> Filtrar por familia</option>
       <option value=""> Todos </option>
@@ -41,7 +36,7 @@
       <option value="baelish">Baelish</option>
       <option value="seaworth">Seaworth</option>
       <option value="free folk">Free Folk</option>
-      <option value="naathi">Naath</option>
+      <option value="naath">Naath</option>
       <option value="bolton">Bolton</option> 
       <option value="naharis">Naharis</option> 
       <option value="sparrow">Sparrow</option> 
@@ -61,8 +56,28 @@
 
   </div>
 
-  <div id="root"></div>
+ <!--Columna de familias-->
+<div class="columnas">
+  <button type="button">Todos</button>
+  <button type="button">Stark</button>
+ </div>
+ 
+ <!--Columna de personajes-->
+ <div>
+   <div id="root" class="columnas"></div>
+   <button name="plantilla" type="button">
+     <img src="#" class="imagen-personaje">
+     <div class="informacion">
+     <p name="nombre">[Nombre-Personaje]</p>
+      </div>
+   </button>
+ </div> 
 
+ <!--Columna tarjeta de información personaje-->
+  <div class="columnas">
+  </div>
+
+<!--   
   <div name="plantilla" style="color:white" class="recuadro-personaje">
 
     <img src="#" class="imagen-personaje">
@@ -103,7 +118,7 @@
     </div>
 
 
-  </div>
+  </div> -->
 
 
   <script src="main.js" type="module"></script>

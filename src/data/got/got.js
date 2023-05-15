@@ -9,8 +9,7 @@ export default{
       "family": "House Targaryen",
       "imageUrl": "./img/DaenerysTargaryen.jpeg",
       "born": "284 dC",
-      "death": "Unknown"
-      
+      "death": "Unknown" 
     },
     {
       "id": 1,
@@ -22,8 +21,6 @@ export default{
       "imageUrl": "./img/SamwellTarly.png",
       "born": "283 dC",
       "death": "Unknown"
-      
-      
     },
     {
       "id": 2,
@@ -34,9 +31,7 @@ export default{
       "family": "House Stark",
       "imageUrl": "./img/JonSnow.jpg",
       "born": "283 dC",
-      "death": "Unknown"
-      
-      
+      "death": "Unknown"  
     },
     {
       "id": 3,
@@ -47,9 +42,7 @@ export default{
       "family": "House Stark",
       "imageUrl": "./img/AryaStark.jpg",
       "born": "289 dC",
-      "death": "Unknown"
-      
-      
+      "death": "Unknown"  
     },
     {
       "id": 4,
@@ -60,9 +53,7 @@ export default{
       "family": "House Stark",
       "imageUrl": "./img/sansaStark.jpg",
       "born": "286 dC",
-      "death": "Unknown"
-      
-      
+      "death": "Unknown" 
     },
     {
       "id": 5,
@@ -85,8 +76,7 @@ export default{
       "imageUrl": "./img/NedStark.jpg",
       "born": "263 dC",
       "death": "299 dC"
-      
-     
+
     },
     {
       "id": 7,
@@ -97,9 +87,7 @@ export default{
       "family": "House Baratheon",
       "imageUrl":  "./img/RobertBaratheon.jpg",
       "born": "262 dC",
-      "death": "298 dC"
-      
-      
+      "death": "298 dC" 
     },
     {
       "id": 8,
@@ -111,8 +99,6 @@ export default{
       "imageUrl": "./img/JamieLannister.jpg",
       "born": "262 dC",
       "death": "305 dC"
-      ,
-    
     },
     {
       "id": 9,
@@ -263,7 +249,7 @@ export default{
       "lastName": "Unknown",
       "fullName": "Ygritte",
       "title": "Spearwife",
-      "family": "Free Folk",
+      "family": "Free folk",
       "imageUrl": "./img/Ygritte.jpg",
       "born": "280 dC",
       "death": "299 dC" 
@@ -311,7 +297,7 @@ export default{
       "lastName": "Targaryen",
       "fullName": "Viserys Targaryen",
       "title": "King Viserys III",
-      "family": "Targaryen",
+      "family": "House Targaryen",
       "imageUrl":"./img/ViserysTargaryen.png",
       "born": "276 dC",
       "death": "298 dC"

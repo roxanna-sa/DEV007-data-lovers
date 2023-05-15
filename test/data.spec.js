@@ -1,4 +1,4 @@
-import { filtrarFamilias, ordenAlfabetico } from '../src/data.js';
+import { filtrarFamilias, ordenAlfabetico, filtrarNombres, conteoPersonajesPorFamilia } from '../src/data.js';
 import data from "../src/data/got/got.js";
 
 /*
@@ -23,19 +23,23 @@ describe('anotherExample', () => {
   });
 });*/
 
+//TEST PARA ORDEN ALFABÉTICO
+
 describe("ordenAlfabetico", ()=> {
   it("es una función", ()=> {
     expect(typeof ordenAlfabetico).toBe("function"); //toBe es para datos primitivos
   });
 
   it("arreglo ordenado ascendente", ()=>{
-    expect(ordenAlfabetico([{"fullName":"C"},{"fullName":"A"},{"fullName":"D"},{"fullName":"B"}],"ascendente")).toStrictEqual([{"fullName":"A"},{"fullName":"B"},{"fullName":"C"},{"fullName":"D"}]); //toStrictEqual es para objetos completos 
+    expect(ordenAlfabetico([{"fullName":"C"},{"fullName":"C"},{"fullName":"A"},{"fullName":"D"},{"fullName":"B"}],"ascendente")).toStrictEqual([{"fullName":"A"},{"fullName":"B"},{"fullName":"C"},{"fullName":"C"},{"fullName":"D"}]); //toStrictEqual es para objetos completos 
   });
 
   it("arreglo ordenado descendente", ()=>{
     expect(ordenAlfabetico([{"fullName":"C"},{"fullName":"A"},{"fullName":"D"},{"fullName":"B"}],"descendente")).toStrictEqual([{"fullName":"D"},{"fullName":"C"},{"fullName":"B"},{"fullName":"A"}]);
   });
 });
+
+//TEST PARA EL FILTRO POR FAMILIAS
 
 describe("filtrarFamilias", ()=> {
   it("es una función", ()=> {
@@ -50,16 +54,47 @@ describe("filtrarFamilias", ()=> {
       "fullName": "Samwell Tarly",
       "title": "Maester",
       "family": "House Tarly",
-      "imageUrl": "https://thronesapi.com/assets/images/sam.jpg",
-      "born": "283 DC"
+      "imageUrl": "./img/SamwellTarly.png",
+      "born": "283 dC",
+      "death": "Unknown"
     }]);
   });
 });
 
+//TEST PARA FILTRAR NOMBRES EN EL INPUT
 
+describe("filtrarNombres", ()=> {
+  it("es una función", ()=> {
+    expect(typeof filtrarNombres).toBe("function");
+  });
 
+  it("filtrar por Cersei", ()=> {
+    expect(filtrarNombres(data.got,"Cersei Lannister")).toStrictEqual([{
+      "id": 9,
+      "firstName": "Cersei",
+      "lastName": "Lannister",
+      "fullName": "Cersei Lannister",
+      "title": "Lady of Casterly Rock",
+      "family": "House Lannister",
+      "imageUrl": "https://thronesapi.com/assets/images/cersei.jpg",
+      "born": "262 dC",
+      "death": "305 dC"
+    }])
+  })
+});
 
-  
+ 
+//TEST PARA FILTRAR CANTIDAD DE MIEMBROS POR FAMILIA
+
+describe("conteoPersonajesPorFamilia", ()=> {
+  it("es una función", ()=> {
+    expect(typeof conteoPersonajesPorFamilia).toBe("function");
+  });
+
+  it("contando personajes por familia", ()=> {
+    expect(conteoPersonajesPorFamilia(data.got)).toStrictEqual({"listadoDeFamilias":["House Targaryen","House Tarly","House Stark","House Baratheon","House Lannister","House Greyjoy","House Clegane","House Baelish","House Seaworth","Unknown","House Tyrell","Free folk","House Tarth","Naath","House Bolton","Naharis","Lorath","House Mormont","Sparrow","House Martell","Sand","Unsullied","Qyburn","Bronn"],"cantidadPersonajesPorFamilia":[3,1,10,6,4,3,1,1,1,3,2,3,1,1,2,1,2,2,1,1,1,1,1,1]})
+  })
+});
 
 
 
