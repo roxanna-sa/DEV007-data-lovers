@@ -4,11 +4,6 @@
   }
 } */
 
-
-
-
-
-
 * {
   margin: 0;
   /* box-sizing: border-box;
@@ -28,7 +23,7 @@ body {
   background-attachment: fixed;
 }
 
-@media screen and (max-width: 393px) {
+@media screen and (min-width: 393px) {
   body {
     background-image: url("./img/fondoTronoDragonMovil.jpg");
     background-repeat: no-repeat;
