@@ -1,4 +1,4 @@
-import { filtrarFamilias, ordenAlfabetico, filtrarNombres} from "./data.js";
+import { filtrarFamilias, ordenAlfabetico, filtrarNombres, conteoPersonajesPorFamilia} from "./data.js";
 import data from "./data/got/got.js";
 
 
@@ -27,7 +27,7 @@ function dibujarPersonajesPantalla(listaPersonajes) {
     document.querySelector("#root").innerHTML += plantillaActual;
   });
 
-};
+}
 
 
 
@@ -39,10 +39,10 @@ function filtro(){
 
   // Proceso 1: Filtro por familia
   const listaDesplegable = document.getElementById('familias');
-  const seleccion = listaDesplegable.options[listaDesplegable.selectedIndex].value; //document.getElementById("familias").value 57&58
+  const seleccionDeCasa = listaDesplegable.options[listaDesplegable.selectedIndex].value; //document.getElementById("familias").value 57&58
 
 
-  filtrados = filtrarFamilias(filtrados,seleccion); //hace el filtro por familia y guarda esa lista ordenada en la variable filtrados
+  filtrados = filtrarFamilias(filtrados,seleccionDeCasa); //hace el filtro por familia y guarda esa lista ordenada en la variable filtrados
   console.log(filtrados)
 
   //Proceso 2: hacer orden AZ/ZA acá
@@ -57,22 +57,13 @@ function filtro(){
 
   // Proceso Final: Dibujar el resultado de los proceso en pantalla
   dibujarPersonajesPantalla(filtrados);
-};
-
-
+}
   
+
 document.querySelector("#familias").addEventListener("change",filtro);
 document.querySelector("#selectOrder").addEventListener("change",filtro);
 document.querySelector("#inputSearch").addEventListener("keyup", filtro);
 
+console.log(conteoPersonajesPorFamilia(structuredClone(data.got)));
 
-
-
-
-
-
- //PARA SACAR EL VALOR DE UNA CAJA DE TEXTO GET ELEMENTBYID().VALUE 
-
-
-
- //conteoPersonajesPorFamilia();
+//PARA SACAR EL VALOR DE UNA CAJA DE TEXTO GET ELEMENTBYID().VALUE
