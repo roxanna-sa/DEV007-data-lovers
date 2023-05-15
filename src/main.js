@@ -45,6 +45,8 @@ function filtro(){
   filtrados = filtrarFamilias(filtrados,seleccion); //hace el filtro por familia y guarda esa lista ordenada en la variable filtrados
   console.log(filtrados)
 
+
+
   //Proceso 2: hacer orden AZ/ZA acá
   const tipoDeOrden = document.getElementById('selectOrder').value;
   if(tipoDeOrden !== ""){
@@ -57,6 +59,9 @@ function filtro(){
 
   // Proceso Final: Dibujar el resultado de los proceso en pantalla
   dibujarPersonajesPantalla(filtrados);
+
+
+
 };
 
 
@@ -64,10 +69,6 @@ function filtro(){
 document.querySelector("#familias").addEventListener("change",filtro);
 document.querySelector("#selectOrder").addEventListener("change",filtro);
 document.querySelector("#inputSearch").addEventListener("keyup", filtro);
-
-
-
-
 
 
 

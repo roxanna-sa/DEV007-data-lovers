@@ -132,7 +132,7 @@ export default{
       "fullName": "Catelyn Stark",
       "title": "Lady of Winterfell",
       "family": "House Stark",
-      "imageUrl": "./img/CerseiLannister.jpg",
+      "imageUrl": "./img/CatelynStark.png",
       "born": "264 dC",
       "death": "299 dC"
     },
@@ -143,7 +143,7 @@ export default{
       "fullName": "Rob Stark",
       "title": "Lord of Winterfell",
       "family": "House Stark",
-      "imageUrl": "https://thronesapi.com/assets/images/robb-stark.jpg",
+      "imageUrl":  "./img/RobStark.png",
       "born": "283 dC",
       "death": "299 dC"
     },
@@ -154,7 +154,7 @@ export default{
       "fullName": "Theon Greyjoy",
       "title": "Captain of the Sea Bitch",
       "family": "House Greyjoy",
-      "imageUrl": "https://thronesapi.com/assets/images/theon.jpg",
+      "imageUrl": "./img/TheonGreyjoy.png",
       "born": "278 dC",
       "death": "Unknown"
     },
@@ -165,7 +165,7 @@ export default{
       "fullName": "Joffrey Baratheon",
       "title": "King & Lord of the Seven Kingdoms",
       "family": "House Baratheon",
-      "imageUrl": "https://thronesapi.com/assets/images/joffrey.jpg",
+      "imageUrl": "./img/JoffreyBaratheon.jpeg",
       "born": "286 dC",
       "death": "300 dC"
     },
@@ -176,7 +176,7 @@ export default{
       "fullName": "Tyrion Lannister",
       "title": "Hand of the Queen",
       "family": "House Lannister",
-      "imageUrl": "https://thronesapi.com/assets/images/tyrion-lannister.jpg",
+      "imageUrl": "./img/TyrionLannister.jpg",
       "born": "272 dC",
       "death": "Unknown"
     },
@@ -187,7 +187,7 @@ export default{
       "fullName": "Sandor Clegane",
       "title": "The Hound",
       "family": "House Clegane",
-      "imageUrl": "https://thronesapi.com/assets/images/the-hound.jpg",
+      "imageUrl": "./img/SandorClegane.jpg",
       "born": "270 dC",
       "death": "300 dC"
     },
@@ -198,7 +198,7 @@ export default{
       "fullName": "Petyr Baelish",
       "title": "Littlefinger",
       "family": "House Baelish",
-      "imageUrl": "https://thronesapi.com/assets/images/littlefinger.jpg",
+      "imageUrl": "./img/PetyrBaelish.jpg",
       "born": "264 dC",
       "death": "305 dC"
     },
@@ -209,7 +209,7 @@ export default{
       "fullName": "Davos Seaworth",
       "title": "Hand of the King",
       "family": "House Seaworth",
-      "imageUrl": "https://thronesapi.com/assets/images/davos-seaworth.png",
+      "imageUrl": "./img/DavosSeaworth.jpg",
       "born": "Unknown",
       "death": "Unknown"
     },
@@ -220,7 +220,7 @@ export default{
       "fullName": "Stannis Baratheon",
       "title": "Lord of Dragonstone",
       "family": "House Baratheon",
-      "imageUrl": "https://thronesapi.com/assets/images/stannis.jpg",
+      "imageUrl": "./img/StannisBaratheon.jpg",
       "born": "264 dC",
       "death": "Unknown"
     },
@@ -231,7 +231,7 @@ export default{
       "fullName": "Varys",
       "title": "Master of Whisperers",
       "family": "Unknown",
-      "imageUrl": "https://thronesapi.com/assets/images/varys.jpg",
+      "imageUrl": "./img/Varys.png",
       "born": "Unknown",
       "death": "Unknown"
     },
@@ -242,7 +242,7 @@ export default{
       "fullName": "Khal Drogo",
       "title": "Khal",
       "family": "House Targaryen",
-      "imageUrl": "https://thronesapi.com/assets/images/khal-drogo.jpg",
+      "imageUrl": "./img/KhalDrogo.png",
       "born": "268 dC",
       "death": "298 dC"
     },
@@ -253,9 +253,9 @@ export default{
       "fullName": "Margaery Tyrell",
       "title": "Queen of the Seven Kingdoms",
       "family": "House Tyrell",
-      "imageUrl": "https://thronesapi.com/assets/images/margaery-tyrell.jpg",
+      "imageUrl": "./img/MargaeryTyrell.jpg",
       "born": "283 dC",
-      "death":"303 dC"
+      "death":"303 dC" 
     },
     {
       "id": 22,
@@ -264,9 +264,9 @@ export default{
       "fullName": "Ygritte",
       "title": "Spearwife",
       "family": "Free Folk",
-      "imageUrl": "https://thronesapi.com/assets/images/ygritte.jpg",
+      "imageUrl": "./img/Ygritte.jpg",
       "born": "280 dC",
-      "death": "299 dC"
+      "death": "299 dC" 
     },
     {
       "id": 23,
@@ -289,9 +289,10 @@ export default{
       "fullName": "Missandei",
       "title": "Queen's Personal Advisor",
       "family": "Naath",
-      "imageUrl": "https://thronesapi.com/assets/images/missandei.jpeg",
+      "imageUrl": "./img/Missandei.jpg",
+      "born": "280 dC",
       "born": "289 dC",
-      "death": "Unknown"
+      "death": "Unknown"  
     },
     {
       "id": 25,
@@ -300,7 +301,7 @@ export default{
       "fullName": "Gilly",
       "title": "The Rabbit Keeper",
       "family": "Free folk",
-      "imageUrl": "https://thronesapi.com/assets/images/gilly.jpg",
+      "imageUrl": "./img/Gilly.jpg",
       "born": "Unknown",
       "death": "Unknown"
     },
@@ -311,7 +312,7 @@ export default{
       "fullName": "Viserys Targaryen",
       "title": "King Viserys III",
       "family": "Targaryen",
-      "imageUrl": "https://thronesapi.com/assets/images/viserys-targaryan.jpg",
+      "imageUrl":"./img/ViserysTargaryen.png",
       "born": "276 dC",
       "death": "298 dC"
     },
@@ -322,9 +323,9 @@ export default{
       "fullName": "Rickon Stark",
       "title": "Prince",
       "family": "House Stark",
-      "imageUrl": "https://thronesapi.com/assets/images/rickon.jpg",
+      "imageUrl": "./img/RickonStark.png",
       "born": "295 dC",
-      "death": "Unknown"
+      "death": "Unknown"  
     },
     {
       "id": 28,
@@ -333,9 +334,9 @@ export default{
       "fullName": "Roose Bolton",
       "title": "Lord of Dreadfort",
       "family": "House Bolton",
-      "imageUrl": "https://thronesapi.com/assets/images/roose-bolton.jpg",
+      "imageUrl":"./img/RooseBolton.jpg",
       "born": "255 dC",
-      "death": "Unknown"
+      "death": "Unknown"  
     },
     {
       "id": 29,
@@ -344,7 +345,7 @@ export default{
       "fullName": "Daario",
       "title": "Commander of the Second Sons",
       "family": "Naharis",
-      "imageUrl": "https://thronesapi.com/assets/images/daario.jpg",
+      "imageUrl": "./img/Daario.jpg",
       "born": "Unknown"
     },
     {
@@ -354,7 +355,7 @@ export default{
       "fullName": "Shae",
       "title": "Mistress",
       "family": "Lorath",
-      "imageUrl": "https://thronesapi.com/assets/images/shae.jpg",
+      "imageUrl": "./img/Shae.jpg",
       "born": "281 dC",
       "death": "300 dC"
     },
@@ -365,7 +366,7 @@ export default{
       "fullName": "Tommen Baratheon",
       "title": "Prince",
       "family": "House Baratheon",
-      "imageUrl": "https://thronesapi.com/assets/images/tommen.jpg",
+      "imageUrl":"./img/TommenBaratheon.png",
       "born": "291 dC",
       "death": "Unknown"
     },
@@ -376,7 +377,7 @@ export default{
       "fullName": "Gendry Baratheon",
       "title": "Lord of Storm's End",
       "family": "House Baratheon",
-      "imageUrl": "https://thronesapi.com/assets/images/gendry.jpg",
+      "imageUrl": "./img/GendryBaratheon.png",
       "born": "284 dC",
       "death": "Unknown"
     },
@@ -387,21 +388,11 @@ export default{
       "fullName": "Jorah Mormont",
       "title": "Knight",
       "family": "House Mormont",
-      "imageUrl": "https://thronesapi.com/assets/images/jorah-mormont.jpg",
+      "imageUrl":"./img/JorahMormont.jpg",
       "born": "254 dC",
       "death": "Unknown"
     },
-    {
-      "id": 34,
-      "firstName": "Robert",
-      "lastName": "Baratheon",
-      "fullName": "Robert Baratheon",
-      "title": "King",
-      "family": "House Baratheon",
-      "imageUrl": "https://thronesapi.com/assets/images/king-robert.jpg",
-      "born": "262 dC",
-      "death": "298 dC"
-    },
+   
     {
       "id": 35,
       "firstName": "Ramsey",
@@ -409,7 +400,7 @@ export default{
       "fullName": "Ramsey Bolton",
       "title": "The Bastard of Bolton",
       "family": "House Bolton",
-      "imageUrl": "https://thronesapi.com/assets/images/ramsey-bolton.jpg",
+      "imageUrl": "./img/RamseyBolton.jpg",
       "born": "277 dC",
       "death": "Unknown"
     },
@@ -420,7 +411,7 @@ export default{
       "fullName": "Talisa Stark",
       "title": "Queen Consort",
       "family": "House Stark",
-      "imageUrl": "https://thronesapi.com/assets/images/talisa-stark.jpg",
+      "imageUrl":"./img/TalisaStark.jpg",
       "born": "Unknown",
       "death": "300 dC",
 
@@ -432,7 +423,7 @@ export default{
       "fullName": "Jeor Mormont",
       "title": "Lord Commander of the Knight's Watch",
       "family": "House Mormont",
-      "imageUrl": "https://thronesapi.com/assets/images/lord-commander-mormont.jpg",
+      "imageUrl":"./img/JeorMormont.jpg",
       "born": "230 dC",
       "death": "299 dC"
     },
@@ -443,7 +434,7 @@ export default{
       "fullName": "The High Sparrow",
       "title": "High Septon",
       "family": "Sparrow",
-      "imageUrl": "https://thronesapi.com/assets/images/the-high-sparrow.jpg",
+      "imageUrl":"./img/TheHighSparrow.jpg",
       "born": "Unknown",
       "death": "Unknown"
     },
@@ -454,7 +445,7 @@ export default{
       "fullName": "Oberyn Martell",
       "title": "Red Viper of Dorne",
       "family": "House Martell",
-      "imageUrl": "https://thronesapi.com/assets/images/red-viper.jpg",
+      "imageUrl": "./img/OberynMartell.jpg",
       "born": "258 dC",
       "death": "300 dC"
     },
@@ -465,7 +456,7 @@ export default{
       "fullName": "Melisandre",
       "title": "Melisandre of Asshai",
       "family": "Unknown",
-      "imageUrl": "https://thronesapi.com/assets/images/melisandre.jpg",
+      "imageUrl":"./img/Melisandre.png",
       "born": "Unknown",
       "death": "Unknown"
     },
@@ -476,9 +467,9 @@ export default{
       "fullName": "Jaqen H'ghar",
       "title": "Faceless Men of Braavos",
       "family": "Lorath",
-      "imageUrl": "https://thronesapi.com/assets/images/jaqen-hghar.jpg",
+      "imageUrl":"./img/JaqenHghar.jpg",
       "born": "Unknown",
-      "death": "Unknown"
+      "death": "Unknown"  
     },
     {
       "id": 42,
@@ -487,9 +478,9 @@ export default{
       "fullName": "Tywin Lannister",
       "title": "Lord Paramount of Westerlands",
       "family": "House Lannister",
-      "imageUrl": "https://thronesapi.com/assets/images/tywin-lannister.jpg",
+      "imageUrl":"./img/TywinLannister.jpg",
       "born": "234 dC",
-      "death": "301 dC"
+      "death": "301 dC"  
     },
     {
       "id": 43,
@@ -498,9 +489,9 @@ export default{
       "fullName": "Ellaria Sand",
       "title": "Paramour of Prince Oberyn Martell",
       "family": "Sand",
-      "imageUrl": "https://thronesapi.com/assets/images/ellaria-sand.jpg",
+      "imageUrl":"./img/EllariaSand.jpg",
       "born": "Unknown",
-      "death": "Unknown"
+      "death": "Unknown"  
     },
     {
       "id": 44,
@@ -509,9 +500,9 @@ export default{
       "fullName": "Tormund Giantsbane",
       "title": "Free Folk Warrior",
       "family": "Free folk",
-      "imageUrl": "https://thronesapi.com/assets/images/tormund-giantsbane.jpg",
+      "imageUrl":"./img/TormundGiantsbane.png",
       "born": "Unknown",
-      "death": "Unknown"
+      "death": "Unknown"  
     },
     {
       "id": 45,
@@ -520,9 +511,9 @@ export default{
       "fullName": "Yara Greyjoy",
       "title": "Lady of the Iron Islands",
       "family": "House Greyjoy",
-      "imageUrl": "https://thronesapi.com/assets/images/yara-greyjoy.jpg",
+      "imageUrl":"./img/YaraGreyjoy.png",
       "born": "276 dC",
-      "death": "Unknown"
+      "death": "Unknown"  
     },
     {
       "id": 46,
@@ -531,9 +522,9 @@ export default{
       "fullName": "Euron Greyjoy",
       "title": "King of the iron Islands",
       "family": "House Greyjoy",
-      "imageUrl": "https://thronesapi.com/assets/images/euron-greyjoy.jpg",
+      "imageUrl": "./img/EuronGreyjoy.png",
       "born": "Unknown",
-      "death": "Unknown"
+      "death": "Unknown"  
     },
     {
       "id": 47,
@@ -542,7 +533,7 @@ export default{
       "fullName": "Hodor",
       "title": "Servant of House Stark",
       "family": "House Stark",
-      "imageUrl": "https://thronesapi.com/assets/images/hodor.jpg",
+      "imageUrl": "./img/Hodor.jpg",
       "born": "Unknown",
       "death": "Unknown"
     },
@@ -553,9 +544,9 @@ export default{
       "fullName": "Maester Pycelle",
       "title": "Grand Maester of the Seven Kingdoms",
       "family": "Unknown",
-      "imageUrl": "https://thronesapi.com/assets/images/pycelle.jpg",
+      "imageUrl":"./img/MaesterPycelle.png",
       "born": "216 dC",
-      "death": "300 dC"
+      "death": "300 dC"  
     },
     {
       "id": 49,
@@ -564,9 +555,9 @@ export default{
       "fullName": "Grey Worm",
       "title": "Commander of the Unsullied",
       "family": "Unsullied",
-      "imageUrl": "https://thronesapi.com/assets/images/greyworm.jpg",
+      "imageUrl":"./img/GreyWorm.jpg",
       "born": "Unknown",
-      "death": "Unknown"
+      "death": "Unknown"    
     },
     {
       "id": 50,
@@ -575,9 +566,9 @@ export default{
       "fullName": "Olenna Tyrell",
       "title": "Queen of Thorns",
       "family": "House Tyrell",
-      "imageUrl": "https://thronesapi.com/assets/images/olenna-tyrell.jpg",
+      "imageUrl":"./img/OlennaTyrell.png",
       "born": "228 dC",
-      "death": "Unknown"
+      "death": "Unknown"  
     },
     {
       "id": 51,
@@ -586,7 +577,7 @@ export default{
       "fullName": "Qyburn",
       "title": "Former maester of the Citadel",
       "family": "Qyburn",
-      "imageUrl": "https://thronesapi.com/assets/images/qyburn.jpg",
+      "imageUrl":"./img/Qyburn.png",
       "born": "Unknown",
       "death": "Unknown"
     },
@@ -597,9 +588,9 @@ export default{
       "fullName": "Lord Bronn",
       "title": "Lord of Highgarden",
       "family": "Bronn",
-      "imageUrl": "https://thronesapi.com/assets/images/bronn.jpg",
+      "imageUrl":"./img/LordBronn.jpg",
       "born": "268 dC",
-      "death": "Unknown"
+      "death": "Unknown"  
     }
   ]
 }

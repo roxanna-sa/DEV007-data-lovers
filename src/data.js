@@ -30,9 +30,10 @@ function orderByFullName(a,b){
 
 // add event listener click, 
 
-
 export const filtrarFamilias = (data, selecciondeCasa) => {
   const filtrar = data.got.filter(casa => casa.family.toLowerCase().includes(selecciondeCasa))
+  
+  
   /*
   filter solo funciona sobre arreglos y pide como si fuese un foreach el nombre de c/elemento
   en este caso, cada elemento (que nosotras nombramos "casa") representa un objeto de got.js
@@ -48,8 +49,7 @@ export const filtrarFamilias = (data, selecciondeCasa) => {
 
 export const filtrarNombres= (data, Name) => {
   const filtrar = data.filter(nombre => nombre.fullName.toLowerCase().includes(Name.toLowerCase()));
-  //console.log(filtrar, "Soy la casa Seleccionada");
+  // console.log(filtrar, "Soy la casa Seleccionada");
   return filtrar;
 }; 
-
 
