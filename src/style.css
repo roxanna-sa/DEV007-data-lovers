@@ -1,19 +1,4 @@
-/* @media screen and (max-width: 800px){
-  body{
-    background-image: url("./images/fondoTronoDragon.jpg"); 
-  }
-} */
-
-* {
-  margin: 0;
-  /* box-sizing: border-box;
-  position: absolute;
-  width: 1728px;
-  height: 1117px; 
-  
-  background-position-x: center;
-  background-repeat: no-repeat; */
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap');
 
 *{ 
   margin:0em;
@@ -22,6 +7,8 @@
 body{
   background: black;
   width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
 }
 
 h1 {
@@ -55,7 +42,7 @@ h1 {
 
 .filtro-personajes {
   border-radius: 0.4em;
-  height: 2em;
+  height: 3em;
   width: auto;
 }
 
@@ -78,9 +65,8 @@ header {
 
 button {
   width: 336px;
-  height: 57px;
-  /* left: 571px; */
-  /* top: 205px; */
+  height: 60px;
+  min-height: 60px;
   background: #453F3F;
   border-radius: 30px;
   text-align: center;
@@ -92,7 +78,6 @@ button {
 .imagen-personaje {
   width: 50px;
   height: 50px;
-  /* min-height: 40px; */
   border-radius: 100%;
   float: left;
 }
@@ -101,25 +86,65 @@ p {
   float: left;
   width: 100%;
   color: white;
-  margin-top: 10px;
+  margin-left: 10px;
+  font-family:'Montserrat';
+  font-weight: 300;
+  line-height: 20px;
+  letter-spacing: 0.25em;
+  text-align: left;
+
 }
 
-.columna1,
-.columna2{
+.text-center{
+  text-align: center;
+}
+
+.margin-top15{
+  margin-top: 15px;
+}
+
+.margin-right10{
+  margin-right:10%;
+}
+
+.margin-right25{
+  margin-right: 25%;
+}
+
+.tarjeta{
+  width:23%;
+  background:#302c2c;
+  float:right;
+  height:calc(100vh - 230px);
+  border-radius: 30px;
+  margin-right:2% ;
+}
+.columnas{
   display: flex;
   flex-direction: column;
-  width: 30%;
-  height: calc(100vh - 200px);
+  width: 20%;
+  height: calc(100vh - 250px);
   overflow-y: scroll; 
   float: left;
-  
+  background-color: #302c2c;
+  border-radius: 30px;
+  margin-top: 20px;
 }
 
-#root
-{
-    width: 30%;
-    height: 80vh;
-    overflow-y: scroll;
+
+.seleccion-boton{
+  background: #D9D9D9;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.seleccion-boton p{
+  color:black;
+  font-weight: bolder;
+}
+
+#selectOrder{
+  height: 3em;
+  border-radius: 0.4em;
 }
 /* Scrollbars */
 
@@ -130,7 +155,8 @@ p {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #2e2d2d; 
+  background: #111316;
+  border-radius: 20px;
 }
  
 /* Handle */
@@ -161,17 +187,33 @@ p {
 
 @media screen and (max-width: 3800px) {
   body {
-    background-image: url("./img/fondoTronoDragon.jpg");
+    background-image: linear-gradient(
+      rgba(0, 0, 0, 0), 
+      rgba(0, 0, 0, 0)
+    ), url("./img/fondoTronoDragon.jpg");
+    transition: 1s;
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position: cover;
     background-attachment: fixed;
+    
   }
+
+  body.opacado{
+    background-image: linear-gradient(
+      rgba(0, 0, 0, 0.7), 
+      rgba(0, 0, 0, 0.7)
+    ), url("./img/fondoTronoDragon.jpg");
+  } 
 }
   
   @media screen and (max-width: 1214px) {
     body {
-      background-image: url("./img/fondoTronoDragonMovil.jpg");
+      background-image: linear-gradient(
+        rgba(0, 0, 0, 0), 
+        rgba(0, 0, 0, 0)
+      ),url("./img/fondoTronoDragonMovil.jpg");
+      transition: 1s;
       background-repeat: no-repeat;
  
       height: 655px;
@@ -181,6 +223,11 @@ p {
       left: 1px;
       top: 100px;
     }
-  
+    body.opacado{
+      background-image: linear-gradient(
+        rgba(0, 0, 0, 0.7), 
+        rgba(0, 0, 0, 0.7)
+      ), url("./img/fondoTronoDragonMovil.jpg");
+    } 
   }
 

@@ -16,90 +16,64 @@
   </header>
 
     
- <div>
-    <input type="search" id="inputSearch" placeholder="Buscar por nombre..." class="filtro-personajes">
-  
-    <select id="familias">
-      <option value="" disabled selected> Filtrar por familia</option>
-      <option value=""> Todos </option>
-      <option value="stark"> Stark</option>
-      <option value="targaryen">Targaryen</option>
-      <option value="lannister">Lannister</option>
-      <option value="baratheon">Baratheon</option>
-      <option value="tyrell">Tyrell</option>
-      <option value="tarly">Tarly</option>
-      <option value="martell">Martell</option>
-      <option value="mormont">Mormont</option> 
-      <option value="tarth">Tarth</option>
-      <option value="greyjoy">Greyjoy</option>
-      <option value="clegane">Clegane</option>
-      <option value="baelish">Baelish</option>
-      <option value="seaworth">Seaworth</option>
-      <option value="free folk">Free Folk</option>
-      <option value="naath">Naath</option>
-      <option value="bolton">Bolton</option> 
-      <option value="naharis">Naharis</option> 
-      <option value="sparrow">Sparrow</option> 
-      <option value="lorath">Lorath</option> 
-      <option value="sand">Sand</option> 
-      <option value="unsullied">Unsullied</option> 
-      <option value="qyburn">Qyburn</option> 
-      <option value="bronn"> Bronn</option> 
-      <option value="unknown"> Desconocida</option>
-    </select>
+  <div>
+    <input type="search" id="inputSearch" placeholder="Search by name..." class="filtro-personajes">
+
 
     <select id="selectOrder"> 
-      <option value="">Ordenar por defecto</option>
-      <option value="ascendente">Ascendente</option>
-      <option value="descendente">Descendente</option>
+      <option value="">Order: Default</option>
+      <option value="ascendente">Order: Ascending</option>
+      <option value="descendente">Order: Descending</option>
     </select>
 
   </div>
 
  <!--Columna de familias-->
-<div class="columna1" >
-  <button type="button">Todos</button>
-  <button type="button">Stark</button>
-  <button type="button">Targaryen</button>
-  <button type="button">Lannister</button>
-  <button type="button">Baratheon</button>
-  <button type="button">Tyrell</button>
-  <button type="button">Martell</button>
-  <button type="button">Mormont</button>
-  <button type="button">Tarth</button>
-  <button type="button">Greyjoy</button>
-  <button type="button">Clegane</button>
-  <button type="button">Baelish</button>
-  <button type="button">Seaworth</button>
-  <button type="button">Free Folk</button>
-  <button type="button">Naath</button>
-  <button type="button">Bolton</button>
-  <button type="button">Naharis</button>
-  <button type="button">Sparrow</button>
-  <button type="button">Lorath</button>
-  <button type="button">Sand</button>
-  <button type="button">Unsullied</button>
-  <button type="button">Qyburn</button>
-  <button type="button">Bronn</button>
-  <button type="button">Desconocida</button>
-
- </div>
+  <div class="columnas margin-right10" id="columna1">
+    <button type="button" class="botonFamilia"><p class="text-center">Todos      </p></button>
+    <button type="button" class="botonFamilia"><p class="text-center">Stark      </p></button>
+    <button type="button" class="botonFamilia"><p class="text-center">Targaryen  </p></button>
+    <button type="button" class="botonFamilia"><p class="text-center">Lannister  </p></button>
+    <button type="button" class="botonFamilia"><p class="text-center">Baratheon  </p></button>
+    <button type="button" class="botonFamilia"><p class="text-center">Tyrell     </p></button>
+    <button type="button" class="botonFamilia"><p class="text-center">Martell    </p></button>
+    <button type="button" class="botonFamilia"><p class="text-center">Mormont    </p></button>
+    <button type="button" class="botonFamilia"><p class="text-center">Tarth      </p></button>
+    <button type="button" class="botonFamilia"><p class="text-center">Greyjoy    </p></button>
+    <button type="button" class="botonFamilia"><p class="text-center">Clegane    </p></button>
+    <button type="button" class="botonFamilia"><p class="text-center">Baelish    </p></button>
+    <button type="button" class="botonFamilia"><p class="text-center">Seaworth   </p></button>
+    <button type="button" class="botonFamilia"><p class="text-center">Free Folk  </p></button>
+    <button type="button" class="botonFamilia"><p class="text-center">Naath      </p></button>
+    <button type="button" class="botonFamilia"><p class="text-center">Bolton     </p></button>
+    <button type="button" class="botonFamilia"><p class="text-center">Naharis    </p></button>
+    <button type="button" class="botonFamilia"><p class="text-center">Sparrow    </p></button>
+    <button type="button" class="botonFamilia"><p class="text-center">Lorath     </p></button>
+    <button type="button" class="botonFamilia"><p class="text-center">Sand       </p></button>
+    <button type="button" class="botonFamilia"><p class="text-center">Unsullied  </p></button>
+    <button type="button" class="botonFamilia"><p class="text-center">Qyburn     </p></button>
+    <button type="button" class="botonFamilia"><p class="text-center">Bronn      </p></button>
+    <button type="button" class="botonFamilia"><p class="text-center">Unknown</p></button>
+  </div>
  
  <!--Columna de personajes-->
- <div>
-   <div id="root" class="columna2"></div>
 
-   <button name="plantilla" type="button">
-     <img src="#" class="imagen-personaje">
-     <div class="informacion">
-     <p name="nombre">[Nombre-Personaje]</p>
-      </div>
-   </button>
- </div> 
+  <div id="root" class="columnas margin-right25" style="display:none"></div>
+
+  
+ 
 
  <!--Columna tarjeta de información personaje-->
-  <div class="columna3">
+  <div class="tarjeta" id="columna3">
   </div>
+  
+
+  <button name="plantilla" type="button">
+    <img src="#" class="imagen-personaje">
+    <div class="informacion">
+      <p name="nombre" class="margin-top15">[Nombre-Personaje]</p>
+    </div>
+ </button>
 
 <!--   
   <div name="plantilla" style="color:white" class="recuadro-personaje">

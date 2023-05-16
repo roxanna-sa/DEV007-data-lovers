@@ -2,11 +2,9 @@ import { filtrarFamilias, ordenAlfabetico, filtrarNombres, conteoPersonajesPorFa
 import data from "./data/got/got.js";
 
 
-
-
 const plantilla = document.querySelector("[name='plantilla']").outerHTML;
 document.querySelector("[name='plantilla']").style.display = "none";
-
+let familiaSeleccionada = "";
 
 
 function dibujarPersonajesPantalla(listaPersonajes) {
@@ -28,21 +26,18 @@ function dibujarPersonajesPantalla(listaPersonajes) {
   });
 
 }
-
-
-
-dibujarPersonajesPantalla(data.got); //le mando todos los personajes a la función que tiene el parámetro listaPersonajes (al cargar la página)
+//Actualizado 15/mayo= Ya no la usamos porque no necesitamos mostrar todos los pjs
+// dibujarPersonajesPantalla(data.got); //le mando todos los personajes a la función que tiene el parámetro listaPersonajes (al cargar la página)
 
  
 function filtro(){
   let filtrados = structuredClone(data);
 
   // Proceso 1: Filtro por familia
-  const listaDesplegable = document.getElementById('familias');
-  const seleccionDeCasa = listaDesplegable.options[listaDesplegable.selectedIndex].value; //document.getElementById("familias").value 57&58
+  //const listaDesplegable = document.getElementById('familias');
+  //const seleccionDeCasa = listaDesplegable.options[listaDesplegable.selectedIndex].value; //document.getElementById("familias").value 57&58
 
-
-  filtrados = filtrarFamilias(filtrados,seleccionDeCasa); //hace el filtro por familia y guarda esa lista ordenada en la variable filtrados
+  filtrados = filtrarFamilias(filtrados,familiaSeleccionada); //hace el filtro por familia y guarda esa lista ordenada en la variable filtrados
   console.log(filtrados)
 
 
@@ -60,11 +55,30 @@ function filtro(){
   // Proceso Final: Dibujar el resultado de los proceso en pantalla
   dibujarPersonajesPantalla(filtrados);
 }
-  
 
-document.querySelector("#familias").addEventListener("change",filtro);
+
+ //vincular botones html a JS
+function seleccionarFamilia(){
+ 
+  Array.from(document.getElementsByClassName("botonFamilia")).forEach(x => x.classList.remove("seleccion-boton")); //quitar clase "seleccion-boton" a todos los botones que tengan la clase botón familia
+  this.classList.add("seleccion-boton"); //Agregar clase selección botón al botón que se le hace click
+  let seleccion = this.children[0].innerHTML.trim().toLowerCase(); //en [0] porque el hijo (<p> es el único elemento y está en la posición CERO)
+  if (seleccion === "todos"){ //si la selección es "todos" se deja en vacío para que no filtre nada y me muestre todos los pjs
+    seleccion = "";
+  }
+  familiaSeleccionada = seleccion; //modificación variable global por la seleccion hecha
+
+  filtro(); //llamar a filtro que se encarga de filtrar y dibujar
+
+  //mostrar la segunda columna que es donde aparece el resultado del filtro
+  document.querySelector("#root").style.display = "block";
+}
+
+
 document.querySelector("#selectOrder").addEventListener("change",filtro);
 document.querySelector("#inputSearch").addEventListener("keyup", filtro);
+Array.from(document.getElementsByClassName("botonFamilia")).forEach(x => x.addEventListener("click",seleccionarFamilia));
+
 
 console.log(conteoPersonajesPorFamilia(structuredClone(data.got)));
 
