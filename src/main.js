@@ -66,6 +66,6 @@ document.querySelector("#familias").addEventListener("change",filtro);
 document.querySelector("#selectOrder").addEventListener("change",filtro);
 document.querySelector("#inputSearch").addEventListener("keyup", filtro);
 
-console.log(conteoPersonajesPorFamilia(structuredClone(data.got)));
+// console.log(conteoPersonajesPorFamilia(structuredClone(data.got)));
 
 //PARA SACAR EL VALOR DE UNA CAJA DE TEXTO GET ELEMENTBYID().VALUE

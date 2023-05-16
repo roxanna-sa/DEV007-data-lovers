@@ -111,8 +111,9 @@ p {
   width: 30%;
   height: calc(100vh - 200px);
   overflow-y: scroll; 
-  float: left;
-  
+  float: left; 
+ 
+ 
 }
 
 #root
@@ -120,6 +121,7 @@ p {
     width: 30%;
     height: 80vh;
     overflow-y: scroll;
+    background-color: #2e2d2d; 
 }
 /* Scrollbars */
 
@@ -169,18 +171,21 @@ p {
   }
 }
   
-  @media screen and (max-width: 1214px) {
+  @media screen and (max-width: 1000px) {
     body {
       background-image: url("./img/fondoTronoDragonMovil.jpg");
       background-repeat: no-repeat;
- 
-      height: 655px;
-      width: 380;
+      background-size: 100% 80% ;
+      background-position: bottom;
+      height: 852px;
+      width: 393;
       position: absolute;
       background-attachment: fixed;
-      left: 1px;
-      top: 100px;
+      left: 13px;
+      
     }
   
   }
+
+  
 
