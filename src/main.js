@@ -80,6 +80,6 @@ document.querySelector("#inputSearch").addEventListener("keyup", filtro);
 Array.from(document.getElementsByClassName("botonFamilia")).forEach(x => x.addEventListener("click",seleccionarFamilia));
 
 
-console.log(conteoPersonajesPorFamilia(structuredClone(data.got)));
+// console.log(conteoPersonajesPorFamilia(structuredClone(data.got)));
 
 //PARA SACAR EL VALOR DE UNA CAJA DE TEXTO GET ELEMENTBYID().VALUE
