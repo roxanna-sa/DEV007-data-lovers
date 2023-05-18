@@ -37,6 +37,10 @@ export const filtrarFamilias = (data, seleccionDeCasa) => {
   return filtrar;
 };
 
+export const filtrarPersonaje = (data, seleccionPersonaje) => {
+  const filtrar = data.got.filter(personaje => personaje.firstName.toLowerCase().includes(seleccionPersonaje));
+  return filtrar;
+}
 
 //input
 
