@@ -101,7 +101,10 @@ function seleccionarFamilia(){
   //mostrar la segunda columna que es donde aparece el resultado del filtro
 
   document.querySelector("#root").style.display = "block";
-  document.querySelector("#columna3").style.display = "none";
+  document.querySelector("#cantidadDeMiembros").style.display = "block";
+  document.querySelector("#selectOrder").style.display = "block";
+ 
+
 }
 
 // let botonSeleccionado = document.getElementById("boton-Personaje")
@@ -111,6 +114,10 @@ function seleccionarFamilia(){
 function limpiarFiltroFamilia(){
   Array.from(document.getElementsByClassName("botonFamilia")).forEach(x => x.classList.remove("seleccion-boton"));
   document.querySelector("#root").style.display = "none";
+  document.querySelector("#cantidadDeMiembros").style.display = "none";
+  document.querySelector("#selectOrder").style.display = "none";
+  document.querySelector("#columna3").style.display = "none";
+  
 }
 
 

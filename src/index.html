@@ -18,16 +18,22 @@
   </header>
 
     
-  <div>
+  <div class="padre-elementos-superiores">
     <input type="search" id="inputSearch" placeholder="Search by name..." class="filtro-personajes">
 
 
-    <select id="selectOrder"> 
+    <select id="selectOrder" style="display:none"> 
       <option class= "opciones" value="">Order: Default</option>
       <option class= "opciones" value="ascendente">Order: Ascending</option>
       <option class= "opciones" value="descendente">Order: Descending</option>
     </select>
+    
 
+    <div class="cantidad-miembros" style="display:none" id="cantidadDeMiembros">
+      <p class="ancho-auto bold">Miembros :</p> 
+      <p class="ancho-auto bold" id="cantidadMiembros"></p>
+     </div>
+     
   </div>
 
  <!--Columna de familias-->
@@ -61,10 +67,7 @@
 
  
  <!--Columna de personajes (columna 2)-->
- <div class="cantidad-miembros">
-  <p class="ancho-auto">Miembros :</p> 
-  <p class="ancho-auto" id="cantidadMiembros"></p>
- </div>
+
 
   <div id="root" class="columnas margin-right25" style="display:none"></div>
 
