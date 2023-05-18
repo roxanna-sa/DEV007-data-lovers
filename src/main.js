@@ -1,4 +1,4 @@
-import { filtrarFamilias, ordenAlfabetico, filtrarNombres, conteoPersonajesPorFamilia} from "./data.js";
+import { filtrarFamilias, ordenAlfabetico, filtrarNombres, conteoPersonajesPorFamilia } from "./data.js";
 import data from "./data/got/got.js";
 
 
@@ -56,20 +56,20 @@ function filtro(){
 
   // Proceso 1: Filtro por familia
 
-  filtrados = filtrarFamilias(filtrados,familiaSeleccionada); //hace el filtro por familia y guarda esa lista ordenada en la variable filtrados
+  filtrados = filtrarFamilias(filtrados, familiaSeleccionada); //hace el filtro por familia y guarda esa lista ordenada en la variable filtrados
   console.log(filtrados)
 
 
 
   //Proceso 2: hacer orden AZ/ZA acá
   const tipoDeOrden = document.getElementById('selectOrder').value;
-  if(tipoDeOrden !== ""){
-    filtrados = ordenAlfabetico(filtrados,tipoDeOrden);  //hace el orden alfabético y guarda esa lista ordenada en la variable filtrados
+  if (tipoDeOrden !== "") {
+    filtrados = ordenAlfabetico(filtrados, tipoDeOrden);  //hace el orden alfabético y guarda esa lista ordenada en la variable filtrados
   }
-  
+
   // Proceso 3: Hacer filtro por input de texto
   const fullName = document.getElementById('inputSearch').value;
-  filtrados = filtrarNombres(filtrados, fullName); 
+  filtrados = filtrarNombres(filtrados, fullName);
 
   // Proceso Final: Dibujar el resultado de los proceso en pantalla
   dibujarPersonajesPantalla(filtrados);
@@ -104,6 +104,7 @@ function seleccionarFamilia(){
   document.querySelector("#columna3").style.display = "none";
 }
 
+// let botonSeleccionado = document.getElementById("boton-Personaje")
 
 
 
