@@ -11,7 +11,7 @@
 <body>
 
   <header>
-    <img src="img/logoheader.png" class="logo-header" alt="">
+    <img src="img/logoheader.png" class="logo-header" alt="" id="logo-principal">
     <img src="img/winterishere.png" class="logo--header" alt="">
   </header>
 
@@ -30,7 +30,7 @@
 
  <!--Columna de familias-->
   <div class="columnas margin-right10" id="columna1">
-    <button type="button" class="botonFamilia"><p class="text-center">Todos      </p></button>
+    <button type="button" class="botonFamilia"><p class="text-center">All        </p></button>
     <button type="button" class="botonFamilia"><p class="text-center">Stark      </p></button>
     <button type="button" class="botonFamilia"><p class="text-center">Targaryen  </p></button>
     <button type="button" class="botonFamilia"><p class="text-center">Lannister  </p></button>
@@ -55,8 +55,14 @@
     <button type="button" class="botonFamilia"><p class="text-center">Bronn      </p></button>
     <button type="button" class="botonFamilia"><p class="text-center">Unknown</p></button>
   </div>
+
+
  
- <!--Columna de personajes-->
+ <!--Columna de personajes (columna 2)-->
+ <div class="cantidad-miembros">
+  <p class="ancho-auto">Miembros :</p> 
+  <p class="ancho-auto" id="cantidadMiembros"></p>
+ </div>
 
   <div id="root" class="columnas margin-right25" style="display:none"></div>
 
@@ -64,16 +70,46 @@
  
 
  <!--Columna tarjeta de información personaje-->
-  <div class="tarjeta" id="columna3">
+  <div class="tarjeta" id="columna3" style="display:none">
+    <p class="details">Character Details</p>
+    <img src="#" class="imgCharacter" id="imgPersonajeSeleccionado">
+    <p>First Name:
+      <p id="nombrePersonajeSeleccionado"></p>
+    </p>
+
+    <p>Last Name:
+      <p id="apellidoPersonajeSeleccionado"></p>
+    </p>
+    
+    <p>Full Name:
+      <p id="nombreCompletoPersonajeSeleccionado"></p>
+    </p>
+    
+    <p>Title:
+      <p id="tituloPersonajeSeleccionado"></p>
+    </p>
+    
+    <p>Family:
+      <p id="familiaPersonajeSeleccionado"></p>
+    </p>
+    
+    <p>Born:
+      <p id="nacimientoPersonajeSeleccionado"></p>
+    </p>
+    
+    <p>Death:
+      <p id="muertePersonajeSeleccionado"></p>
+    </p>
+   
   </div>
   
 
-  <button name="plantilla" type="button">
+  <button id="[id]" name="plantilla" type="button" class="botonPersonaje">
     <img src="#" class="imagen-personaje">
     <div class="informacion">
       <p name="nombre" class="margin-top15">[Nombre-Personaje]</p>
     </div>
- </button>
+  </button>
 
 <!--   
   <div name="plantilla" style="color:white" class="recuadro-personaje">

@@ -328,7 +328,7 @@ export default{
       "id": 29,
       "firstName": "Daario",
       "lastName": "Naharis",
-      "fullName": "Daario",
+      "fullName": "Daario Naharis",
       "title": "Commander of the Second Sons",
       "family": "Naharis",
       "imageUrl": "./img/Daario.jpg",
@@ -380,7 +380,7 @@ export default{
     },
    
     {
-      "id": 35,
+      "id": 34,
       "firstName": "Ramsey",
       "lastName": "Bolton",
       "fullName": "Ramsey Bolton",
@@ -391,7 +391,7 @@ export default{
       "death": "Unknown"
     },
     {
-      "id": 36,
+      "id": 35,
       "firstName": "Talisa",
       "lastName": "Stark",
       "fullName": "Talisa Stark",
@@ -403,7 +403,7 @@ export default{
 
     },
     {
-      "id": 37,
+      "id": 36,
       "firstName": "Jeor",
       "lastName": "Mormont",
       "fullName": "Jeor Mormont",
@@ -414,7 +414,7 @@ export default{
       "death": "299 dC"
     },
     {
-      "id": 38,
+      "id": 37,
       "firstName": "The High",
       "lastName": "Sparrow",
       "fullName": "The High Sparrow",
@@ -425,7 +425,7 @@ export default{
       "death": "Unknown"
     },
     {
-      "id": 39,
+      "id": 38,
       "firstName": "Oberyn",
       "lastName": "Martell",
       "fullName": "Oberyn Martell",
@@ -436,7 +436,7 @@ export default{
       "death": "300 dC"
     },
     {
-      "id": 40,
+      "id": 39,
       "firstName": "Melisandre",
       "lastName": "The Red Woman",
       "fullName": "Melisandre",
@@ -447,7 +447,7 @@ export default{
       "death": "Unknown"
     },
     {
-      "id": 41,
+      "id": 40,
       "firstName": "Jaqen",
       "lastName": "H'ghar",
       "fullName": "Jaqen H'ghar",
@@ -458,7 +458,7 @@ export default{
       "death": "Unknown"  
     },
     {
-      "id": 42,
+      "id": 41,
       "firstName": "Tywin",
       "lastName": "Lannister",
       "fullName": "Tywin Lannister",
@@ -469,7 +469,7 @@ export default{
       "death": "301 dC"  
     },
     {
-      "id": 43,
+      "id": 42,
       "firstName": "Ellaria",
       "lastName": "Sand",
       "fullName": "Ellaria Sand",
@@ -480,7 +480,7 @@ export default{
       "death": "Unknown"  
     },
     {
-      "id": 44,
+      "id": 43,
       "firstName": "Tormund",
       "lastName": "Giantsbane",
       "fullName": "Tormund Giantsbane",
@@ -491,7 +491,7 @@ export default{
       "death": "Unknown"  
     },
     {
-      "id": 45,
+      "id": 44,
       "firstName": "Yara",
       "lastName": "Greyjoy",
       "fullName": "Yara Greyjoy",
@@ -502,7 +502,7 @@ export default{
       "death": "Unknown"  
     },
     {
-      "id": 46,
+      "id": 45,
       "firstName": "Euron",
       "lastName": "Greyjoy",
       "fullName": "Euron Greyjoy",
@@ -513,7 +513,7 @@ export default{
       "death": "Unknown"  
     },
     {
-      "id": 47,
+      "id": 46,
       "firstName": "Wylis",
       "lastName": "Hodor",
       "fullName": "Hodor",
@@ -524,7 +524,7 @@ export default{
       "death": "Unknown"
     },
     {
-      "id": 48,
+      "id": 47,
       "firstName": "Maester",
       "lastName": "Pycelle",
       "fullName": "Maester Pycelle",
@@ -535,7 +535,7 @@ export default{
       "death": "300 dC"  
     },
     {
-      "id": 49,
+      "id": 48,
       "firstName": "Grey",
       "lastName": "Worm",
       "fullName": "Grey Worm",
@@ -546,7 +546,7 @@ export default{
       "death": "Unknown"    
     },
     {
-      "id": 50,
+      "id": 49,
       "firstName": "Olenna",
       "lastName": "Tyrell",
       "fullName": "Olenna Tyrell",
@@ -557,7 +557,7 @@ export default{
       "death": "Unknown"  
     },
     {
-      "id": 51,
+      "id": 50,
       "firstName": "Qyburn",
       "lastName": "Grand Maester",
       "fullName": "Qyburn",
@@ -568,7 +568,7 @@ export default{
       "death": "Unknown"
     },
     {
-      "id": 52,
+      "id": 51,
       "firstName": "Lord",
       "lastName": "Bronn",
       "fullName": "Lord Bronn",

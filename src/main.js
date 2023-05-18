@@ -5,6 +5,7 @@ import data from "./data/got/got.js";
 const plantilla = document.querySelector("[name='plantilla']").outerHTML;
 document.querySelector("[name='plantilla']").style.display = "none";
 let familiaSeleccionada = "";
+let miembrosFamilia; //acá se va a guardar un objeto, por eso está undefined
 
 
 function dibujarPersonajesPantalla(listaPersonajes) {
@@ -13,29 +14,47 @@ function dibujarPersonajesPantalla(listaPersonajes) {
     let plantillaActual = plantilla;
 
     plantillaActual = plantillaActual.replace("#", item.imageUrl); //pusimos # porque el [] da error en consola con la img
-    plantillaActual = plantillaActual.replace("[PrimerNombre-Personaje]", item.firstName);
-    plantillaActual = plantillaActual.replace("[Apellido-Personaje]", item.lastName);
+    // plantillaActual = plantillaActual.replace("[PrimerNombre-Personaje]", item.firstName);
+    // plantillaActual = plantillaActual.replace("[Apellido-Personaje]", item.lastName);
     plantillaActual = plantillaActual.replace("[Nombre-Personaje]", item.fullName);
-    plantillaActual = plantillaActual.replace("[Titulo-Personaje]", item.title);
-    plantillaActual = plantillaActual.replace("[Fecha-Nacimiento]", item.born);
-    plantillaActual = plantillaActual.replace("[Fecha-Muerte]", item.death);
+    // plantillaActual = plantillaActual.replace("[Titulo-Personaje]", item.title);
+    // plantillaActual = plantillaActual.replace("[Fecha-Nacimiento]", item.born);
+    // plantillaActual = plantillaActual.replace("[Fecha-Muerte]", item.death);
+    plantillaActual = plantillaActual.replace("[id]",item.id);
     // es lo mismo que el if
-    plantillaActual = plantillaActual.replace("[Casa-Personaje]", (item.family === "" ? "-" : item.family)); // ?= entonces : = si no (lo hago de esta forma por si hay campos vacíos)
+    // plantillaActual = plantillaActual.replace("[Casa-Personaje]", (item.family === "" ? "-" : item.family)); // ?= entonces : = si no (lo hago de esta forma por si hay campos vacíos)
 
     document.querySelector("#root").innerHTML += plantillaActual;
   });
 
+  Array.from(document.getElementsByClassName("botonPersonaje")).forEach(x => x.addEventListener("click",dibujarMiembrosPantalla));
+  
 }
 //Actualizado 15/mayo= Ya no la usamos porque no necesitamos mostrar todos los pjs
-// dibujarPersonajesPantalla(data.got); //le mando todos los personajes a la función que tiene el parámetro listaPersonajes (al cargar la página)
+//dibujarPersonajesPantalla(data.got); //le mando todos los personajes a la función que tiene el parámetro listaPersonajes (al cargar la página)
+function dibujarMiembrosPantalla(){
+  Array.from(document.getElementsByClassName("botonPersonaje")).forEach(x => x.classList.remove("seleccion-boton")); //quitar clase "seleccion-boton" a todos los botones que tengan la clase botón familia
+  this.classList.add("seleccion-boton"); //Agregar clase selección botón al botón que se le hace click
 
+  const ID = parseInt(this.id);
+  const personajeSeleccionado = data.got[ID];
+  
+  document.querySelector("#imgPersonajeSeleccionado").src = personajeSeleccionado.imageUrl;
+  document.querySelector("#nombrePersonajeSeleccionado").innerHTML = personajeSeleccionado.firstName;
+  document.querySelector("#apellidoPersonajeSeleccionado").innerHTML = personajeSeleccionado.lastName;
+  document.querySelector("#nombreCompletoPersonajeSeleccionado").innerHTML = personajeSeleccionado.fullName;
+  document.querySelector("#tituloPersonajeSeleccionado").innerHTML = personajeSeleccionado.title;
+  document.querySelector("#familiaPersonajeSeleccionado").innerHTML = personajeSeleccionado.family;
+  document.querySelector("#nacimientoPersonajeSeleccionado").innerHTML = personajeSeleccionado.born;
+  document.querySelector("#muertePersonajeSeleccionado").innerHTML = personajeSeleccionado.death;
+
+  document.querySelector("#columna3").style.display = "block";
+}
  
 function filtro(){
   let filtrados = structuredClone(data);
 
   // Proceso 1: Filtro por familia
-  //const listaDesplegable = document.getElementById('familias');
-  //const seleccionDeCasa = listaDesplegable.options[listaDesplegable.selectedIndex].value; //document.getElementById("familias").value 57&58
 
   filtrados = filtrarFamilias(filtrados,familiaSeleccionada); //hace el filtro por familia y guarda esa lista ordenada en la variable filtrados
   console.log(filtrados)
@@ -54,32 +73,55 @@ function filtro(){
 
   // Proceso Final: Dibujar el resultado de los proceso en pantalla
   dibujarPersonajesPantalla(filtrados);
+  
 }
 
 
- //vincular botones html a JS
+//vincular botones html a JS
 function seleccionarFamilia(){
- 
   Array.from(document.getElementsByClassName("botonFamilia")).forEach(x => x.classList.remove("seleccion-boton")); //quitar clase "seleccion-boton" a todos los botones que tengan la clase botón familia
   this.classList.add("seleccion-boton"); //Agregar clase selección botón al botón que se le hace click
   let seleccion = this.children[0].innerHTML.trim().toLowerCase(); //en [0] porque el hijo (<p> es el único elemento y está en la posición CERO)
-  if (seleccion === "todos"){ //si la selección es "todos" se deja en vacío para que no filtre nada y me muestre todos los pjs
+  if (seleccion === "all"){ //si la selección es "todos" se deja en vacío para que no filtre nada y me muestre todos los pjs
     seleccion = "";
   }
   familiaSeleccionada = seleccion; //modificación variable global por la seleccion hecha
 
+  if (seleccion === ""){
+    document.getElementById("cantidadMiembros").innerHTML = "";
+  }else{
+
+    //Escribir cantidad de miembros por familia
+    const indiceEncontrado = miembrosFamilia.listadoDeFamilias.findIndex((item)=> item.toLowerCase().includes(seleccion));
+    const cantidadMiembros = miembrosFamilia.cantidadPersonajesPorFamilia [indiceEncontrado];
+    document.getElementById("cantidadMiembros").innerHTML = cantidadMiembros;
+  }
   filtro(); //llamar a filtro que se encarga de filtrar y dibujar
 
   //mostrar la segunda columna que es donde aparece el resultado del filtro
+
   document.querySelector("#root").style.display = "block";
+  document.querySelector("#columna3").style.display = "none";
 }
+
+
+
+
+function limpiarFiltroFamilia(){
+  Array.from(document.getElementsByClassName("botonFamilia")).forEach(x => x.classList.remove("seleccion-boton"));
+  document.querySelector("#root").style.display = "none";
+}
+
 
 
 document.querySelector("#selectOrder").addEventListener("change",filtro);
 document.querySelector("#inputSearch").addEventListener("keyup", filtro);
 Array.from(document.getElementsByClassName("botonFamilia")).forEach(x => x.addEventListener("click",seleccionarFamilia));
+document.querySelector("#logo-principal").addEventListener("click",limpiarFiltroFamilia);
 
 
-// console.log(conteoPersonajesPorFamilia(structuredClone(data.got)));
+
+miembrosFamilia = conteoPersonajesPorFamilia(structuredClone(data.got));
 
 //PARA SACAR EL VALOR DE UNA CAJA DE TEXTO GET ELEMENTBYID().VALUE
+

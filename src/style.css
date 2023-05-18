@@ -7,7 +7,7 @@
 body{
   background: black;
   width: 100%;
-  padding: 10px;
+  padding: 0.625em;
   box-sizing: border-box;
 }
 
@@ -16,7 +16,7 @@ h1 {
   margin: 1em;
 }
 
-.recuadro-personaje {
+/*.recuadro-personaje {
   display: flex;
   width: calc(100% / 7);
   border: 0.063em solid black;
@@ -32,7 +32,7 @@ h1 {
   width: auto;
   object-fit: cover;
   border-radius: 0.813em;
-}
+}*/
 
 .informacion {
   display: flex;
@@ -64,32 +64,34 @@ header {
 
 
 button {
-  width: 336px;
-  height: 60px;
-  min-height: 60px;
+  width: 26.8em;
+  height: 4.3em;
+  min-height: 4.3em;
   background: #453F3F;
-  border-radius: 30px;
+  border-radius: 1.875em;
   text-align: center;
   margin: 0 auto;
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 0.625em;
 }
 
 .imagen-personaje {
-  width: 50px;
-  height: 50px;
+  width: 3.8em;
+  height: 3.8em;
   border-radius: 100%;
   float: left;
+  margin-left: 0.1em;
+  object-fit: cover;
 }
 
 p {
   float: left;
   width: 100%;
   color: white;
-  margin-left: 10px;
+  margin-left: 0.625em;
   font-family:'Montserrat';
   font-weight: 300;
-  line-height: 20px;
+  line-height: 0.078em;
   letter-spacing: 0.25em;
   text-align: left;
 
@@ -100,7 +102,7 @@ p {
 }
 
 .margin-top15{
-  margin-top: 15px;
+  margin-top: 1.5em;
 }
 
 .margin-right10{
@@ -115,27 +117,58 @@ p {
   width:23%;
   background:#302c2c;
   float:right;
-  height:calc(100vh - 230px);
-  border-radius: 30px;
+  height:calc(100vh - 14.375em);
+  border-radius: 1.875em;
+ 
   
 }
+
+.tarjeta p{
+  line-height: normal;
+}
+
+.imgCharacter{
+  width: 18em;
+  margin:0 auto;
+  display: block;
+  height: 18em;
+  object-fit: cover;
+  margin-top:3.5em;
+  margin-bottom: 1em;
+  border-radius: 1em;
+}
+.details{
+  display: flex;
+  justify-content: center;
+  margin-top:1em;
+}
+
 .columnas{
   display: flex;
   flex-direction: column;
   width: 20%;
-  height: calc(100vh - 250px);
+  height: calc(100vh - 15.625em);
   overflow-y: scroll; 
   float: left;
   background-color: #302c2c;
-  border-radius: 30px;
-  margin-top: 20px;
+  border-radius: 1.875em;
+  margin-top: 1.25em;
 }
 
+
+.cantidad-miembros{  
+ display: flex;
+ /* justify-content:right; */
+}
+
+.ancho-auto{
+  width:auto;
+}
 
 .seleccion-boton{
   background: #D9D9D9;
   /* border: 1px solid #000000; */
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0em 0.25em 0.25em rgba(0, 0, 0, 0.25);
 }
 
 .seleccion-boton p{
@@ -151,19 +184,19 @@ p {
 
 /* width */
 ::-webkit-scrollbar {
-  width:15px;
+  width:0.938em;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
   background: #111316;
-  border-radius: 20px;
+  border-radius: 1em;
 }
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: #bdbbbb; 
-  border-radius: 30px;
+  border-radius: 1.875em;
 }
 
 /* Handle on hover */
