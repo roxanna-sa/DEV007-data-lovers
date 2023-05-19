@@ -8,7 +8,6 @@ body {
   background: black;
   width: 100%;
   padding: 0.625em;
-  /* width: 100%; */
   padding: 10px;
   box-sizing: border-box;
   background-image: linear-gradient(rgba(0, 0, 0, 0),
@@ -26,24 +25,6 @@ h1 {
   margin: 1em;
 }
 
-/*.recuadro-personaje {
-  display: flex;
-  width: calc(100% / 7);
-  border: 0.063em solid black;
-  float: left;
-  box-sizing: border-box;
-  flex-direction: column;
-
-}
-
-.imagen-personaje {
-
-  height: 12.5em;
-  width: auto;
-  object-fit: cover;
-  border-radius: 0.813em;
-}*/
-
 .informacion {
   display: flex;
   justify-content: baseline;
@@ -60,12 +41,14 @@ h1 {
   margin-left: 6%;
 }
 
+/*logo Grande*/
 .logo-header {
   height: 12em;
   width: auto;
   
 }
 
+/*logo secundario*/
 .logo--header {
   height: 2em;
   width: auto;
@@ -78,9 +61,10 @@ header {
 }
 
 
-
+/*los botones*/
 button {
   width: 26.8em;
+  max-width: 26.8em;
   height: 4.3em;
   min-height: 4.3em;
   background: #453F3F;
@@ -89,8 +73,60 @@ button {
   margin: 0 auto;
   display: block;
   margin-bottom: 0.625em;
+  cursor:pointer;
+  transition: all ease 0.5s;
+  overflow: hidden;
+  position: relative;
+  color:rgba(255,255,255,1);
+  box-shadow:inset 0 0 0 1px rgba(0,0,0,0.1);
+  text-decoration: none;
+  
 }
 
+ 
+button:after,
+button:before{
+	width: 80px;
+	height: 200px;
+	content: '';
+	display: block;
+	background: rgba(255,255,255,0.5);
+	transform: rotate(45deg);
+	top: -60px;
+	position: absolute;
+	transition: none;
+	right:-45%;
+	cursor: pointer;
+}
+ 
+button:before{
+	left: -48%;
+}
+ 
+button:hover{
+	text-shadow: 0 1px 1px rgba(0,0,0,0.5);
+	background:#453F3F;
+}
+ 
+button:hover:after,
+button:hover:before{
+	transform: rotate(45deg), scaleX(130%);
+	background: rgba(255,255,255,0.1);
+	transition: all ease 0.5s;
+}
+ 
+button:hover:after{
+	right: 130%;
+}
+ 
+button:hover:before{
+	left: 130%;
+}
+
+
+
+
+/*imagen personaje en boton*/
 .imagen-personaje {
   width: 3.8em;
   height: 3.8em;
@@ -113,6 +149,7 @@ p {
 
 }
 
+/*clases reutilizables*/
 .text-center {
   text-align: center;
 }
@@ -129,20 +166,26 @@ p {
   margin-right: 25%;
 }
 
+.fondo-negro{
+  background: black;
+}
+
+ /*columna3*/
 .tarjeta{
   width:23%;
   background:#302c2c;
   float:right;
   height:calc(100vh - 14.375em);
   border-radius: 1.875em;
- 
-  
 }
 
+
+ /*parrafo columna*/
 .tarjeta p{
   line-height: normal;
 }
 
+/*imagen personaje en tarjeta*/
 .imgCharacter{
   width: 18em;
   margin:0 auto;
@@ -153,18 +196,22 @@ p {
   margin-bottom: 1em;
   border-radius: 1em;
 }
+
+/*parrafo character details*/
 .details{
   display: flex;
   justify-content: center;
   margin-top:1em;
 }
 
+/*Div Padre de search/Order y Miembros*/
 .padre-elementos-superiores{
   display: flex;
   align-items: baseline;
-  /*background: rgba(0, 0, 0, 0.25)*/
+  /*background: rgba(0, 0, 0, 0.25)*/ /*la mafer*/
 }
 
+/*columna 1&2*/
 .columnas{
   display: flex;
   flex-direction: column;
@@ -177,26 +224,30 @@ p {
   margin-top: 1.25em;
 }
 
-
+/*cantidad de miembros por familia en pantalla*/
 .cantidad-miembros{  
  display: flex;
- /* justify-content:right; */
  font-weight: bolder;
 }
 
+/*clase reutilizable*/
 .ancho-auto{
   width:auto;
 }
+
+/*clase reutilizable*/
 .bold{
   font-weight: 400;
 }
 
+/*botón al ser seleccionado*/
 .seleccion-boton{
   background: #D9D9D9;
   /* border: 1px solid #000000; */
   box-shadow: 0em 0.25em 0.25em rgba(0, 0, 0, 0.25);
 }
 
+/*letras del botón*/
 .seleccion-boton p {
   color: black;
   font-weight: bolder;
@@ -210,7 +261,7 @@ p {
 }
 
 
-/* Scrollbars */
+/* Scrollbar*/
 
 /* width */
 ::-webkit-scrollbar {
@@ -448,35 +499,36 @@ body.opacado {
 
 
 .tarjetaPersonaje{
- color:white;
-margin-top: 0%;
-width: 300px;
-height: 35px;
-text-align: left;
-letter-spacing: 0.30em;
-margin-left: 3%;
-font-size: 15px;
-font-weight: 700;
+  color:white;
+  margin-top: 0%;
+  width: 300px;
+  height: 35px;
+  text-align: left;
+  letter-spacing: 0.30em;
+  margin-left: 3%;
+  font-size: 15px;
+  font-weight: 600;
 }
 
 
 
 .tarjetaPersonajeInfo{
   color:white;
- margin-top: 0%;
- width: 300px;
- height: 25px;
- text-align: justify;
- letter-spacing: 0.30em;
- margin-left: 40%;
- margin-top: -9%;
- font-size: 15px;
- }
+  margin-top: 0%;
+  width: 300px;
+  height: 25px;
+  text-align: justify;
+  letter-spacing: 0.30em;
+  margin-left: 40%;
+  margin-top: -9%;
+  font-size: 15px;
+  overflow:auto;
+}
 
  .contenedorInfo{
 
-  height: 400px;
-  width: 400px;
+  height: auto;
+  width: 25em;
   margin-top: 18%;
- }
+}
 
