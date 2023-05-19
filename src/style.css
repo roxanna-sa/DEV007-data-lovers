@@ -3,7 +3,7 @@
 * {
   margin: 0em;
 }
-
+@media screen and (max-width: 2000px){
 body {
   background: black;
   width: 100%;
@@ -16,14 +16,47 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-
-
 }
 
 h1 {
   text-align: center;
   margin: 1em;
 }
+
+#root{
+  width: 400px;
+  height: calc(100vh - 15.625em);
+}
+
+#columna1{
+  width: 400px;
+  height: calc(100vh - 15.625em);
+}
+
+#columna3{
+  width: 400px;
+  height: calc(180vh - 15.625em);
+  margin-top: 0em;
+  margin-left: -15em;
+}
+
+/*.recuadro-personaje {
+  display: flex;
+  width: calc(100% / 7);
+  border: 0.063em solid black;
+  float: left;
+  box-sizing: border-box;
+  flex-direction: column;
+
+}
+
+.imagen-personaje {
+
+  height: 12.5em;
+  width: auto;
+  object-fit: cover;
+  border-radius: 0.813em;
+}*/
 
 .informacion {
   display: flex;
@@ -45,7 +78,7 @@ h1 {
 .logo-header {
   height: 12em;
   width: auto;
-  
+
 }
 
 /*logo secundario*/
@@ -141,12 +174,11 @@ p {
   width: 100%;
   color: white;
   margin-left: 0.625em;
-  font-family:'Montserrat';
+  font-family: 'Montserrat';
   font-weight: 300;
   line-height: 0.078em;
   letter-spacing: 0.25em;
   text-align: left;
-
 }
 
 /*clases reutilizables*/
@@ -154,7 +186,7 @@ p {
   text-align: center;
 }
 
-.margin-top15{
+.margin-top15 {
   margin-top: 1.5em;
 }
 
@@ -188,11 +220,11 @@ p {
 /*imagen personaje en tarjeta*/
 .imgCharacter{
   width: 18em;
-  margin:0 auto;
+  margin: 0 auto;
   display: block;
   height: 18em;
   object-fit: cover;
-  margin-top:3.5em;
+  margin-top: 3.5em;
   margin-bottom: 1em;
   border-radius: 1em;
 }
@@ -201,7 +233,7 @@ p {
 .details{
   display: flex;
   justify-content: center;
-  margin-top:1em;
+  margin-top: 1em;
 }
 
 /*Div Padre de search/Order y Miembros*/
@@ -217,7 +249,7 @@ p {
   flex-direction: column;
   width: 20%;
   height: calc(100vh - 15.625em);
-  overflow-y: scroll; 
+  overflow-y: scroll;
   float: left;
   background-color: #302c2c;
   border-radius: 1.875em;
@@ -265,7 +297,7 @@ p {
 
 /* width */
 ::-webkit-scrollbar {
-  width:0.938em;
+  width: 0.938em;
 }
 
 /* Track */
@@ -276,7 +308,7 @@ p {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #bdbbbb; 
+  background: #bdbbbb;
   border-radius: 1.875em;
 }
 
@@ -286,230 +318,165 @@ p {
 
 }
 
-@media only screen and (max-width: 500px) {
-  .recuadro-personaje {
-    width: 100%;
-  }
-
-  .logo-header {
-    height: auto;
-    width: 50%;
-    
-  }
-
-  .logo--header {
-    height: auto;
-    width: 30%;
-  }
-}
-
 
 body.opacado {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7),
       rgba(0, 0, 0, 0.7)), url("./img/fondoTronoDragon.jpg");
 }
 
+
+/* TARJETA PERSONAJE TITULOS */
+.tarjetaPersonaje {
+  color: white;
+  margin-top: 0%;
+  width: 300px;
+  height: 20px;
+  text-align: center;
+  letter-spacing: 0.30em;
+  margin-top: -2%;
+  margin-left: 15%;
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 1%;
+}
+
+.tarjetaPersonajeInfo {
+  color: white;
+  margin-top: 0%;
+  width: 300px;
+  height: 50px;
+  text-align: center;
+  letter-spacing: 0.30em;
+  margin-left: 15%;
+  margin-top: -1%;
+  font-size: 15px;
+  margin-bottom: 0%;
+}
+
+/* DIV PARA CENTRAR TEXTO TARJETA PERSONAJE */
+.contenedorInfo {
+  height: 400px;
+  width: 400px;
+  margin-top: -15%;
+}
+
+/* }  AQUI CIERRA EL MEDIA QUERIE DE ESCRITORIO */
+
 /* Vista IPAD */
-@media screen and (max-width: 1200px) {
+
+@media screen and (max-width: 768px) {
   body {
-    background-image: linear-gradient(rgba(0, 0, 0, 0),
-        rgba(0, 0, 0, 0)), url("./img/fondoTronoDragon.jpg");
-    transition: 1s;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 170% 70%;
-    background-position: center;
+    background-image: url("./img/fondoTronoDragon.jpg"); 
+    background-position: center; 
     background-size: cover;
-    background-position-y: bottom;
-  } 
+    margin-left: -10em;
+  }
+}
 
-  @media screen and (max-width: 1200px) {
-    .logo-header {
-      height: 14,5em;
-      width: auto;  
-      margin-top: 0%; 
-      margin-left: 0%;
-      
-     } 
-    .logo--header {
-      height: 1em;
-      display: none;
+@media screen and (max-width: 1200px) {
 
-   
-    }  
-    }
-  
-    @media screen and (max-width: 1200px){
-    #selectOrder {
-      height: 3em;
-      border-radius: 0.4em;
-     display: none;
-    
-    }
+  .logo-header {
+    height: auto;
+    width: 60em;
+    margin-left: 9em;
   }
 
-  @media screen and (max-width: 1200px) {
+  .logo--header {
+    height: auto;
+    width: 30%;
+    display: none;
+  }
+
+  #selectOrder {
+    height: 3em;
+    border-radius: 0.4em;
+    margin-left: 70em;
+
+  }
+
+  .columnas {
+    display: flex;
+    flex-direction: column;
+    width: 70em;
+    height: calc(100vh - 15.625em);
+    overflow-y: scroll;
+    background-color: #302c2c33;
+    border-radius: 1.875em;
+    margin-top: 1.25em;
+    margin-left: 4em;
+  }
+
+
+  button {
+    width: 20em;
+    height: 5em;
+    min-height: 4.3em;
+    background: #453F3F;
+    border-radius: 1.875em;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 0.625em;
+    font-size: 2em;
+  }
+
+  .informacion {
+    width: 20em;
+    height: 5em;
+    text-align: center;
+  }
+
+  .margin-top15 {
+    margin-left: 5em;
+    margin-top: -2em;
+
+  }
+
   .filtro-personajes {
     border-radius: 0.4em;
     height: 3em;
     width: auto;
-    background-color: #f5f1f128;
+    background-color: #f5f1f142;
     color: white;
     font-size: 1em;
-     margin-left: 80%;
+    margin-left: 48em;
   }
-}
 
-@media screen and (max-width: 1200px){
-.columnas {
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-  height: calc(100vh - 250px);
-  overflow-y: scroll;
-  float: left;
-  background-color: #302c2c;
-  border-radius: 30px;
-  margin-top: 20px;
-  margin-left: 30%;
-}
-}
-
-
-
-@media screen and (max-width: 1200px){
-  #columna3 {
-  
-   display: none;
-  
-  }
-}
-
-@media screen and (max-width: 1200px){
-  #root {
-  
-   display: none;
-  
-  }
-}
-
-
-/* Vista Movil */
-  @media screen and (max-width: 300px) {
-      body {
-        background-image: linear-gradient(
-          rgba(0, 0, 0, 0), 
-          rgba(0, 0, 0, 0)
-        ),url("./img/fondoTronoDragon.jpg");
-        transition: 1s;
-        background-repeat: no-repeat;
-        position: relative; 
-        background-attachment: fixed;
-        /* left: 1px;
-        top: 100px; */
-        background-size: 20% 20%;
-      }} 
-
-      @media screen and (max-width: 850px){
-        .columnas {
-          display: flex;
-          flex-direction: column;
-          width: 50%;
-          height: calc(2000vh - 250px);
-          overflow-y: scroll;
-          float: left;
-          background-color: #302c2c;
-          border-radius: 30px;
-          margin-top: -14%;
-          margin-left: 30%;
-        }
-        }
-
-  body.opacado {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7),
-        rgba(0, 0, 0, 0.7)), url("./img/fondoTronoDragon.jpg");
-  }
-}
-
-@media screen and (max-width: 400px){
-  .columnas {
+  .tarjeta {
     display: flex;
-    flex-direction: column;
-    width: 1000px;
-    height: calc(400vh - 250px);
-    overflow-y: scroll;
-    float: left;
+    width: 60em;
+    height: calc(160vh - 15.625em);
     background-color: #302c2c;
-    border-radius: 30px;
-    margin-top: 20px;
-    margin-left: 75%;
-  }
-  }
-  @media screen and (max-width: 400px){
-  button {
-    width: 1000px;
-    height: 500px;
-    min-height: 300px;
-    background: #453F3F;
-    border-radius: 50px;
-    text-align: center;
-    font-size: 70px;
-    margin: 0 auto;
-    display: block;
-    margin-bottom: 10px;
-}
+    border-radius: 1.875em;
+    margin-top: 0em;
+    margin-left: 10em;
+    margin-right: -14em;
   }
 
-  @media screen and (max-width: 400px) {
-    .filtro-personajes {
-      border-radius: 0.4em;
-      height: 2em;
-      width: auto;
-      background-color: #f5f1f128;
-      color: white;
-      font-size: 4em;
-       margin-left: 185%;
-    }
-  }
-
-  @media screen and (max-width: 400px){
-  ::-webkit-scrollbar {
-    width: 60px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: #111316;
-    border-radius: 20px;
-     }
-  
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: #bdbbbb;
-    border-radius: 30px;
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #D9D9D9;
-  
-  }
-  }
-
-
-
-.tarjetaPersonaje{
-  color:white;
-  margin-top: 0%;
-  width: 300px;
-  height: 35px;
-  text-align: left;
+  /* TARJETA PERSONAJE TITULOS */
+.tarjetaPersonaje {
+  color: rgb(195, 14, 14);
+  width: 40em;
+  height: 1em;
+  text-align: center;
   letter-spacing: 0.30em;
-  margin-left: 3%;
-  font-size: 15px;
-  font-weight: 600;
+  margin-left: 10em;
+  font-size: 1.5em;
+   
 }
 
+.tarjetaPersonajeInfo {
+  color: white;
+  margin-top: 0%;
+  width: 40em;
+  height: 1.875em;
+  text-align: center;
+  letter-spacing: 0.30em;
+  margin-left: -9em;
+  margin-top: 6em;
+  font-size: 30px;
+  margin-bottom: -30em;
+}
 
 
 .tarjetaPersonajeInfo{
@@ -532,3 +499,16 @@ body.opacado {
   margin-top: 18%;
 }
 
+.imgCharacter {
+  width: 50em;
+  margin: 0 auto;
+  display: block;
+  height: 45em;
+  object-fit: cover;
+  margin-top: 3.5em;
+  margin-bottom: 1em;
+  border-radius: 1em;
+  /* display: none; */
+}
+}
+}
