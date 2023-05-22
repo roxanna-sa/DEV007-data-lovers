@@ -134,3 +134,5 @@ miembrosFamilia = conteoPersonajesPorFamilia(structuredClone(data.got));
 
 //PARA SACAR EL VALOR DE UNA CAJA DE TEXTO GET ELEMENTBYID().VALUE
 
+
+
