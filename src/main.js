@@ -5,9 +5,12 @@ import data from "./data/got/got.js";
 const plantilla = document.querySelector("[name='plantilla']").outerHTML;
 document.querySelector("[name='plantilla']").style.display = "none";
 let familiaSeleccionada = "";
-let miembrosFamilia; //acá se va a guardar un objeto, por eso está undefined
+let miembrosFamilia = {} //acá se va a guardar un objeto, por eso está vacío
 
-
+/**
+ * Esta función se encarga de dibujar la segunda columna
+ * @param {filtrados} listaPersonajes 
+ */
 function dibujarPersonajesPantalla(listaPersonajes) {
   document.querySelector("#root").innerHTML = ""; //limpiar el root que es donde dibujamos cada personaje
   listaPersonajes.forEach((item) => { //data.got.forEach((item, index)
@@ -107,9 +110,7 @@ function seleccionarFamilia(){
 
 }
 
-// let botonSeleccionado = document.getElementById("boton-Personaje")
-
-
+//let botonSeleccionado = document.getElementById("boton-Personaje")
 
 function limpiarFiltroFamilia(){
   Array.from(document.getElementsByClassName("botonFamilia")).forEach(x => x.classList.remove("seleccion-boton"));

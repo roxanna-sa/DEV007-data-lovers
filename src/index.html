@@ -19,10 +19,26 @@
 
     
   <div class="padre-elementos-superiores">
-    <input type="search" id="inputSearch" placeholder="Search by name..." class="filtro-personajes">
 
+    <div class="input-logo">
+      <input type="search" id="inputSearch" placeholder="Search by name..." class="filtro-personajes">
+      
+      <svg
+      xmlns="http://www.w3.org/2000/svg"
+      class="input-icon"
+      viewBox="0 0 20 20"
+      fill="currentColor"
+   >
+      <path
+         fill-rule="evenodd"
+         d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+         clip-rule="evenodd"
+      />
+   </svg>
+                        
+    </div>
 
-    <select id="selectOrder" style="display:none"> 
+    <select id="selectOrder" style="display:none" class="selector-orden"> 
       <option class= "opciones" value="">Order: Default</option>
       <option class= "opciones" value="ascendente">Order: Ascending</option>
       <option class= "opciones" value="descendente">Order: Descending</option>
@@ -30,7 +46,7 @@
     
 
     <div class="cantidad-miembros" style="display:none" id="cantidadDeMiembros">
-      <p class="ancho-auto bold">Miembros :</p> 
+      <p class="ancho-auto bold">Members :</p> 
       <p class="ancho-auto bold" id="cantidadMiembros"></p>
     </div>
      
@@ -152,31 +168,31 @@
     <img src="#" class="imgCharacter" id="imgPersonajeSeleccionado">
 
     <div class="contenedorInfo">
-      <p class="tarjetaPersonaje">First Name:
+      <p class="tarjetaPersonaje">First Name:</p>
       <p id="nombrePersonajeSeleccionado" class="tarjetaPersonajeInfo"></p>
       </p>
 
-      <p class="tarjetaPersonaje">Last Name:
-      <p id="apellidoPersonajeSeleccionado" class="tarjetaPersonajeInfo" </p>
+      <p class="tarjetaPersonaje">Last Name:</p>
+      <p id="apellidoPersonajeSeleccionado" class="tarjetaPersonajeInfo"></p>
       </p>
 
-      <p class="tarjetaPersonaje">Full Name:
+      <p class="tarjetaPersonaje">Full Name:</p>
       <p id="nombreCompletoPersonajeSeleccionado" class="tarjetaPersonajeInfo"></p>
       </p>
 
-      <p class="tarjetaPersonaje">Family:
-      <p id="familiaPersonajeSeleccionado" class="tarjetaPersonajeInfo" </p>
+      <p class="tarjetaPersonaje">Family:</p>
+      <p id="familiaPersonajeSeleccionado" class="tarjetaPersonajeInfo"></p>
       </p>
 
-      <p class="tarjetaPersonaje">Born:
+      <p class="tarjetaPersonaje">Born:</p>
       <p id="nacimientoPersonajeSeleccionado" class="tarjetaPersonajeInfo"></p>
       </p>
 
-      <p class="tarjetaPersonaje">Death:
+      <p class="tarjetaPersonaje">Death:</p>
       <p id="muertePersonajeSeleccionado" class="tarjetaPersonajeInfo"></p>
       </p>
 
-      <p class="tarjetaPersonaje">Title:
+      <p class="tarjetaPersonaje">Title:</p>
         <p id="tituloPersonajeSeleccionado" class="tarjetaPersonajeInfo"></p>
         </p>
     </div>
