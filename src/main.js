@@ -8,6 +8,7 @@ let familiaSeleccionada = "";
 let miembrosFamilia; //acá se va a guardar un objeto, por eso está undefined
 
 
+
 function dibujarPersonajesPantalla(listaPersonajes) {
   document.querySelector("#root").innerHTML = ""; //limpiar el root que es donde dibujamos cada personaje
   listaPersonajes.forEach((item) => { //data.got.forEach((item, index)
@@ -132,4 +133,6 @@ document.querySelector("#logo-principal").addEventListener("click",limpiarFiltro
 miembrosFamilia = conteoPersonajesPorFamilia(structuredClone(data.got));
 
 //PARA SACAR EL VALOR DE UNA CAJA DE TEXTO GET ELEMENTBYID().VALUE
+
+
 
