@@ -119,14 +119,6 @@ function seleccionarFamilia(){
 }
 
 
-function mediaQ(){
-  // console.log("mediaQ");
-  //   if (mediaQuery.matches) {
-  
-  //     document.querySelector("#columna1").style.display = "none";
-  
-  //   }
-}
 
 function limpiarFiltroFamilia(){
   Array.from(document.getElementsByClassName("botonFamilia")).forEach(x => x.classList.remove("seleccion-boton"));
@@ -143,7 +135,7 @@ document.querySelector("#selectOrder").addEventListener("change",filtro);
 document.querySelector("#inputSearch").addEventListener("keyup", filtro);
 Array.from(document.getElementsByClassName("botonFamilia")).forEach(x => x.addEventListener("click",seleccionarFamilia));
 document.querySelector("#logo-principal").addEventListener("click",limpiarFiltroFamilia);
-addEventListener("resize",mediaQ);
+addEventListener("resize",mediaQMovil);
 
 
 miembrosFamilia = conteoPersonajesPorFamilia(structuredClone(data.got));
