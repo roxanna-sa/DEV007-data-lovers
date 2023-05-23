@@ -58,11 +58,11 @@ h1 {
   font-family: 'Montserrat';
 }
 
-.filtro-personajes:hover{
+.filtro-personajes:hover {
   border: 2px solid white;
 }
 
-.input-logo{
+.input-logo {
   position: relative;
   width: 271px;
 }
@@ -99,12 +99,12 @@ header {
 }
 
 #columna3 {
-    width: 400px;
-    height:auto;
-    /*height: calc(100vh - 15.625em);*/
-    margin-top: 0em;
-    margin-left: -15em;
-  
+  width: 400px;
+  height: auto;
+  /*height: calc(100vh - 15.625em);*/
+  margin-top: 0em;
+  margin-left: -15em;
+
 }
 
 
@@ -407,7 +407,7 @@ p {
 
 /* Vista IPAD */
 
- @media screen and (max-width: 820px) {
+@media screen and (max-width: 820px) {
 
   html {
     background-color: black;
@@ -434,8 +434,8 @@ p {
   #selectOrder {
     height: 3em;
     border-radius: 0.4em;
-    margin-left: 70em;
-   
+    margin-left: -1em;
+
   }
 
 
@@ -444,7 +444,7 @@ p {
     width: 700px;
     height: calc(100vh - 15.625em);
     background-color: #302c2c33;
-    margin-left: 10em;
+    margin-left: 8em;
   }
 
 
@@ -452,7 +452,7 @@ p {
     width: 700px;
     height: calc(100vh - 15.625em);
     background-color: #302c2c33;
-    margin-left: 10em;
+    margin-left: 8em;
   }
 
   .input-logo {
@@ -476,156 +476,8 @@ p {
     width: 700px;
     height: 1100px;
     margin-top: 1em;
-    margin-left: 20em;
-    margin-right: 7em;
-    background-color: #302c2cf1;
-  }
 
-
-  button {
-    width: 20em;
-    height: 5em;
-    min-height: 4.3em;
-    background: #453F3F;
-    border-radius: 1.875em;
-    text-align: center;
-    margin: 0 auto;
-    display: block;
-    margin-bottom: 0.625em;
-    font-size: 2em;
-  }
- 
-  .informacion {
-    width: 20em;
-    height: 5em;
-    text-align: center;
-  }
-
-  .margin-top15 {
-    margin-left: 5em;
-    margin-top: -2em;
-
-  }
-
-  .filtro-personajes {
-    border-radius: 0.4em;
-    height: 3em;
-    width: auto;
-    background-color: #f5f1f142;
-    color: white;
-    font-size: 1em;
-    margin-left: 48em;
-  }
-
-  /* TARJETA PERSONAJE TITULOS */
-.tarjetaPersonaje {
-  color: white;
-  width: 40em;
-  height: 1.5em;
-  text-align: center;
-  letter-spacing: 0.30em;
-  margin-right: 30em;
-  margin-left: -2em;
-  margin-top: 0em;
-  font-size: 25px;
-  margin-bottom: 0.2em;
-  font-weight: 5em;
-
-}
-
-/* Nos quedamos con esta */
-.tarjetaPersonajeInfo {
-  color: white;
-  width: 800px;
-  height: 35px;
-  text-align: center;
-  letter-spacing: 0.30em;
-  margin-left: 2.5em;
-  margin-top: 0em;
-  font-size: 25px;
-  overflow: auto;
-}
-
-.contenedorInfo {
-
-  height: auto;
-  width: 25em;
-  margin-top: 1em;
-  margin-left: -7em;
-}
-
-.imgCharacter {
-  width: 30em;
-  margin: 0 auto;
-  display: block;
-  height: 30em;
-  object-fit: cover;
-  margin-top: 3.5em;
-  margin-bottom: 1em;
-  border-radius: 1em;
-  /* display: none; */
-}
- }
-
-
-
-/* VISTA MOVIL */
-
-
-@media screen and (max-width: 390px) {
-
-  html {
-    background-color: black;
-    
-  } 
-
-  body{
-    background-image: none;
-  }
- 
-
-  .logo-header {
-    height: auto;
-    width: 60em;
-    margin-left: -1em;
-  }
-
-  .logo--header {
-    height: auto;
-    width: 30%;
-    display: none;
-  }
-
-  #selectOrder {
-    height: 3em;
-    border-radius: 0.4em;
-    margin-left: 70em;
-
-  }
-
-
-  #columna1 {
-    width: 700px;
-    height: calc(200vh - 15.625em);
-    background-color: #302c2c33;
-    margin-left: 7em;
-  }
-
-
-  #root {
-    width: 700px;
-    height: 1800px;
-    background-color: #302c2c33;
-    margin-left: 7em;
-  }
-
-
-
-  #columna3 {
-    width: 800px;
-    height: calc(100vh - -50em);
-    margin-top: 3em;
-    margin-right: -30em;
+    margin-right: -1em;
     background-color: #302c2cf1;
   }
 
@@ -673,9 +525,9 @@ p {
     text-align: center;
     letter-spacing: 0.30em;
     margin-right: 30em;
-    margin-left: -4em;
+    margin-left: -2em;
     margin-top: 0em;
-    font-size: 30px;
+    font-size: 25px;
     margin-bottom: 0.2em;
     font-weight: 5em;
 
@@ -685,12 +537,12 @@ p {
   .tarjetaPersonajeInfo {
     color: white;
     width: 800px;
-    height: 60px;
+    height: 35px;
     text-align: center;
     letter-spacing: 0.30em;
-    margin-left: 2em;
+    margin-left: 2.5em;
     margin-top: 0em;
-    font-size: 30px;
+    font-size: 25px;
     overflow: auto;
   }
 
@@ -699,18 +551,175 @@ p {
     height: auto;
     width: 25em;
     margin-top: 1em;
-    margin-left: -5em;
+    margin-left: -7em;
   }
 
   .imgCharacter {
-    width: 45em;
+    width: 30em;
+    margin: 0 auto;
+    display: block;
+    height: 30em;
+    object-fit: cover;
+    margin-top: 3.5em;
+    margin-bottom: 1em;
+    border-radius: 1em;
+    /* display: none; */
+  }
+}
+
+
+
+/* VISTA MOVIL */
+
+
+@media screen and (max-width: 390px) {
+
+  html {
+    background-color: black;
+
+  }
+
+  body {
+    background-image: none;
+  }
+
+
+  .logo-header {
+    height: auto;
+    width: 60em;
+    margin-left: -1em;
+  }
+
+  .logo--header {
+    height: auto;
+    width: 30%;
+    display: none;
+  }
+
+  #selectOrder {
+    height: em;
+    border-radius: 0.4em;
+    margin-left: 2em;
+    font-size: 1em;
+
+  }
+
+
+  #columna1 {
+    width: 700px;
+    height: calc(200vh - 15.625em);
+    background-color: #302c2c33;
+    margin-left: 7em;
+  }
+
+
+  #root {
+    width: 700px;
+    height: 1800px;
+    background-color: #302c2c33;
+    margin-left: 7em;
+  }
+
+
+
+  #columna3 {
+    width: 890px;
+    height: calc(100vh - -50em);
+    margin-top: 3em;
+    margin-right: -33em;
+    background-color: #302c2cf1;
+  }
+
+
+  button {
+    width: 20em;
+    height: 5em;
+    min-height: 4.3em;
+    background: #453F3F;
+    border-radius: 1.875em;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 0.625em;
+    font-size: 2em;
+  }
+
+  .informacion {
+    width: 20em;
+    height: 5em;
+    text-align: center;
+  }
+
+  .margin-top15 {
+    margin-left: 5em;
+    margin-top: -2em;
+
+  }
+
+  .filtro-personajes {
+    border-radius: 0.4em;
+    height: 3em;
+    width: auto;
+    background-color: #f5f1f142;
+    color: white;
+    font-size: 1em;
+    margin-left: 48em;
+  }
+
+  /* TARJETA PERSONAJE TITULOS */
+  .tarjetaPersonaje {
+    color: white;
+    width: 35em;
+    height: 1.5em;
+    text-align: justify;
+    letter-spacing: 0.30em;
+    margin-right: 30em;
+    margin-left: 6em;
+    margin-top: 0em;
+    font-size: 30px;
+    margin-bottom: 0.2em;
+    font-weight: 5em;
+  
+  }
+
+  /* Nos quedamos con esta */
+  .tarjetaPersonajeInfo {
+    width: 400px;
+    height: 80px;
+    font-size: 30px;
+    margin-top: -2em;
+    margin-bottom: 1em;
+    margin-left: 16em;
+    text-align: left;
+  }
+
+
+  .titlePersonajeInfo{
+    width: 400px;
+    height: 80px;
+    font-size: 30px;
+    margin-top: -2em;
+    margin-left: 16em;
+    text-align: left;
+
+  }
+  .contenedorInfo {
+
+    height: auto;
+    width: 25em;
+    margin-top: 1em;
+    margin-left: -2em;
+  }
+
+  .imgCharacter {
+    width: 52em;
     margin: 0 auto;
     display: block;
     height: 50em;
     object-fit: cover;
     margin-top: 3.5em;
     margin-bottom: 1em;
-    border-radius: 1em;
+
     /* display: none; */
   }
 
