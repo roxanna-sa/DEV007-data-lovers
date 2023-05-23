@@ -137,7 +137,6 @@ Array.from(document.getElementsByClassName("botonFamilia")).forEach(x => x.addEv
 document.querySelector("#logo-principal").addEventListener("click",limpiarFiltroFamilia);
 
 
-
 miembrosFamilia = conteoPersonajesPorFamilia(structuredClone(data.got));
 
 //PARA SACAR EL VALOR DE UNA CAJA DE TEXTO GET ELEMENTBYID().VALUE
