@@ -7,7 +7,7 @@ document.querySelector("[name='plantilla']").style.display = "none";
 let familiaSeleccionada = "";
 let miembrosFamilia = {} //acá se va a guardar un objeto, por eso está vacío
 const mediaQMovil = window.matchMedia('(max-width: 500px)');
-
+const mediaQTablet = window.matchMedia('(max-width: 820px)');
 
 /**
  * Esta función se encarga de dibujar la segunda columna
@@ -55,7 +55,7 @@ function dibujarMiembrosPantalla(){
 
   document.querySelector("#columna3").style.display = "block";
 
-  if (mediaQMovil.matches){
+  if (mediaQMovil.matches || mediaQTablet.matches){
     document.querySelector("#root").style.display = "none";
   }
 }
@@ -113,20 +113,12 @@ function seleccionarFamilia(){
   document.querySelector("#cantidadDeMiembros").style.display = "block";
   document.querySelector("#selectOrder").style.display = "block";
   
-  if(mediaQMovil.matches){
+  if (mediaQMovil.matches || mediaQTablet.matches){
     document.querySelector("#columna1").style.display = "none";
   }
 }
 
 
-function mediaQ(){
-  // console.log("mediaQ");
-  //   if (mediaQuery.matches) {
-  
-  //     document.querySelector("#columna1").style.display = "none";
-  
-  //   }
-}
 
 function limpiarFiltroFamilia(){
   Array.from(document.getElementsByClassName("botonFamilia")).forEach(x => x.classList.remove("seleccion-boton"));
@@ -143,7 +135,7 @@ document.querySelector("#selectOrder").addEventListener("change",filtro);
 document.querySelector("#inputSearch").addEventListener("keyup", filtro);
 Array.from(document.getElementsByClassName("botonFamilia")).forEach(x => x.addEventListener("click",seleccionarFamilia));
 document.querySelector("#logo-principal").addEventListener("click",limpiarFiltroFamilia);
-addEventListener("resize",mediaQ);
+
 
 
 miembrosFamilia = conteoPersonajesPorFamilia(structuredClone(data.got));

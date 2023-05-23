@@ -7,7 +7,7 @@
 @media screen and (max-width: 3000px) {
   body {
     background: black;
-    background-image: linear-gradient(rgba(0, 0, 0, 0),
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
         rgba(0, 0, 0, 0.9)), url("./img/fondoTronoDragon.jpg");
     background-attachment: fixed;
     background-position: center;
@@ -38,7 +38,7 @@
   width: auto;
   object-fit: cover;
   border-radius: 0.813em;
-}*/
+}
 
 .informacion {
   display: flex;
@@ -56,6 +56,10 @@
   font-size: 1em;
   margin-left: 6%;
   font-family: 'Montserrat';
+}
+
+.filtro-personajes:hover{
+  border: 2px solid white;
 }
 
 .input-logo{
@@ -108,7 +112,6 @@ header {
   justify-content: baseline;
   height: 2.1em;
 }
-
 
 
 /*logo Grande*/
@@ -397,7 +400,7 @@ button {
     margin-top: -15%;
   }
 
-  
+
 /* }  AQUI CIERRA EL MEDIA QUERIE DE ESCRITORIO */
 
 /* Vista IPAD */
@@ -473,7 +476,7 @@ button {
     margin-bottom: 0.625em;
     font-size: 2em;
   }
-
+ 
   .informacion {
     width: 20em;
     height: 5em;
