@@ -120,26 +120,25 @@ function seleccionarFamilia(){
 
 
 
-function limpiarFiltroFamilia(){
+/*function limpiarFiltroFamilia(){
   Array.from(document.getElementsByClassName("botonFamilia")).forEach(x => x.classList.remove("seleccion-boton"));
   document.querySelector("#root").style.display = "none";
   document.querySelector("#cantidadDeMiembros").style.display = "none";
   document.querySelector("#selectOrder").style.display = "none";
   document.querySelector("#columna3").style.display = "none";
-  
-}
+  Se usó para borrar elementos al hacer click en el logo principal, pero se decidió utilizar una etiqueta <a> en HTML para recargar el sitio 
+}*/
 
 
 
 document.querySelector("#selectOrder").addEventListener("change",filtro);
 document.querySelector("#inputSearch").addEventListener("keyup", filtro);
 Array.from(document.getElementsByClassName("botonFamilia")).forEach(x => x.addEventListener("click",seleccionarFamilia));
-document.querySelector("#logo-principal").addEventListener("click",limpiarFiltroFamilia);
+/*document.querySelector("#logo-principal").addEventListener("click",limpiarFiltroFamilia);*/
 
 
 miembrosFamilia = conteoPersonajesPorFamilia(structuredClone(data.got));
 
 //PARA SACAR EL VALOR DE UNA CAJA DE TEXTO GET ELEMENTBYID().VALUE
-
 
 
