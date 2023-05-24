@@ -1,53 +1,49 @@
 <!DOCTYPE html>
 <html>
 
-  <head>
+<head>
   <meta charset="utf-8">
   <title>Data Lovers</title>
   <link rel="stylesheet" href="style.css" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  </head>
+</head>
 
-  <body>
+<body>
 
   <header>
-    <a accesskey="h" id="home" href="../src/index.html"><img src="img/logoheader.png" class="logo-header" alt="" id="logo-principal"></a>
+    <a accesskey="h" id="home" href="../src/index.html"><img src="img/logoheader.png" class="logo-header" alt=""
+        id="logo-principal"></a>
     <img src="img/winterishere.png" class="logo--header" alt="">
   </header>
 
-    
+
   <div class="padre-elementos-superiores">
 
     <div class="input-logo">
       <input type="search" id="inputSearch" placeholder="Search by name..." class="filtro-personajes">
-      
-      <svg
-      xmlns="http://www.w3.org/2000/svg"
-      class="input-icon"
-      viewBox="0 0 20 20"
-      fill="currentColor">
 
-        <path
-          fill-rule="evenodd"
+      <svg xmlns="http://www.w3.org/2000/svg" class="input-icon" viewBox="0 0 20 20" fill="currentColor">
+
+        <path fill-rule="evenodd"
           d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
           clip-rule="evenodd">
         </path>
       </svg>
-                        
+
     </div>
 
-    <select id="selectOrder" style="display:none" class="selector-orden"> 
-      <option class= "opciones" value="">Order: Default</option>
-      <option class= "opciones" value="ascendente">Order: Ascending</option>
-      <option class= "opciones" value="descendente">Order: Descending</option>
+    <select id="selectOrder" style="display:none" class="selector-orden">
+      <option class="opciones" value="">Order: Default</option>
+      <option class="opciones" value="ascendente">Order: Ascending</option>
+      <option class="opciones" value="descendente">Order: Descending</option>
     </select>
-    
+
 
     <div class="cantidad-miembros" style="display:none" id="cantidadDeMiembros">
-      <p class="ancho-auto bold">Members :</p> 
+      <p class="ancho-auto bold"> Members :</p>
       <p class="ancho-auto bold" id="cantidadMiembros"></p>
     </div>
-     
+
   </div>
 
   <!--Columna de familias-->
@@ -131,7 +127,7 @@
     <button type="button" class="botonFamilia">
       <p class="text-center">Sand </p>
     </button>
-    
+
     <button type="button" class="botonFamilia">
       <p class="text-center">Unsullied </p>
     </button>
@@ -150,8 +146,8 @@
   </div>
 
 
- 
- <!--Columna de personajes (columna 2)-->
+
+  <!--Columna de personajes (columna 2)-->
 
 
 
@@ -171,30 +167,37 @@
       </p>
 
       <p class="tarjetaPersonaje">Last Name:</p>
+      <div class="Icono">
+              </div>
       <p id="apellidoPersonajeSeleccionado" class="tarjetaPersonajeInfo"></p>
       </p>
 
       <p class="tarjetaPersonaje">Full Name:</p>
+      <!-- <img src="img/usuario.png" alt="Icono FirstName"> -->
       <p id="nombreCompletoPersonajeSeleccionado" class="tarjetaPersonajeInfo"></p>
       </p>
 
       <p class="tarjetaPersonaje">Family:</p>
+      <!-- <img src="img/family.png" alt="Icono Family"> -->
       <p id="familiaPersonajeSeleccionado" class="tarjetaPersonajeInfo"></p>
       </p>
 
       <p class="tarjetaPersonaje">Born:</p>
+      <!-- <img src="img/fecha-de-nacimiento.png" alt="Icono Fecha de Nacimiento"> -->
       <p id="nacimientoPersonajeSeleccionado" class="tarjetaPersonajeInfo"></p>
       </p>
 
       <p class="tarjetaPersonaje">Death:</p>
+      <!-- <img src="img/espada.png" alt="Icono Fecha de Muerte"> -->
       <p id="muertePersonajeSeleccionado" class="tarjetaPersonajeInfo"></p>
       </p>
 
       <p class="tarjetaPersonaje">Title:</p>
-        <p id="tituloPersonajeSeleccionado" class="titlePersonajeInfo"></p>
-        </p>
+      <!-- <img src="img/divisa.png" alt="Icono Titulo"> -->
+      <p id="tituloPersonajeSeleccionado" class="titlePersonajeInfo"></p>
+      </p>
     </div>
-  
+
 
   </div>
 

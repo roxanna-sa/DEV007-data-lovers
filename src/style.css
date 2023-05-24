@@ -742,4 +742,15 @@ p {
     top: 50%;
     transform: translateY(-50%);
   }
+  .Icono{
+    background-color: red;
+    height: 50px;
+    width: 50px;
+   background-image: url("./img/blindaje.png");
+   background-size: 50px 50px;
+   background-repeat: no-repeat;
+   margin-top: 5em;
+   margin-left: 5em;
+   
+  }
 }
