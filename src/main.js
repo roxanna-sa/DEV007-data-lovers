@@ -7,7 +7,7 @@ document.querySelector("[name='plantilla']").style.display = "none";
 let familiaSeleccionada = "";
 let miembrosFamilia = {} //acá se va a guardar un objeto, por eso está vacío
 const mediaQMovil = window.matchMedia('(max-width: 500px)');
-const mediaQTablet = window.matchMedia('(max-width: 850px)');
+const mediaQTablet = window.matchMedia('(max-width: 855px)');
 
 /**
  * Esta función se encarga de dibujar la segunda columna
