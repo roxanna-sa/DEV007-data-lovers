@@ -7,7 +7,7 @@ document.querySelector("[name='plantilla']").style.display = "none";
 let familiaSeleccionada = "";
 let miembrosFamilia = {} //acá se va a guardar un objeto, por eso está vacío
 const mediaQMovil = window.matchMedia('(max-width: 500px)');
-const mediaQTablet = window.matchMedia('(max-width: 820px)');
+const mediaQTablet = window.matchMedia('(max-width: 855px)');
 
 /**
  * Esta función se encarga de dibujar la segunda columna
@@ -19,12 +19,7 @@ function dibujarPersonajesPantalla(listaPersonajes) {
     let plantillaActual = plantilla;
 
     plantillaActual = plantillaActual.replace("#", item.imageUrl); //pusimos # porque el [] da error en consola con la img
-    // plantillaActual = plantillaActual.replace("[PrimerNombre-Personaje]", item.firstName);
-    // plantillaActual = plantillaActual.replace("[Apellido-Personaje]", item.lastName);
     plantillaActual = plantillaActual.replace("[Nombre-Personaje]", item.fullName);
-    // plantillaActual = plantillaActual.replace("[Titulo-Personaje]", item.title);
-    // plantillaActual = plantillaActual.replace("[Fecha-Nacimiento]", item.born);
-    // plantillaActual = plantillaActual.replace("[Fecha-Muerte]", item.death);
     plantillaActual = plantillaActual.replace("[id]",item.id);
     // es lo mismo que el if
     // plantillaActual = plantillaActual.replace("[Casa-Personaje]", (item.family === "" ? "-" : item.family)); // ?= entonces : = si no (lo hago de esta forma por si hay campos vacíos)
@@ -68,8 +63,6 @@ function filtro(){
   filtrados = filtrarFamilias(filtrados, familiaSeleccionada); //hace el filtro por familia y guarda esa lista ordenada en la variable filtrados
   console.log(filtrados)
 
-
-
   //Proceso 2: hacer orden AZ/ZA acá
   const tipoDeOrden = document.getElementById('selectOrder').value;
   if (tipoDeOrden !== "") {
@@ -78,11 +71,11 @@ function filtro(){
 
   // Proceso 3: Hacer filtro por input de texto
   const fullName = document.getElementById('inputSearch').value;
-  filtrados = filtrarNombres(filtrados, fullName);
-
+    filtrados = filtrarNombres(filtrados, fullName);
+    
   // Proceso Final: Dibujar el resultado de los proceso en pantalla
   dibujarPersonajesPantalla(filtrados);
-  
+    
 }
 
 
@@ -118,6 +111,12 @@ function seleccionarFamilia(){
   }
 }
 
+document.querySelector("#selectOrder").addEventListener("change",filtro);
+document.querySelector("#inputSearch").addEventListener("keyup", filtro);
+Array.from(document.getElementsByClassName("botonFamilia")).forEach(x => x.addEventListener("click",seleccionarFamilia));
+
+miembrosFamilia = conteoPersonajesPorFamilia(structuredClone(data.got));
+
 
 
 /*function limpiarFiltroFamilia(){
@@ -129,15 +128,7 @@ function seleccionarFamilia(){
   Se usó para borrar elementos al hacer click en el logo principal, pero se decidió utilizar una etiqueta <a> en HTML para recargar el sitio 
 }*/
 
-
-
-document.querySelector("#selectOrder").addEventListener("change",filtro);
-document.querySelector("#inputSearch").addEventListener("keyup", filtro);
-Array.from(document.getElementsByClassName("botonFamilia")).forEach(x => x.addEventListener("click",seleccionarFamilia));
 /*document.querySelector("#logo-principal").addEventListener("click",limpiarFiltroFamilia);*/
-
-
-miembrosFamilia = conteoPersonajesPorFamilia(structuredClone(data.got));
 
 //PARA SACAR EL VALOR DE UNA CAJA DE TEXTO GET ELEMENTBYID().VALUE
 

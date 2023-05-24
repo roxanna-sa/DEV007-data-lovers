@@ -25,6 +25,7 @@ function orderByFullName(a,b){
   }
 }
 
+//Filtro por familias
 export const filtrarFamilias = (data, seleccionDeCasa) => {
   const filtrar = data.got.filter(casa => casa.family.toLowerCase().includes(seleccionDeCasa))
   /*
