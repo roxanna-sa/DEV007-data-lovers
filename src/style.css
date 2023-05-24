@@ -96,6 +96,7 @@ h1 {
 header {
   display: flex;
   align-items: center;
+
 }
 
 #columna3 {
@@ -119,7 +120,6 @@ header {
 .logo-header {
   height: 12em;
   width: auto;
-
 }
 
 /*logo secundario*/
@@ -127,11 +127,6 @@ header {
   height: 2em;
   width: auto;
 
-}
-
-header {
-  display: flex;
-  align-items: center;
 }
 
 
@@ -410,14 +405,14 @@ p {
 
 /* Vista IPAD */
 
-@media screen and (max-width: 855px) {
+@media screen and (min-width: 680px) and (max-width: 848px) {
 
   html {
     background-color: black;
   }
 
   body {
-
+    
     background-color: black;
     background-image: none;
   }
@@ -445,7 +440,7 @@ p {
 
   #columna1 {
     width: 700px;
-    height: calc(100vh - 15.625em);
+    height: auto;
     background-color: #302c2c33;
     margin-left: 8em;
   }
@@ -453,7 +448,7 @@ p {
 
   #root {
     width: 700px;
-    height: calc(100vh - 15.625em);
+    height: auto;
     background-color: #302c2c33;
     margin-left: 8em;
   }
@@ -477,9 +472,8 @@ p {
 
   #columna3 {
     width: 700px;
-    height: 1100px;
+    height: auto;
     margin-top: 1em;
-
     margin-right: -1em;
     background-color: #302c2cf1;
   }
@@ -575,7 +569,7 @@ p {
 /* VISTA MOVIL */
 
 
-@media screen and (max-width: 500px) {
+@media screen and (min-width: 320px) and (max-width: 480px) {
 
   html {
     background-color: black;
@@ -594,13 +588,12 @@ p {
   }
 
   .logo--header {
-    height: auto;
-    width: 30%;
+   
     display: none;
   }
 
   #selectOrder {
-    height: em;
+    height: 3em;
     border-radius: 0.4em;
     margin-left: 2em;
     font-size: 1em;
@@ -610,7 +603,7 @@ p {
 
   #columna1 {
     width: 700px;
-    height: calc(200vh - 15.625em);
+    height:auto;
     background-color: #302c2c33;
     margin-left: 7em;
   }
@@ -618,7 +611,7 @@ p {
 
   #root {
     width: 700px;
-    height: 1800px;
+    height: auto;
     background-color: #302c2c33;
     margin-left: 7em;
   }
@@ -627,9 +620,9 @@ p {
 
   #columna3 {
     width: 890px;
-    height: calc(100vh - -50em);
+    height: auto;
     margin-top: 3em;
-    margin-right: -33em;
+    margin-right: -33.4em;
     background-color: #302c2cf1;
   }
 
@@ -639,7 +632,6 @@ p {
     height: 5em;
     min-height: 4.3em;
     background: #453F3F;
-    border-radius: 1.875em;
     text-align: center;
     margin: 0 auto;
     display: block;
