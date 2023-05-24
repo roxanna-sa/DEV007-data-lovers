@@ -99,12 +99,12 @@ header {
 }
 
 #columna3 {
-    width: 400px;
-    height:auto;
-    /*height: calc(100vh - 15.625em);*/
-    margin-top: 0em;
-    margin-left: -15em;
-    
+  width: 400px;
+  height: auto;
+  /*height: calc(100vh - 15.625em);*/
+  margin-top: 0em;
+  margin-left: -15em;
+
 }
 
 
@@ -251,7 +251,7 @@ p {
   height: calc(100vh - 14.375em);
   border-radius: 1.875em;
   margin-right: 5em;
-  border:5px;
+  border: 5px;
   border-style: double dotted;
   border-color: rgba(172, 169, 169, 0.3);
 }
@@ -303,10 +303,17 @@ p {
 }
 
 /*cantidad de miembros por familia en pantalla*/
-.cantidad-miembros {
-  display: flex;
-  font-weight: bolder;
-  font-family: 'Montserrat';
+.Members{
+  font-size: 20px;
+  margin-left: 1em;
+  
+ 
+}
+.cantidadMembers{
+  font-size: 20px;
+  margin-left: 9em;
+
+ 
 }
 
 /*clase reutilizable*/
@@ -375,12 +382,12 @@ p {
   margin-top: 0%;
   width: 300px;
   height: 20px;
-  text-align: center;
+  text-align: justify;
   letter-spacing: 0.30em;
   margin-top: -2%;
-  margin-left: 15%;
-  font-size: 15px;
-  font-weight: 600;
+  margin-left: 5em;
+  font-size: 13px;
+  font-weight: 400;
   margin-bottom: 1%;
   font-family: 'Montserrat';
 }
@@ -390,21 +397,104 @@ p {
   margin-top: 0%;
   width: 300px;
   height: 50px;
-  text-align: center;
+  text-align: justify;
   letter-spacing: 0.30em;
-  margin-left: 15%;
-  margin-top: -1%;
-  font-size: 15px;
+  margin-left: 15em;
+  margin-top: -6%;
+  font-size: 13px;
   margin-bottom: 0%;
+}
+
+.titlePersonajeInfo {
+  width: 150px;
+  height: 100px;
+  font-size: 14px;
+  margin-top: -2em;
+  margin-left: 15em;
+  text-align: left;
+  font-size: 13px;
+
+
 }
 
 /* DIV PARA CENTRAR TEXTO TARJETA PERSONAJE */
 .contenedorInfo {
   height: 400px;
   width: 400px;
-  margin-top: -15%;
+  margin-top: 3em;
 }
 
+
+.IconoLastName {
+  height: 25px;
+  width: 25px;
+  background-image: url("./img/blindaje.png");
+  background-size: 25px 25px;
+  background-repeat: no-repeat;
+  margin-top: -23em;
+  margin-left: 1em;
+
+}
+
+.IconoFirstName {
+  height: 25px;
+  width: 25px;
+  background-image: url("./img/usuario.png");
+  background-size: 25px 25px;
+  background-repeat: no-repeat;
+  margin-top: -4.5em;
+  margin-left: 1em;
+}
+
+.IconoFullName {
+  height: 25px;
+  width: 25px;
+  background-image: url("./img/FullName.png");
+  background-size: 25px 25px;
+  background-repeat: no-repeat;
+  margin-top: 4em;
+  margin-left: 1em;
+}
+
+.IconoFamily {
+  height: 30px;
+  width: 30px;
+  background-image: url("./img/family.png");
+  background-size: 30px 30px;
+  background-repeat: no-repeat;
+  margin-top: 1em;
+  margin-left: 1em;
+}
+
+.IconoBorn {
+  height: 23px;
+  width: 23px;
+  background-image: url("./img/fecha-de-nacimiento.png");
+  background-size: 23px 23px;
+  background-repeat: no-repeat;
+  margin-top: 0.8em;
+  margin-left: 1em;
+}
+
+.IconoDeath {
+  height: 23px;
+  width: 23px;
+  background-image: url("./img/espada.png");
+  background-size: 23px 23px;
+  background-repeat: no-repeat;
+  margin-top: 1.3em;
+  margin-left: 1em;
+}
+
+.IconoTitle {
+  height: 30px;
+  width: 30px;
+  background-image: url("./img/title.png");
+  background-size: 30px 30px;
+  background-repeat: no-repeat;
+  margin-top: 1em;
+  margin-left: 1em;
+}
 
 /* }  AQUI CIERRA EL MEDIA QUERIE DE ESCRITORIO */
 
@@ -523,38 +613,47 @@ p {
   /* TARJETA PERSONAJE TITULOS */
   .tarjetaPersonaje {
     color: white;
-    width: 40em;
+    width: 35em;
     height: 1.5em;
-    text-align: center;
+    text-align: justify;
     letter-spacing: 0.30em;
     margin-right: 30em;
-    margin-left: -2em;
-    margin-top: 0em;
+    margin-left: 6em;
+    margin-top: 1em;
     font-size: 25px;
-    margin-bottom: 0.2em;
+    margin-bottom: 0em;
     font-weight: 5em;
 
   }
 
   /* Nos quedamos con esta */
   .tarjetaPersonajeInfo {
-    color: white;
-    width: 800px;
-    height: 35px;
-    text-align: center;
-    letter-spacing: 0.30em;
-    margin-left: 2.5em;
-    margin-top: 0em;
+    width: 200px;
+    height: 30px;
     font-size: 25px;
-    overflow: auto;
+    margin-top: -1.5em;
+    margin-bottom: 1em;
+    margin-left: 15.5em;
+    text-align: left;
+  }
+
+
+  .titlePersonajeInfo {
+    width: 300px;
+    height: 50px;
+    font-size: 25px;
+    margin-top: -2.5em;
+    margin-left: 15.5em;
+    text-align: left;
+
   }
 
   .contenedorInfo {
 
     height: auto;
     width: 25em;
-    margin-top: 1em;
-    margin-left: -7em;
+    margin-top: -2em;
+    margin-left: -2em;
   }
 
   .imgCharacter {
@@ -566,7 +665,87 @@ p {
     margin-top: 3.5em;
     margin-bottom: 1em;
     border-radius: 1em;
-    /* display: none; */
+     }
+  .IconoFirstName {
+    height: 40px;
+    width: 40px;
+    background-image: url("./img/usuario.png");
+    background-size: 40px 40px;
+    background-repeat: no-repeat;
+    margin-top: -7em;
+    margin-left: 3em;
+  }
+
+  .IconoLastName {
+    height: 40px;
+    width: 40px;
+    background-image: url("./img/blindaje.png");
+    background-size: 40px 40px;
+    background-repeat: no-repeat;
+    margin-top: 7em;
+    margin-left: 3em;
+
+  }
+
+  .IconoFullName {
+    height: 40px;
+    width: 40px;
+    background-image: url("./img/FullName.png");
+    background-size: 40px 40px;
+    background-repeat: no-repeat;
+    margin-top: 7em;
+    margin-left: 3em;
+  }
+
+  .IconoFamily {
+    height: 60px;
+    width: 60px;
+    background-image: url("./img/family.png");
+    background-size: 60px 60px;
+    background-repeat: no-repeat;
+    margin-top: 2em;
+    margin-left: 3em;
+  }
+
+  .IconoBorn {
+    height: 40px;
+    width: 40px;
+    background-image: url("./img/fecha-de-nacimiento.png");
+    background-size: 40px 40px;
+    background-repeat: no-repeat;
+    margin-top: 2em;
+    margin-left: 3em;
+  }
+
+  .IconoDeath {
+    height: 40px;
+    width: 40px;
+    background-image: url("./img/espada.png");
+    background-size: 40px 40px;
+    background-repeat: no-repeat;
+    margin-top: 3em;
+    margin-left: 3em;
+  }
+
+  .IconoTitle {
+    height: 60px;
+    width: 60px;
+    background-image: url("./img/title.png");
+    background-size: 60px 60px;
+    background-repeat: no-repeat;
+    margin-top: 2em;
+    margin-left: 3em;
+  }
+  .Members{
+    font-size: 25px;
+    margin-left: 1em;
+    
+   
+  }
+  .cantidadMembers{
+    font-size: 25px;
+    margin-left: 9em;
+   
   }
 }
 
@@ -602,7 +781,7 @@ p {
   #selectOrder {
     height: em;
     border-radius: 0.4em;
-    margin-left: 2em;
+    margin-left: -1em;
     font-size: 1em;
 
   }
@@ -682,7 +861,7 @@ p {
     font-size: 30px;
     margin-bottom: 0.2em;
     font-weight: 5em;
-  
+
   }
 
   /* Nos quedamos con esta */
@@ -697,7 +876,7 @@ p {
   }
 
 
-  .titlePersonajeInfo{
+  .titlePersonajeInfo {
     width: 400px;
     height: 80px;
     font-size: 30px;
@@ -706,6 +885,7 @@ p {
     text-align: left;
 
   }
+
   .contenedorInfo {
 
     height: auto;
@@ -742,15 +922,77 @@ p {
     top: 50%;
     transform: translateY(-50%);
   }
-  .Icono{
-    background-color: red;
+
+  .IconoFirstName {
+
     height: 50px;
     width: 50px;
-   background-image: url("./img/blindaje.png");
-   background-size: 50px 50px;
-   background-repeat: no-repeat;
-   margin-top: 5em;
-   margin-left: 5em;
-   
+    background-image: url("./img/usuario.png");
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
+    margin-top: -9em;
+    margin-left: 3em;
   }
+
+  .IconoLastName {
+    height: 50px;
+    width: 50px;
+    background-image: url("./img/blindaje.png");
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
+    margin-top: 7em;
+    margin-left: 3em;
+
+  }
+
+  .IconoFullName {
+    height: 50px;
+    width: 50px;
+    background-image: url("./img/FullName.png");
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
+    margin-top: 9em;
+    margin-left: 3em;
+  }
+
+  .IconoFamily {
+    height: 70px;
+    width: 70px;
+    background-image: url("./img/family.png");
+    background-size: 70px 70px;
+    background-repeat: no-repeat;
+    margin-top: 3em;
+    margin-left: 3em;
+  }
+
+  .IconoBorn {
+    height: 50px;
+    width: 50px;
+    background-image: url("./img/fecha-de-nacimiento.png");
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
+    margin-top: 2em;
+    margin-left: 3em;
+  }
+
+  .IconoDeath {
+    height: 50px;
+    width: 50px;
+    background-image: url("./img/espada.png");
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
+    margin-top: 3em;
+    margin-left: 3em;
+  }
+
+  .IconoTitle {
+    height: 70px;
+    width: 70px;
+    background-image: url("./img/title.png");
+    background-size: 70px 70px;
+    background-repeat: no-repeat;
+    margin-top: 3em;
+    margin-left: 3em;
+  }
+
 }
