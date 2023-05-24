@@ -410,7 +410,7 @@ p {
 
 /* Vista IPAD */
 
-@media screen and (max-width: 820px) {
+@media screen and (max-width: 840px) {
 
   html {
     background-color: black;
@@ -575,7 +575,7 @@ p {
 /* VISTA MOVIL */
 
 
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 500px) {
 
   html {
     background-color: black;
