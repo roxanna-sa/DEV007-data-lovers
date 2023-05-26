@@ -101,12 +101,6 @@ Una vez recibimos feedback de nuestros usuarios respecto a los prototipos de baj
 
 
 # 5. Interfaz
-Una vez recibido el feedback por parte de los usuarios de nuestro prototipo de alta fidelidad empezamos a codear y actualmente nuestra interfaz luce así:
-
-#### Interfaz desktop
-##### Página de Inicio
-##### Lista desplegada de personas 
-##### Muestra de tarjeta de personaje en Pantalla. 
 
 
 
