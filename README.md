@@ -15,7 +15,8 @@
 
 El proyecto es una visualización sencilla de un conjunto de datos, en este caso, de los personajes de la 
 serie Game of Thrones transmitida por HBO y basada en los libros de George RR Martin.
-Permite ordenar, filtrar, buscar y contar.
+Permite ordenar, filtrar, buscar y contar. 
+Está pensado y diseñado para ser el apartado de personajes de un sitio web que incopore mayor información sobre el universo de GoT.
 
 # 2. Usuarios
 
@@ -104,6 +105,7 @@ cómodo ahorrarles tanto clicks para poder interactuar con nuestro sitio.
 
 # 5. Interfaz
 
+¿Estás interesado en conocer nuestro proyecto? Puedes hacer click en el siguiente enlace: [Proyecto GoT](https://roxanna-sa.github.io/DEV007-data-lovers/)
 
 
 
