@@ -109,13 +109,6 @@ header {
 }
 
 
-.informacion {
-  display: flex;
-  justify-content: baseline;
-  height: 2.1em;
-}
-
-
 /*logo Grande*/
 .logo-header {
   height: 12em;
@@ -298,17 +291,18 @@ p {
 }
 
 /*cantidad de miembros por familia en pantalla*/
-.Members{
+.Members {
   font-size: 20px;
   margin-left: 1em;
-  
- 
+
+
 }
-.cantidadMembers{
+
+.cantidadMembers {
   font-size: 20px;
   margin-left: 9em;
 
- 
+
 }
 
 /*clase reutilizable*/
@@ -502,7 +496,7 @@ p {
   }
 
   body {
-    
+
     background-color: black;
     background-image: none;
   }
@@ -573,9 +567,7 @@ p {
     width: 20em;
     height: 5em;
     min-height: 4.3em;
-    background: #453F3F;
-    border-radius: 1.875em;
-    text-align: center;
+     text-align: center;
     margin: 0 auto;
     display: block;
     margin-bottom: 0.625em;
@@ -659,7 +651,8 @@ p {
     margin-top: 3.5em;
     margin-bottom: 1em;
     border-radius: 1em;
-     }
+  }
+
   .IconoFirstName {
     height: 40px;
     width: 40px;
@@ -730,16 +723,18 @@ p {
     margin-top: 2em;
     margin-left: 3em;
   }
-  .Members{
+
+  .Members {
     font-size: 25px;
     margin-left: 1em;
-    
-   
+
+
   }
-  .cantidadMembers{
+
+  .cantidadMembers {
     font-size: 25px;
     margin-left: 9em;
-   
+
   }
 }
 
@@ -767,7 +762,7 @@ p {
   }
 
   .logo--header {
-   
+
     display: none;
   }
 
@@ -782,7 +777,7 @@ p {
 
   #columna1 {
     width: 700px;
-    height:auto;
+    height: auto;
     background-color: #302c2c33;
     margin-left: 7em;
   }
@@ -810,7 +805,6 @@ p {
     width: 20em;
     height: 5em;
     min-height: 4.3em;
-    background: #453F3F;
     text-align: center;
     margin: 0 auto;
     display: block;
