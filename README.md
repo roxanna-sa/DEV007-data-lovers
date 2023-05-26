@@ -38,6 +38,8 @@ móvil.
 
 Para eso, decidimos crear un sitio que nos mostrara la foto de cada personaje junto con su data principal.
 
+<img src="./img/HU1.jpg">
+
 ## Historia de usuario 2.1 (Filtrar la data):
 
 Para las usuarias, es importante poder buscar dentro del sitio el personaje que desean revisar, sin necesidad
@@ -45,11 +47,15 @@ de tener que leer todas las tarjetas.
 Para eso, se crea una barra de búsqueda, donde mediante un input de búsqueda, el sitio devuelve las coincidencias con el texto
 que se ha ingresado.
 
+<img src="./img/HU2.1.jpg">
+
 ## Historia de usuario 2.2 (Filtrar la data):
 
 Las usuarias también han manifestado la importancia de poder filtrar los personajes según un atributo muy 
 importante en la serie: sus casas o familias. 
 Para ello, se crean botones asignados a cada familia que permiten acceder únicamente a sus miembros.
+
+<img src="./img/HU2.2.jpg">
 
 ## Historia de usuario 3 (Ordenar A-Z/Z-A):
 
@@ -58,11 +64,15 @@ personajes, es importante para las usuarias poder ordenarlos de manera alfabéti
 descendente. Para este propósito, se creó un selector de orden que permite traer los personajes en el orden
 elegido.
 
+<img src="./img/HU3.jpg">
+
 ## Historia de usuario 4 (Conteo):
 
 La usuaria quiere saber la cantidad de integrantes que tiene cada una de las casas al hacer click en su
 respectivo botón. Para ello, se ha dispuesto de un contador de miembros en la parte superior del despliegue
 de los mismos.
+
+<img src="./img/HU4.jpg">
 
 
 # 4. Prototipos
@@ -71,11 +81,15 @@ Quisimos diseñar una interfaz que adaptada al feedback de nuestras historias de
 pensamos en una interfaz que tuviera una lista desplegable de las familias de la Serie GOT, y que una vez que el usuario seleccione
 la familia que desea ver, se le desplegara otra lista en donde podría ver todos los integrantes de esa familia y a su vez poder seleccionar
 de que personaje quisiera ver los detalles. y Al seleccionar el personaje se le despliega la tarjeta con toda la data del persona seleccionado
+
+
 <img src="./img/prototipoBajaEscritorio.jpg">
 
 Y diseñamos nuestro protipo de baja fidelidad para móvil, en la siguiente imagen se puede apreciar como se vería la trajeta del personaje de GOT en 
 dispositivo movil:
-<img src="./img/PrototipoBajaMovil.jpg">
+
+<img src="./img/PrototipodeBajaMovil.jpg">
+
 Una vez recibimos feedback de nuestros usuarios respecto a los prototipos de baja fidelidad, realizamos los de alta fidelidad en Figma y este fue el resultado:
 
 
