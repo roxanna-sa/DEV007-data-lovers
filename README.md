@@ -97,6 +97,8 @@ Una vez recibimos feedback de nuestros usuarios respecto a los prototipos de baj
 <img src="./img/PrototipodeAlta.png">
 
 #### Prototipo de alta Móvil
+En nuestra interfaz móvil decidimos no hacer la vista inicio de página ya que el feedback recibido por parte de nuestros usuarios fue que seria mucho más
+cómodo ahorrarles tanto clicks para poder interactuar con nuestro sitio. 
 <img src="./img/prototipomovilfigma.png">
 
 
