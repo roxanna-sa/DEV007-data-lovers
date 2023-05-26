@@ -27,7 +27,7 @@ la data.
 
 ## 3. Objetivos de aprendizaje
 
-Historia de usuario 1 (visualizar la data):
+#Historia de usuario 1 (visualizar la data):
 
 La usuaria gusta de ver la serie cada cierto tiempo. Ya ha terminado sus ocho temporadas en más de una ocasión,
 sin embargo, considera que los nombres, apellidos y casas son muy complicados de memorizar, por lo que siempre
@@ -38,27 +38,27 @@ móvil.
 
 Para eso, decidimos crear un sitio que nos mostrara la foto de cada personaje junto con su data principal.
 
-Historia de usuario 2.1 (Filtrar la data):
+#Historia de usuario 2.1 (Filtrar la data):
 
 Para las usuarias, es importante poder buscar dentro del sitio el personaje que desean revisar, sin necesidad
 de tener que leer todas las tarjetas. 
 Para eso, se crea una barra de búsqueda, donde mediante un input de búsqueda, el sitio devuelve las coincidencias con el texto
 que se ha ingresado.
 
-Historia de usuario 2.2 (Filtrar la data):
+#Historia de usuario 2.2 (Filtrar la data):
 
 Las usuarias también han manifestado la importancia de poder filtrar los personajes según un atributo muy 
 importante en la serie: sus casas o familias. 
 Para ello, se crean botones asignados a cada familia que permiten acceder únicamente a sus miembros.
 
-Historia de usuario 3 (Ordenar A-Z/Z-A):
+#Historia de usuario 3 (Ordenar A-Z/Z-A):
 
 Se ha llegado también a la conclusión de que una vez seleccionada una casa o la vista general de todos los 
 personajes, es importante para las usuarias poder ordenarlos de manera alfabética, tanto ascendente como
 descendente. Para este propósito, se creó un selector de orden que permite traer los personajes en el orden
 elegido.
 
-Historia de usuario 4 (Conteo):
+#Historia de usuario 4 (Conteo):
 
 La usuaria quiere saber la cantidad de integrantes que tiene cada una de las casas al hacer click en su
 respectivo botón. Para ello, se ha dispuesto de un contador de miembros en la parte superior del despliegue
