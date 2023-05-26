@@ -83,7 +83,7 @@ la familia que desea ver, se le desplegara otra lista en donde podría ver todos
 de que personaje quisiera ver los detalles. y Al seleccionar el personaje se le despliega la tarjeta con toda la data del persona seleccionado
 
 
-<img src="./img/prototipoBajaEscritorio.jpg">
+<img src="./img/PrototipodeBajaEscritorio.jpg">
 
 Y diseñamos nuestro protipo de baja fidelidad para móvil, en la siguiente imagen se puede apreciar como se vería la trajeta del personaje de GOT en 
 dispositivo movil:
