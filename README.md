@@ -88,7 +88,7 @@ de que personaje quisiera ver los detalles. y Al seleccionar el personaje se le 
 Y diseñamos nuestro protipo de baja fidelidad para móvil, en la siguiente imagen se puede apreciar como se vería la trajeta del personaje de GOT en 
 dispositivo movil:
 
-<img src="./img/PrototipodeBajaMovil.jpg">
+<img src="./img/PrototipoBajaMovil.jpg">
 
 Una vez recibimos feedback de nuestros usuarios respecto a los prototipos de baja fidelidad, realizamos los de alta fidelidad en Figma y este fue el resultado:
 
