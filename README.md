@@ -25,7 +25,7 @@ Además de entregar los datos mencionados anteriormente, el proyecto permite sab
 muerte de cada personaje. También se muestra la cantidad de miembros que pertenecen a casa del total que alberga
 la data.
 
-# 3. Objetivos de aprendizaje
+# 3. Historias de usuario
 
 ## Historia de usuario 1 (visualizar la data):
 
