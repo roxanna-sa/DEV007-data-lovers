@@ -66,9 +66,12 @@ de los mismos.
 
 
 # 4. Prototipos
-
-Prueba
-
+Basadas en nuestras Historias de usuario comenzamos haciendo nuestros prototipos de baja fidelidad para desktop y móvil. 
+Quisimos diseñar una interfaz que adaptada al feedback de nuestras historias de usuario, como se puede ver en la siguiente imagen,
+pensamos en una interfaz que tuviera una lista desplegable de las familias de la Serie GOT, y que una vez que el usuario seleccione
+la familia que desea ver, se le desplegara otra lista en donde podría ver todos los integrantes de esa familia y a su vez poder seleccionar
+de que personaje quisiera ver los detalles. y Al seleccionar el personaje se le despliega la tarjeta con toda la data del persona seleccionado
+<img src="./images/prototipoBajaEscritorio">
 
 # 5. Interfaz
 
