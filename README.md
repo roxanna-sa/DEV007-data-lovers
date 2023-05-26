@@ -71,7 +71,22 @@ Quisimos diseñar una interfaz que adaptada al feedback de nuestras historias de
 pensamos en una interfaz que tuviera una lista desplegable de las familias de la Serie GOT, y que una vez que el usuario seleccione
 la familia que desea ver, se le desplegara otra lista en donde podría ver todos los integrantes de esa familia y a su vez poder seleccionar
 de que personaje quisiera ver los detalles. y Al seleccionar el personaje se le despliega la tarjeta con toda la data del persona seleccionado
-<img src="./images/prototipoBajaEscritorio">
+<img src="./img/prototipoBajaEscritorio.jpg">
+
+Y diseñamos nuestro protipo de baja fidelidad para móvil, en la siguiente imagen se puede apreciar como se vería la trajeta del personaje de GOT en 
+dispositivo movil:
+<img src="./img/PrototipoBajaMovil.jpg">
+Una vez recibimos feedback de nuestros usuarios respecto a los prototipos de baja fidelidad, realizamos los de alta fidelidad en Figma y este fue el resultado:
+
+
+#### Prototipo de alta fidelidad
+<img src="./img/PrototipodeAlta.png">
+
+#### Prototipo de alta Móvil
+<img src="./img/prototipomovilfigma.png">
+
 
 # 5. Interfaz
+
+
 
