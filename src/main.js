@@ -119,7 +119,7 @@ function seleccionarFamilia(){
 }
 
 document.querySelector("#selectOrder").addEventListener("change",filtro);
-document.querySelector("#inputSearch").addEventListener("keyup", filtro);
+document.querySelector("#inputSearch").addEventListener("keyup", filtrarSinSeleccion);
 Array.from(document.getElementsByClassName("botonFamilia")).forEach(x => x.addEventListener("click",seleccionarFamilia));
 
 miembrosFamilia = conteoPersonajesPorFamilia(structuredClone(data.got));
