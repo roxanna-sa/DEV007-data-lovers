@@ -78,7 +78,14 @@ function filtro(){
     
 }
 
+function filtrarSinSeleccion(){
 
+  document.querySelector("#root").style.display = "block";
+  document.querySelector("#columna3").style.display = "none";
+  familiaSeleccionada="";
+  filtro();
+  
+}
 //vincular botones html a JS
 function seleccionarFamilia(){
   Array.from(document.getElementsByClassName("botonFamilia")).forEach(x => x.classList.remove("seleccion-boton")); //quitar clase "seleccion-boton" a todos los botones que tengan la clase botón familia
@@ -112,7 +119,7 @@ function seleccionarFamilia(){
 }
 
 document.querySelector("#selectOrder").addEventListener("change",filtro);
-document.querySelector("#inputSearch").addEventListener("keyup", filtro);
+document.querySelector("#inputSearch").addEventListener("keyup", filtrarSinSeleccion);
 Array.from(document.getElementsByClassName("botonFamilia")).forEach(x => x.addEventListener("click",seleccionarFamilia));
 
 miembrosFamilia = conteoPersonajesPorFamilia(structuredClone(data.got));
