@@ -1,18 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap');
 
 * {
-  margin: 0em;
+  margin: 0;
 }
-
 
 body {
   background: black;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.9)), url("./img/fondoTronoDragon.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.9)), url("./img/fondoTronoDragon.jpg");
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
-
 }
 
 h1 {
@@ -29,8 +26,6 @@ h1 {
   width: 400px;
   height: calc(100vh - 15.625em);
 }
-
-
 
 .imagen-personaje {
 
@@ -77,8 +72,6 @@ h1 {
   transform: translateY(-50%);
 }
 
-
-
 /*logo Grande*/
 .logo-header {
   height: 12em;
@@ -90,13 +83,11 @@ h1 {
 .logo--header {
   height: 2em;
   width: auto;
-
 }
 
 header {
   display: flex;
   align-items: center;
-
 }
 
 #columna3 {
@@ -104,9 +95,7 @@ header {
   height: calc(100vh - 15.625em);
   margin-top: 0em;
   margin-left: -15em;
-
 }
-
 
 /*logo Grande*/
 .logo-header {
@@ -118,9 +107,7 @@ header {
 .logo--header {
   height: 2em;
   width: auto;
-
 }
-
 
 /*los botones*/
 button {
@@ -141,7 +128,6 @@ button {
   color: rgba(255, 255, 255, 1);
   box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.1);
   text-decoration: none;
-
 }
 
 
@@ -183,9 +169,6 @@ button:hover:after {
 button:hover:before {
   left: 130%;
 }
-
-
-
 
 /*imagen personaje en boton*/
 .imagen-personaje {
@@ -243,7 +226,6 @@ p {
   border-color: rgba(172, 169, 169, 0.3);
 }
 
-
 /*parrafo columna*/
 .tarjeta p {
   line-height: normal;
@@ -272,8 +254,6 @@ p {
 .padre-elementos-superiores {
   display: flex;
   align-items: baseline;
-  /*background: rgba(0, 0, 0, 0.25)*/
-
 }
 
 /*columna 1&2*/
@@ -293,15 +273,11 @@ p {
 .Members {
   font-size: 20px;
   margin-left: 1em;
-
-
 }
 
 .cantidadMembers {
   font-size: 20px;
   margin-left: 9em;
-
-
 }
 
 /*clase reutilizable*/
@@ -317,7 +293,6 @@ p {
 /*botón al ser seleccionado*/
 .seleccion-boton {
   background: #D9D9D9;
-  /* border: 1px solid #000000; */
   box-shadow: 0em 0.25em 0.25em rgba(0, 0, 0, 0.25);
 }
 
@@ -336,7 +311,6 @@ p {
   font-size: 1em;
   background: white;
 }
-
 
 /* Scrollbar*/
 
