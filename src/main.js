@@ -1,5 +1,5 @@
 import { filtrarFamilias, ordenAlfabetico, filtrarNombres, conteoPersonajesPorFamilia } from "./data.js";
-import data from "./data/got/got.js";
+//import data from "./data/got/got.js";
 
 
 const plantilla = document.querySelector("[name='plantilla']").outerHTML;
@@ -115,21 +115,17 @@ document.querySelector("#selectOrder").addEventListener("change",filtro);
 document.querySelector("#inputSearch").addEventListener("keyup", filtro);
 Array.from(document.getElementsByClassName("botonFamilia")).forEach(x => x.addEventListener("click",seleccionarFamilia));
 
+async function getText(file) {
+  let objetoEncontrado = await fetch(file);
+  let contenidoObjeto = await objetoEncontrado.text();
+  return contenidoObjeto;
+}
+
+const dataTraida = await getText("./data/got/got.json");
+const data = JSON.parse(dataTraida);
+
+
 miembrosFamilia = conteoPersonajesPorFamilia(structuredClone(data.got));
 
-
-
-/*function limpiarFiltroFamilia(){
-  Array.from(document.getElementsByClassName("botonFamilia")).forEach(x => x.classList.remove("seleccion-boton"));
-  document.querySelector("#root").style.display = "none";
-  document.querySelector("#cantidadDeMiembros").style.display = "none";
-  document.querySelector("#selectOrder").style.display = "none";
-  document.querySelector("#columna3").style.display = "none";
-  Se usó para borrar elementos al hacer click en el logo principal, pero se decidió utilizar una etiqueta <a> en HTML para recargar el sitio 
-}*/
-
-/*document.querySelector("#logo-principal").addEventListener("click",limpiarFiltroFamilia);*/
-
-//PARA SACAR EL VALOR DE UNA CAJA DE TEXTO GET ELEMENTBYID().VALUE
 
 
