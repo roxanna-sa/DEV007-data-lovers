@@ -29,8 +29,7 @@ function dibujarPersonajesPantalla(listaPersonajes) {
   Array.from(document.getElementsByClassName("botonPersonaje")).forEach(x => x.addEventListener("click",dibujarMiembrosPantalla));
   
 }
-//Actualizado 15/mayo= Ya no la usamos porque no necesitamos mostrar todos los pjs
-//dibujarPersonajesPantalla(data.got); //le mando todos los personajes a la función que tiene el parámetro listaPersonajes (al cargar la página)
+
 function dibujarMiembrosPantalla(){
   Array.from(document.getElementsByClassName("botonPersonaje")).forEach(x => x.classList.remove("seleccion-boton")); //quitar clase "seleccion-boton" a todos los botones que tengan la clase botón familia
   this.classList.add("seleccion-boton"); //Agregar clase selección botón al botón que se le hace click
@@ -60,7 +59,6 @@ function filtro(){
   // Proceso 1: Filtro por familia
 
   filtrados = filtrarFamilias(filtrados, familiaSeleccionada); //hace el filtro por familia y guarda esa lista ordenada en la variable filtrados
-  console.log(filtrados)
 
   //Proceso 2: hacer orden AZ/ZA acá
   const tipoDeOrden = document.getElementById('selectOrder').value;
@@ -82,7 +80,7 @@ function filtrarSinSeleccion(){
 
   document.querySelector("#root").style.display = "block";
   document.querySelector("#columna3").style.display = "none";
-  familiaSeleccionada="";
+  familiaSeleccionada= "";
   filtro();
   
 }
