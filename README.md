@@ -77,11 +77,11 @@ de los mismos.
 
 
 # 4. Prototipos
-Basadas en nuestras Historias de usuario comenzamos haciendo nuestros prototipos de baja fidelidad para desktop y móvil. 
-Quisimos diseñar una interfaz que adaptada al feedback de nuestras historias de usuario, como se puede ver en la siguiente imagen,
-pensamos en una interfaz que tuviera una lista desplegable de las familias de la Serie GOT, y que una vez que el usuario seleccione
-la familia que desea ver, se le desplegara otra lista en donde podría ver todos los integrantes de esa familia y a su vez poder seleccionar
-de que personaje quisiera ver los detalles. y Al seleccionar el personaje se le despliega la tarjeta con toda la data del persona seleccionado
+Basado en nuestras historias de usuario se inició el diseño de prototipos de baja fidelidad para desktop y móvil. 
+Quisimos diseñar una interfaz adaptada al feedback de nuestras usuarias, como se puede ver en la siguiente imagen.
+Inicialmente, se había trabajado en un prototipo que tenía una lista desplegable de las familias de la Serie GOT, y que una vez que el usuario hiciera click
+en la familia que deseara ver se le desplegara otra lista en donde podría ver todos los integrantes de esa familia y a su vez poder seleccionar
+de que personaje quisiera ver los detalles. 
 
 
 <img src="./img/PrototipodeBajaEscritorio.jpg">
@@ -94,10 +94,13 @@ dispositivo movil:
 Una vez recibimos feedback de nuestros usuarios respecto a los prototipos de baja fidelidad, realizamos los de alta fidelidad en Figma y este fue el resultado:
 
 
-#### Prototipo de alta fidelidad
+#### Prototipo de alta fidelidad desktop
+Se eliminó el select que mostraba a las familias, el diseño era imposible de realizar utilizando ese método. En cambio, se decidió transformar las opciones en botones
+y asignar un scroll interno que permitiera desplazarse por las opciones.
+
 <img src="./img/PrototipodeAlta.png">
 
-#### Prototipo de alta Móvil
+#### Prototipo de alta fidelidad móvil
 En nuestra interfaz móvil decidimos no hacer la vista inicio de página ya que el feedback recibido por parte de nuestros usuarios fue que seria mucho más
 cómodo ahorrarles tanto clicks para poder interactuar con nuestro sitio. 
 <img src="./img/prototipomovilfigma.png">
