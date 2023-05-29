@@ -71,7 +71,7 @@ function filtro(){
 
   // Proceso 3: Hacer filtro por input de texto
   const fullName = document.getElementById('inputSearch').value;
-    filtrados = filtrarNombres(filtrados, fullName);
+  filtrados = filtrarNombres(filtrados, fullName);
     
   // Proceso Final: Dibujar el resultado de los proceso en pantalla
   dibujarPersonajesPantalla(filtrados);
@@ -116,8 +116,8 @@ document.querySelector("#inputSearch").addEventListener("keyup", filtro);
 Array.from(document.getElementsByClassName("botonFamilia")).forEach(x => x.addEventListener("click",seleccionarFamilia));
 
 async function getText(file) {
-  let objetoEncontrado = await fetch(file);
-  let contenidoObjeto = await objetoEncontrado.text();
+  const objetoEncontrado = await fetch(file);
+  const contenidoObjeto = await objetoEncontrado.text();
   return contenidoObjeto;
 }
 
