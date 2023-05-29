@@ -78,7 +78,14 @@ function filtro(){
     
 }
 
+function filtrarSinSeleccion(){
 
+  document.querySelector("#root").style.display = "block";
+  document.querySelector("#columna3").style.display = "none";
+  familiaSeleccionada="";
+  filtro();
+  
+}
 //vincular botones html a JS
 function seleccionarFamilia(){
   Array.from(document.getElementsByClassName("botonFamilia")).forEach(x => x.classList.remove("seleccion-boton")); //quitar clase "seleccion-boton" a todos los botones que tengan la clase botón familia
