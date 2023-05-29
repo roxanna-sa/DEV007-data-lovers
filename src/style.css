@@ -1,36 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap');
 
 * {
-  margin: 0em;
+  margin: 0;
 }
 
 
 body {
   background: black;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.9)), url("./img/fondoTronoDragon.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.9)), url("./img/fondoTronoDragon.jpg");
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
 
 }
 
-h1 {
-  text-align: center;
-  margin: 1em;
-}
 
 #root {
-  width: 400px;
+  display: flex;
+  width: 20%;
   height: calc(100vh - 15.625em);
 }
 
 #columna1 {
-  width: 400px;
+  display:flex;
+  width: 20%;
   height: calc(100vh - 15.625em);
 }
-
-
 
 .imagen-personaje {
 
@@ -100,13 +95,19 @@ header {
 }
 
 #columna3 {
-  width: 400px;
+  width: 23%;
   height: calc(100vh - 15.625em);
+  background: #302c2c;
   margin-top: 0em;
   margin-left: -15em;
+  float: right;
+  border-radius: 1.875em;
+  margin-right: 5em;
+  order: 5px;
+  border-style: double dotted;
+  border-color: rgba(172, 169, 169, 0.3);
 
 }
-
 
 /*logo Grande*/
 .logo-header {
@@ -184,9 +185,6 @@ button:hover:before {
   left: 130%;
 }
 
-
-
-
 /*imagen personaje en boton*/
 .imagen-personaje {
   width: 3.8em;
@@ -228,19 +226,6 @@ p {
 
 .fondo-negro {
   background: black;
-}
-
-/*columna3*/
-.tarjeta {
-  width: 23%;
-  background: #302c2c;
-  float: right;
-  height: auto;
-  border-radius: 1.875em;
-  margin-right: 5em;
-  border: 5px;
-  border-style: double dotted;
-  border-color: rgba(172, 169, 169, 0.3);
 }
 
 
@@ -300,8 +285,6 @@ p {
 .cantidadMembers {
   font-size: 20px;
   margin-left: 9em;
-
-
 }
 
 /*clase reutilizable*/
@@ -518,8 +501,6 @@ p {
     margin-left: -1em;
 
   }
-
-
 
   #columna1 {
     width: 700px;
