@@ -18,12 +18,14 @@ h1 {
 }
 
 #root {
-  width: 400px;
+  display:flex;
+  width: 21%;
   height: calc(100vh - 15.625em);
 }
 
 #columna1 {
-  width: 400px;
+  display:flex;
+  width: 21%;
   height: calc(100vh - 15.625em);
 }
 
@@ -90,12 +92,21 @@ header {
   align-items: center;
 }
 
+/*columna3*/
 #columna3 {
-  width: 400px;
-  height: calc(100vh - 15.625em);
+  width: 26%;
   margin-top: 0em;
-  margin-left: -15em;
+  background: #302c2c;
+  float: left;
+  height: auto;
+  border-radius: 1.875em;
+  margin-right: 2%;
+  box-sizing: border-box;
+  border: 5px;
+  border-style: double dotted;
+  border-color: rgba(172, 169, 169, 0.3);
 }
+
 
 /*logo Grande*/
 .logo-header {
@@ -206,25 +217,14 @@ p {
 }
 
 .margin-right25 {
-  margin-right: 25%;
+  margin-right: 20%;
 }
 
 .fondo-negro {
   background: black;
 }
 
-/*columna3*/
-.tarjeta {
-  width: 23%;
-  background: #302c2c;
-  float: right;
-  height: auto;
-  border-radius: 1.875em;
-  margin-right: 5em;
-  border: 5px;
-  border-style: double dotted;
-  border-color: rgba(172, 169, 169, 0.3);
-}
+
 
 /*parrafo columna*/
 .tarjeta p {
@@ -261,7 +261,7 @@ p {
   display: flex;
   flex-direction: column;
   width: 20%;
-  height: calc(100vh - 15.625em);
+  height: calc(100vh - 235px);
   overflow-y: scroll;
   float: left;
   background-color: #302c2c;
@@ -341,13 +341,10 @@ p {
 /* TARJETA PERSONAJE TITULOS */
 .tarjetaPersonaje {
   color: white;
-  margin-top: 0%;
-  width: 300px;
+  width: calc(50% - 30px);
   height: 20px;
   text-align: justify;
   letter-spacing: 0.30em;
-  margin-top: -2%;
-  margin-left: 5em;
   font-size: 13px;
   font-weight: 400;
   margin-bottom: 1%;
@@ -356,106 +353,83 @@ p {
 
 .tarjetaPersonajeInfo {
   color: white;
-  margin-top: 0%;
-  width: 300px;
+  width: calc(50% - 30px);
   height: 50px;
   text-align: justify;
   letter-spacing: 0.30em;
-  margin-left: 15em;
-  margin-top: -6%;
   font-size: 13px;
   margin-bottom: 0%;
 }
 
 .titlePersonajeInfo {
-  width: 150px;
-  height: 100px;
+  width: 25px;
+  height: 25px;
   font-size: 14px;
-  margin-top: -2em;
-  margin-left: 15em;
   text-align: left;
   font-size: 13px;
-
-
 }
 
 /* DIV PARA CENTRAR TEXTO TARJETA PERSONAJE */
 .contenedorInfo {
-  height: 400px;
-  width: 400px;
+  /* height: 400px; */
+  width: 90%;
+  margin-left: 5%;
   margin-top: 3em;
+  overflow-y: scroll;
 }
 
-
-.IconoLastName {
+.icono{
   height: 25px;
   width: 25px;
+  float: left;
+}
+
+.IconoLastName {
   background-image: url("./img/blindaje.png");
   background-size: 25px 25px;
   background-repeat: no-repeat;
-  margin-top: -23em;
-  margin-left: 1em;
-
 }
 
 .IconoFirstName {
-  height: 25px;
-  width: 25px;
   background-image: url("./img/usuario.png");
   background-size: 25px 25px;
   background-repeat: no-repeat;
-  margin-top: -4.5em;
-  margin-left: 1em;
+ 
 }
 
 .IconoFullName {
-  height: 25px;
-  width: 25px;
   background-image: url("./img/FullName.png");
   background-size: 25px 25px;
   background-repeat: no-repeat;
-  margin-top: 4em;
-  margin-left: 1em;
+ 
 }
 
 .IconoFamily {
-  height: 30px;
-  width: 30px;
   background-image: url("./img/family.png");
   background-size: 30px 30px;
   background-repeat: no-repeat;
-  margin-top: 1em;
-  margin-left: 1em;
+
 }
 
 .IconoBorn {
-  height: 23px;
-  width: 23px;
   background-image: url("./img/fecha-de-nacimiento.png");
   background-size: 23px 23px;
   background-repeat: no-repeat;
-  margin-top: 0.8em;
-  margin-left: 1em;
+ 
 }
 
 .IconoDeath {
-  height: 23px;
-  width: 23px;
   background-image: url("./img/espada.png");
   background-size: 23px 23px;
   background-repeat: no-repeat;
-  margin-top: 1.3em;
-  margin-left: 1em;
+  
 }
 
 .IconoTitle {
-  height: 30px;
-  width: 30px;
   background-image: url("./img/title.png");
   background-size: 30px 30px;
   background-repeat: no-repeat;
-  margin-top: 1em;
-  margin-left: 1em;
+
 }
 
 /* }  AQUI CIERRA EL MEDIA QUERIE DE ESCRITORIO */

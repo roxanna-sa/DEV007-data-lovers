@@ -9,10 +9,9 @@ let miembrosFamilia = {} //acá se va a guardar un objeto, por eso está vacío
 const mediaQMovil = window.matchMedia('(max-width: 500px)');
 const mediaQTablet = window.matchMedia('(max-width: 855px)');
 
-/**
- * Esta función se encarga de dibujar la segunda columna
- * @param {filtrados} listaPersonajes 
- */
+
+//Esta función se encarga de dibujar la segunda columna
+
 function dibujarPersonajesPantalla(listaPersonajes) {
   document.querySelector("#root").innerHTML = ""; //limpiar el root que es donde dibujamos cada personaje
   listaPersonajes.forEach((item) => { //data.got.forEach((item, index)
@@ -71,13 +70,22 @@ function filtro(){
 
   // Proceso 3: Hacer filtro por input de texto
   const fullName = document.getElementById('inputSearch').value;
+  if(fullName.length >= 3){
     filtrados = filtrarNombres(filtrados, fullName);
-    
+  }
   // Proceso Final: Dibujar el resultado de los proceso en pantalla
   dibujarPersonajesPantalla(filtrados);
     
 }
 
+function filtrarSinSeleccion(){
+
+  document.querySelector("#root").style.display = "block";
+  document.querySelector("#columna3").style.display = "none";
+  familiaSeleccionada="";
+  filtro();
+  
+}
 
 //vincular botones html a JS
 function seleccionarFamilia(){
@@ -112,24 +120,13 @@ function seleccionarFamilia(){
 }
 
 document.querySelector("#selectOrder").addEventListener("change",filtro);
-document.querySelector("#inputSearch").addEventListener("keyup", filtro);
+document.querySelector("#inputSearch").addEventListener("keyup", filtrarSinSeleccion);
 Array.from(document.getElementsByClassName("botonFamilia")).forEach(x => x.addEventListener("click",seleccionarFamilia));
 
 miembrosFamilia = conteoPersonajesPorFamilia(structuredClone(data.got));
 
 
 
-/*function limpiarFiltroFamilia(){
-  Array.from(document.getElementsByClassName("botonFamilia")).forEach(x => x.classList.remove("seleccion-boton"));
-  document.querySelector("#root").style.display = "none";
-  document.querySelector("#cantidadDeMiembros").style.display = "none";
-  document.querySelector("#selectOrder").style.display = "none";
-  document.querySelector("#columna3").style.display = "none";
-  Se usó para borrar elementos al hacer click en el logo principal, pero se decidió utilizar una etiqueta <a> en HTML para recargar el sitio 
-}*/
 
-/*document.querySelector("#logo-principal").addEventListener("click",limpiarFiltroFamilia);*/
-
-//PARA SACAR EL VALOR DE UNA CAJA DE TEXTO GET ELEMENTBYID().VALUE
 
 

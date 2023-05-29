@@ -17,7 +17,7 @@
   </header>
 
 
-  <div class="padre-elementos-superiores">
+  <section class="padre-elementos-superiores">
 
     <div class="input-logo">
       <input type="search" id="inputSearch" placeholder="Search by name..." class="filtro-personajes">
@@ -44,10 +44,10 @@
       <p class="cantidadMembers" id="cantidadMiembros"></p>
     </div>
 
-  </div>
+  </section>
 
   <!--Columna de familias-->
-  <div class="columnas margin-right10" id="columna1">
+  <section class="columnas margin-right10" id="columna1">
     <button type="button" class="botonFamilia">
       <p class="text-center">All </p>
     </button>
@@ -143,67 +143,53 @@
     <button type="button" class="botonFamilia">
       <p class="text-center">Unknown</p>
     </button>
-  </div>
+  </section>
 
   <!--Columna de personajes (columna 2)-->
 
-  <div id="root" class="columnas margin-right25" style="display:none"></div>
+  <section id="root" class="columnas margin-right25" style="display:none"></section>
 
 
   <!--Columna tarjeta de información personaje-->
-  <div class="tarjeta" id="columna3" style="display:none">
+  <section class="tarjeta" id="columna3" style="display:none">
     <p class="details">Character Details</p>
     <img src="#" class="imgCharacter" id="imgPersonajeSeleccionado">
 
     <div class="contenedorInfo">
-
+      
+      <div class="IconoFirstName icono"></div>
       <p class="tarjetaPersonaje">First Name:</p>
       <p id="nombrePersonajeSeleccionado" class="tarjetaPersonajeInfo"></p>
 
-
+      <div class="IconoLastName icono"></div>
       <p class="tarjetaPersonaje">Last Name:</p>
       <p id="apellidoPersonajeSeleccionado" class="tarjetaPersonajeInfo"></p>
 
 
-
+      <div class="IconoFullName icono"></div>
       <p class="tarjetaPersonaje">Full Name:</p>
       <p id="nombreCompletoPersonajeSeleccionado" class="tarjetaPersonajeInfo"></p>
 
-
+      <div class="IconoFamily icono"></div>
       <p class="tarjetaPersonaje">Family:</p>
       <p id="familiaPersonajeSeleccionado" class="tarjetaPersonajeInfo"></p>
 
-
+       
+      <div class="IconoBorn icono"></div>
       <p class="tarjetaPersonaje">Born:</p>
       <p id="nacimientoPersonajeSeleccionado" class="tarjetaPersonajeInfo"></p>
 
-
+      <div class="IconoDeath icono"></div>
       <p class="tarjetaPersonaje">Death:</p>
       <p id="muertePersonajeSeleccionado" class="tarjetaPersonajeInfo"></p>
 
+      <div class="IconoTitle icono"></div>
       <p class="tarjetaPersonaje">Title:</p>
-      <p id="tituloPersonajeSeleccionado" class="titlePersonajeInfo"></p>
+      <p id="tituloPersonajeSeleccionado" class="tarjetaPersonajeInfo"></p>
 
     </div>
 
-    <div>
-      <div class="IconoLastName">
-      </div>
-      <div class="IconoFirstName">
-      </div>
-      <div class="IconoFullName">
-      </div>
-      <div class="IconoFamily">
-      </div>
-      <div class="IconoBorn">
-      </div>
-      <div class="IconoDeath">
-      </div>
-      <div class="IconoTitle">
-    </div>
-
-  </div>
-
+  </section>
 
   <button id="[id]" name="plantilla" type="button" class="botonPersonaje">
     <img src="#" class="imagen-personaje">
