@@ -504,18 +504,20 @@ p {
 
   #columna1 {
     width: 700px;
-    height: auto;
+    height: 85vh;
     background-color: #302c2c33;
     margin-left: 8em;
+    overflow-y: scroll;
     
   }
 
 
   #root {
     width: 700px;
-    height: auto;
+    height: 85vh;
     background-color: #302c2c33;
     margin-left: 8em;
+    overflow-y: scroll;
   }
 
   .input-logo {
@@ -758,17 +760,19 @@ p {
 
   #columna1 {
     width: 700px;
-    height: auto;
+    height: 200vh;
     background-color: #302c2c33;
     margin-left: 7em;
+    overflow-y: scroll;
   }
 
 
   #root {
     width: 700px;
-    height: auto;
+    height: 200vh;
     background-color: #302c2c33;
     margin-left: 7em;
+    overflow-y: scroll;
   }
 
 
