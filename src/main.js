@@ -9,6 +9,37 @@ let miembrosFamilia = {} //acá se va a guardar un objeto, por eso está vacío
 const mediaQMovil = window.matchMedia('(max-width: 500px)');
 const mediaQTablet = window.matchMedia('(max-width: 855px)');
 
+//vincular botones html a JS
+function seleccionarFamilia(){
+  Array.from(document.getElementsByClassName("botonFamilia")).forEach(x => x.classList.remove("seleccion-boton")); //quitar clase "seleccion-boton" a todos los botones que tengan la clase botón familia
+  this.classList.add("seleccion-boton"); //Agregar clase selección botón al botón que se le hace click
+  let seleccion = this.children[0].innerHTML.trim().toLowerCase(); //en [0] porque el hijo (<p> es el único elemento y está en la posición CERO)
+  if (seleccion === "all"){ //si la selección es "todos" se deja en vacío para que no filtre nada y me muestre todos los pjs
+    seleccion = "";
+  }
+  familiaSeleccionada = seleccion; //modificación variable global por la seleccion hecha
+
+  if (seleccion === ""){
+    document.getElementById("cantidadMiembros").innerHTML = "";
+  }else{
+
+    //Escribir cantidad de miembros por familia
+    const indiceEncontrado = miembrosFamilia.listadoDeFamilias.findIndex((item)=> item.toLowerCase().includes(seleccion));
+    const cantidadMiembros = miembrosFamilia.cantidadPersonajesPorFamilia [indiceEncontrado];
+    document.getElementById("cantidadMiembros").innerHTML = cantidadMiembros;
+  }
+  filtro(); //llamar a filtro que se encarga de filtrar y dibujar
+
+  //mostrar la segunda columna que es donde aparece el resultado del filtro
+
+  document.querySelector("#root").style.display = "block";
+  document.querySelector("#cantidadDeMiembros").style.display = "block";
+  document.querySelector("#selectOrder").style.display = "block";
+  
+  if (mediaQMovil.matches || mediaQTablet.matches){
+    document.querySelector("#columna1").style.display = "none";
+  }
+}
 
 //Esta función se encarga de dibujar la segunda columna
 
@@ -26,16 +57,16 @@ function dibujarPersonajesPantalla(listaPersonajes) {
     document.querySelector("#root").innerHTML += plantillaActual;
   });
 
-  Array.from(document.getElementsByClassName("botonPersonaje")).forEach(x => x.addEventListener("click",dibujarMiembrosPantalla));
+  Array.from(document.getElementsByClassName("botonPersonaje")).forEach(x => x.addEventListener("click",dibujarMiembrosPantalla)); //x = boton-personaje
   
 }
 
 function dibujarMiembrosPantalla(){
   Array.from(document.getElementsByClassName("botonPersonaje")).forEach(x => x.classList.remove("seleccion-boton")); //quitar clase "seleccion-boton" a todos los botones que tengan la clase botón familia
-  this.classList.add("seleccion-boton"); //Agregar clase selección botón al botón que se le hace click
+  this.classList.add("seleccion-boton"); // classList.add = Agregar clase selección botón al botón que se le hace click
 
-  const ID = parseInt(this.id);
-  const personajeSeleccionado = data.got[ID];
+  const ID = parseInt(this.id); //THIS referencia al botón que se le hizo click y llamó la función.
+  const personajeSeleccionado = data.got[ID]; //estamos leyendo el indice 
   
   document.querySelector("#imgPersonajeSeleccionado").src = personajeSeleccionado.imageUrl;
   document.querySelector("#nombrePersonajeSeleccionado").innerHTML = personajeSeleccionado.firstName;
@@ -83,38 +114,6 @@ function filtrarSinSeleccion(){
   familiaSeleccionada= "";
   filtro();
   
-}
-
-//vincular botones html a JS
-function seleccionarFamilia(){
-  Array.from(document.getElementsByClassName("botonFamilia")).forEach(x => x.classList.remove("seleccion-boton")); //quitar clase "seleccion-boton" a todos los botones que tengan la clase botón familia
-  this.classList.add("seleccion-boton"); //Agregar clase selección botón al botón que se le hace click
-  let seleccion = this.children[0].innerHTML.trim().toLowerCase(); //en [0] porque el hijo (<p> es el único elemento y está en la posición CERO)
-  if (seleccion === "all"){ //si la selección es "todos" se deja en vacío para que no filtre nada y me muestre todos los pjs
-    seleccion = "";
-  }
-  familiaSeleccionada = seleccion; //modificación variable global por la seleccion hecha
-
-  if (seleccion === ""){
-    document.getElementById("cantidadMiembros").innerHTML = "";
-  }else{
-
-    //Escribir cantidad de miembros por familia
-    const indiceEncontrado = miembrosFamilia.listadoDeFamilias.findIndex((item)=> item.toLowerCase().includes(seleccion));
-    const cantidadMiembros = miembrosFamilia.cantidadPersonajesPorFamilia [indiceEncontrado];
-    document.getElementById("cantidadMiembros").innerHTML = cantidadMiembros;
-  }
-  filtro(); //llamar a filtro que se encarga de filtrar y dibujar
-
-  //mostrar la segunda columna que es donde aparece el resultado del filtro
-
-  document.querySelector("#root").style.display = "block";
-  document.querySelector("#cantidadDeMiembros").style.display = "block";
-  document.querySelector("#selectOrder").style.display = "block";
-  
-  if (mediaQMovil.matches || mediaQTablet.matches){
-    document.querySelector("#columna1").style.display = "none";
-  }
 }
 
 document.querySelector("#selectOrder").addEventListener("change",filtro);
