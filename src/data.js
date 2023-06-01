@@ -1,11 +1,6 @@
 //listaPersonajes= c/pj  orden=ascendente/descendente
 
-/**
- * 
- * @param {*} filtrados elemento data.got
- * @param {*} tipoDeOrden es un texto que debería ser ascendente o descendente
- * @returns 
- */
+
 export const ordenAlfabetico = (filtrados,tipoDeOrden) => {
   filtrados.sort(orderByFullName);
   if (tipoDeOrden !== "ascendente"){ //ascendente es el value del select order HTML
@@ -28,13 +23,7 @@ function orderByFullName(a,b){
 //Filtro por familias
 export const filtrarFamilias = (data, seleccionDeCasa) => {
   const filtrar = data.got.filter(casa => casa.family.toLowerCase().includes(seleccionDeCasa))
-  /*
-  filter solo funciona sobre arreglos y pide como si fuese un foreach el nombre de c/elemento
-  en este caso, cada elemento (que nosotras nombramos "casa") representa un objeto de got.js
-  y filter se encarga de sólo filtrar los elementos que cumplan la condición 
-  la condición es que el objeto.family en minúsculas incluya la casa que seleccionó el usuario
-  seleccion de casa es el parámetro, en main están los argumentos que se le envían a la función 
-  */
+
   return filtrar;
 };
 
@@ -43,7 +32,6 @@ export const filtrarFamilias = (data, seleccionDeCasa) => {
 
 export const filtrarNombres= (data, Name) => {
   const filtrar = data.filter(nombre => nombre.fullName.toLowerCase().includes(Name.toLowerCase()));
-  // console.log(filtrar, "Soy la casa Seleccionada");
   return filtrar;
 }; 
 
@@ -53,9 +41,8 @@ export const filtrarNombres= (data, Name) => {
 export function conteoPersonajesPorFamilia(listadoPersonajes) {
   let listadoDeFamilias = listadoPersonajes.map(x => x.family); //de todos los personajes, se obtienen las familias. Estas pueden repetirse más de una vez.
   //listadoDeFamilias = listadoDeFamilias.filter(function(familia, index) { //filter siempre pide función dentro
-  //return listadoDeFamilias.indexOf(familia) === index;
-  //}); //Vivie
-  listadoDeFamilias = listadoDeFamilias.filter((familia, index) => listadoDeFamilias.indexOf(familia) === index); //Vivie
+  
+  listadoDeFamilias = listadoDeFamilias.filter((familia, index) => listadoDeFamilias.indexOf(familia) === index); 
                                               
   const cantidadPersonajesPorFamilia = []; //se va a guardar la cantidad de personajes por c/familia
   listadoDeFamilias.forEach((familia) => {

@@ -71,7 +71,8 @@ describe("conteoPersonajesPorFamilia", ()=> {
   });
 
   it("contando personajes por familia", ()=> {
-    expect(conteoPersonajesPorFamilia(data.got)).toStrictEqual({"listadoDeFamilias":["House Targaryen","House Tarly","House Stark","House Baratheon","House Lannister","House Greyjoy","House Clegane","House Baelish","House Seaworth","Unknown","House Tyrell","Free folk","House Tarth","Naath","House Bolton","Naharis","Lorath","House Mormont","Sparrow","House Martell","Sand","Unsullied","Qyburn","Bronn"],"cantidadPersonajesPorFamilia":[3,1,10,5,4,3,1,1,1,3,2,3,1,1,2,1,2,2,1,1,1,1,1,1]})
+    expect(conteoPersonajesPorFamilia(data.got)).toStrictEqual({"listadoDeFamilias":["House Targaryen","House Tarly","House Stark","House Baratheon","House Lannister","House Greyjoy","House Clegane","House Baelish","House Seaworth","Unknown","House Tyrell","Free folk","House Tarth","Naath","House Bolton","Naharis","Lorath","House Mormont","Sparrow","House Martell","Sand","Unsullied","Qyburn","Bronn"],
+      "cantidadPersonajesPorFamilia":[3,1,10,5,4,3,1,1,1,3,2,3,1,1,2,1,2,2,1,1,1,1,1,1]})
   })
 });
 
