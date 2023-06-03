@@ -27,7 +27,7 @@ function orderByFullName(a,b){
 
 //Filtro por familias
 export const filtrarFamilias = (data, seleccionDeCasa) => {
-  const filtrar = data.got.filter(casa => casa.family.toLowerCase().includes(seleccionDeCasa))
+  const filtrado = data.filter(casa => casa.family.toLowerCase().includes(seleccionDeCasa));
   /*
   filter solo funciona sobre arreglos y pide como si fuese un foreach el nombre de c/elemento
   en este caso, cada elemento (que nosotras nombramos "casa") representa un objeto de got.js
@@ -35,7 +35,7 @@ export const filtrarFamilias = (data, seleccionDeCasa) => {
   la condición es que el objeto.family en minúsculas incluya la casa que seleccionó el usuario
   seleccion de casa es el parámetro, en main están los argumentos que se le envían a la función 
   */
-  return filtrar;
+  return filtrado;
 };
 
 

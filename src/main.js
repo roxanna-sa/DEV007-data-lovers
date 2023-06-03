@@ -8,7 +8,7 @@ let familiaSeleccionada = "";
 let miembrosFamilia = {} //acá se va a guardar un objeto, por eso está vacío
 const mediaQMovil = window.matchMedia('(max-width: 500px)');
 const mediaQTablet = window.matchMedia('(max-width: 855px)');
-
+let data= [];
 /**
  * Esta función se encarga de dibujar la segunda columna
  * @param {filtrados} listaPersonajes 
@@ -37,7 +37,7 @@ function dibujarMiembrosPantalla(){
   this.classList.add("seleccion-boton"); //Agregar clase selección botón al botón que se le hace click
 
   const ID = parseInt(this.id);
-  const personajeSeleccionado = data.got[ID];
+  const personajeSeleccionado = data[ID];
   
   document.querySelector("#imgPersonajeSeleccionado").src = personajeSeleccionado.imageUrl;
   document.querySelector("#nombrePersonajeSeleccionado").innerHTML = personajeSeleccionado.firstName;
@@ -115,17 +115,21 @@ document.querySelector("#selectOrder").addEventListener("change",filtro);
 document.querySelector("#inputSearch").addEventListener("keyup", filtro);
 Array.from(document.getElementsByClassName("botonFamilia")).forEach(x => x.addEventListener("click",seleccionarFamilia));
 
-async function getText(file) {
-  const objetoEncontrado = await fetch(file);
-  const contenidoObjeto = await objetoEncontrado.text();
-  return contenidoObjeto;
+async function getCharacters() {
+  const bringData = await fetch("https://thronesapi.com/api/v2/Characters");
+  const bringText = await bringData.text();
+  const dataJson = JSON.parse(bringText);
+  return dataJson
 }
 
-const dataTraida = await getText("./data/got/got.json");
-const data = JSON.parse(dataTraida);
+getCharacters().then((dataAPI) => {
+  data = dataAPI;
+  miembrosFamilia = conteoPersonajesPorFamilia(structuredClone(data));
+});
 
 
-miembrosFamilia = conteoPersonajesPorFamilia(structuredClone(data.got));
+
+
 
 
 

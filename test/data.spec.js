@@ -26,7 +26,7 @@ describe("filtrarFamilias", ()=> {
   });
 
   it("filtrar por Tarly", ()=> {
-    expect(filtrarFamilias(data,"tarly")).toStrictEqual([{
+    expect(filtrarFamilias(data.got,"tarly")).toStrictEqual([{
       "id": 1,
       "firstName": "Samwell",
       "lastName": "Tarly",
